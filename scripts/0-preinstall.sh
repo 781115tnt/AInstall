@@ -65,6 +65,7 @@ createsubvolumes () {
     btrfs subvolume create /mnt/@var
     btrfs subvolume create /mnt/@tmp
     btrfs subvolume create /mnt/@.snapshots
+    btrfs subvolume create /mnt/@home
 }
 
 # @description Mount all btrfs subvolumes after root has been mounted.
@@ -72,6 +73,7 @@ mountallsubvol () {
     mount -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
     mount -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
     mount -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
+    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition5} /mnt/home
 }
 
 # @description BTRFS subvolulme creation and mounting. 
@@ -107,8 +109,8 @@ if [[ "${FS}" == "btrfs" ]]; then
     mkfs.btrfs -L HOME ${partition5} -f
     mount -t btrfs ${partition3} /mnt
     swapon ${partition4}
-    subvolumesetup
     mount -o ${MOUNT_OPTIONS} ${partition5} /mnt/home
+    subvolumesetup
 elif [[ "${FS}" == "ext4" ]]; then
     mkfs.vfat -F32 -n "EFIBOOT" ${partition2}
     mkfs.ext4 -L ROOT ${partition3}
@@ -130,8 +132,8 @@ elif [[ "${FS}" == "luks" ]]; then
 # create subvolumes for btrfs
     mount -t btrfs ${partition3} /mnt
     swapon ${partition4}
-    subvolumesetup
     mount -o ${MOUNT_OPTIONS} ${partition5} /mnt/home
+    subvolumesetup
 # store uuid of encrypted partition for grub
     echo ENCRYPTED_PARTITION_UUID=$(blkid -s UUID -o value ${partition3}) >> $CONFIGS_DIR/setup.conf
 fi
