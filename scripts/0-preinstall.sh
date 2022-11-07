@@ -71,13 +71,12 @@ subvolumesetup () {
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
 # make directories home, .snapshots, var, tmp
     mkdir -p /mnt/{home,var,tmp,.snapshots}
-    
-    btrfs subvolume create /mnt/home/@
-    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition5} /mnt/home
 # mount subvolumes
     mount -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
     mount -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
     mount -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
+    btrfs subvolume create /mnt/@home
+    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition5} /mnt/home
 }
 
 if [[ "${DISK}" =~ "nvme" ]]; then
