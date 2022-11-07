@@ -1,22 +1,19 @@
 + Install pamac-aur and allow it use AUR
 	yay -S pamac-aur
-+ Use pamac to remove unused apps
+
++ Remove unused apps
+	sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
+	
 + Install:
-	sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau adwaita-qt5 adwaita-qt6
-	yay -S adw-gtk3 adw-gtk-theme morewaita
-	sudo pacman -S gnome-tweaks firefox 
-	yay -S gnome-browser-connector
-	yay -S adwaita-icon-theme gtk-update-icon-cache papirus-icon-theme 
+	sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau adwaita-qt5 adwaita-qt6 gnome-tweaks firefox vlc smplayer htop gnome-boxes gnome-terminal
+	
+	yay -S gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita adwaita-icon-theme gtk-update-icon-cache papirus-icon-theme freedownloadmanager
+	
 + Use firefox to install gnome extensions:
 	Dash to Panel by charlesg99
 	Gtk4, GSconnect, Desktop Icons NG (DING) by smedius
 	GSConnect by dlandau
 	Gnome 4x UI Improvements by AXP
 	AppIndicator and KStatusNotifierItem Support by 3v1n0
-+ Use pamac to install
-	freedownloadmanager
-	vlc
-	smplayer
-	htop
-	gnome-boxes
+	
 + Use gnome-tweaks to select icons EPapirus-Dark
