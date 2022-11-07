@@ -75,6 +75,10 @@ subvolumesetup () {
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
+# for /home
+    mount -t btrfs ${partition5} /mnt/home
+    btrfs subvolume create /mnt/home/@
+    umount /mnt/home
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@ ${partition5} /mnt/home
 }
 
