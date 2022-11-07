@@ -61,7 +61,7 @@ echo -ne "
 # @description Creates the btrfs subvolumes. 
 createsubvolumes () {
     btrfs subvolume create /mnt/@
-    btrfs subvolume create /mnt/home/@
+    btrfs subvolume create /mnt/@home
     btrfs subvolume create /mnt/@var
     btrfs subvolume create /mnt/@tmp
     btrfs subvolume create /mnt/@.snapshots
@@ -85,7 +85,6 @@ subvolumesetup () {
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
 # make directories home, .snapshots, var, tmp
     mkdir -p /mnt/{home,var,tmp,.snapshots}
-    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition5} /mnt/home
 # mount subvolumes
     mountallsubvol
 }
@@ -108,7 +107,6 @@ if [[ "${FS}" == "btrfs" ]]; then
     mkswap -c ${partition4}
     mkfs.btrfs -L HOME ${partition5} -f
     mount -t btrfs ${partition3} /mnt
-    mount -t btrfs ${partition5} /mnt/home
     swapon ${partition4}
     subvolumesetup
 elif [[ "${FS}" == "ext4" ]]; then
@@ -131,7 +129,6 @@ elif [[ "${FS}" == "luks" ]]; then
     mkfs.btrfs -L HOME ${partition5}
 # create subvolumes for btrfs
     mount -t btrfs ${partition3} /mnt
-    mount -t btrfs ${partition5} /mnt/home
     swapon ${partition4}
     subvolumesetup
 # store uuid of encrypted partition for grub
