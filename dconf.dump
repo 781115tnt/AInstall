@@ -15,10 +15,11 @@ window-size=(1289, 839)
 
 [org/gnome/boxes]
 first-run=false
+shared-folders="[<{'uuid': <'b374ad05-f179-4544-b244-3dec31b92471'>, 'path': <'/run/media/WORKSPACE'>, 'name': <'WORKSPACE'>}>]"
 view='icon-view'
 window-maximized=false
 window-position=[35, 32]
-window-size=[1060, 840]
+window-size=[1282, 1017]
 
 [org/gnome/clocks/state/window]
 maximized=false
@@ -26,11 +27,16 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='user-accounts'
+last-panel='datetime'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST']
+folder-children=['Utilities', 'YaST', '3cb30205-9d68-420e-8e8c-48b66151c767']
+
+[org/gnome/desktop/app-folders/folders/3cb30205-9d68-420e-8e8c-48b66151c767]
+apps=['org.gnome.DiskUtility.desktop', 'gparted.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Settings.desktop', 'gnome-system-monitor.desktop', 'timeshift-gtk.desktop']
+name='System tools'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'mpv.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'qv4l2.desktop', 'org.gnome.clocks.desktop', 'yelp.desktop']
@@ -68,8 +74,14 @@ monospace-font-name='Monospace 10'
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox']
 show-banners=false
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gparted]
+application-id='gparted.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-boxes]
 application-id='org.gnome.Boxes.desktop'
@@ -88,6 +100,9 @@ application-id='org.manjaro.pamac.manager.desktop'
 
 [org/gnome/desktop/notifications/application/smplayer]
 application-id='smplayer.desktop'
+
+[org/gnome/desktop/notifications/application/timeshift-gtk]
+application-id='timeshift-gtk.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -112,7 +127,7 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=480
+window-height=656
 window-width=600
 
 [org/gnome/gnome-system-monitor]
@@ -144,7 +159,7 @@ search-filter-time-type='last_modified'
 initial-size=(1310, 895)
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, 'org.gnome.Calculator.desktop': <{'position': <1>}>, 'org.gnome.DiskUtility.desktop': <{'position': <2>}>, 'org.gnome.baobab.desktop': <{'position': <3>}>, 'org.gnome.Settings.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'lstopo.desktop': <{'position': <6>}>, 'htop.desktop': <{'position': <7>}>, 'timeshift-gtk.desktop': <{'position': <8>}>, 'org.gnome.tweaks.desktop': <{'position': <9>}>, 'org.gnome.Extensions.desktop': <{'position': <10>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, 'org.gnome.Calculator.desktop': <{'position': <1>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <2>}>, 'lstopo.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'org.gnome.tweaks.desktop': <{'position': <5>}>, 'org.gnome.Extensions.desktop': <{'position': <6>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <7>}>}]
 disabled-extensions=['gsconnect@andyholmes.github.io', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['dash-to-panel@jderose9.github.com', 'gtk4-ding@smedius.gitlab.com', 'gnome-ui-tune@itstime.tech', 'appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection']
 favorite-apps=['org.gnome.Boxes.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'vlc.desktop', 'org.manjaro.pamac.manager.desktop', 'org.gnome.TextEditor.desktop']
@@ -161,7 +176,7 @@ intellihide-hide-from-windows=true
 leftbox-padding=-1
 panel-anchors='{"0":"MIDDLE"}'
 panel-lengths='{"0":100}'
-panel-sizes='{"0":32}'
+panel-sizes='{"0":48}'
 primary-monitor=0
 status-icon-padding=-1
 taskbar-locked=true
@@ -231,7 +246,7 @@ sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 window-position=(35, 32)
-window-size=(695, 434)
+window-size=(1005, 716)
 
 [system/proxy]
 mode='none'
