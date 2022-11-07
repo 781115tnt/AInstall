@@ -57,3 +57,7 @@
 	cp gtk.css ~/.config/gtk-3.0/
 	cp gtk.css ~/.config/gtk-4.0/
 	
+	
++ Chinese, Korean, Japanese fonts
+	yay -S adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+	
