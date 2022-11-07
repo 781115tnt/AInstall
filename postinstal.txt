@@ -30,3 +30,5 @@
 	 cp -Rf  vlc ~/.config/
 	 
 + Use pamac to remove orphan apps
+
++ Set user become autologin
