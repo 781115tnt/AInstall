@@ -5,7 +5,7 @@
 	sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
 	
 + Install:
-	sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau adwaita-qt5 adwaita-qt6 gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor
+	sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau kvantum gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor
 	
 	yay -S gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita adwaita-icon-theme gtk-update-icon-cache papirus-icon-theme freedownloadmanager timeshift
 	
@@ -19,6 +19,8 @@
 	
 + Use gnome-tweaks to select icons EPapirus-Dark
 
++ Select Kvantum gnome dark theme  
+
 + Đánh tiếng Việt:
 	yay -S ibus-bamboo ibus-daemon
 	Sau đó restart/logout rồi thêm keyboard Vietnamese(Bamboo)
@@ -27,6 +29,7 @@
 	 sudo cp -R Roboto /usr/share/fonts/
 	 //to get out: dconf dump / > dconf.dump
 	 //to load: dconf load / < dconf.dump
+	 cp -Rf  vlc ~/.config/
 	 cp -Rf  vlc ~/.config/
 	 
 + Use pamac to remove orphan apps
