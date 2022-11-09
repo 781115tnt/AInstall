@@ -1,18 +1,13 @@
-+ Install pamac-aur and allow it use AUR
-	yay -S pamac-aur
-
 + Remove unused apps
-	sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
+udo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
 	
+
 + Install:
-	sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer
+sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer
 	
-	yay -S gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita adwaita-icon-theme gtk-update-icon-cache papirus-icon-theme freedownloadmanager timeshift ibus-bamboo ibus-daemon
-	
-+ Chinese, Korean, Japanese fonts
-	yay -S adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
-	
-	
+yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita papirus-icon-theme freedownloadmanager timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+
+
 + Use firefox to install gnome extensions:
 	Dash to Panel by charlesg99
 	Gtk4, GSconnect, Desktop Icons NG (DING) by smedius
@@ -24,22 +19,22 @@
 + Use gnome-tweaks to select icons EPapirus-Dark
 
 + Make GTK slim
-	cp gtk.css ~/.config/gtk-3.0/
-	cp gtk.css ~/.config/gtk-4.0/
+cp gtk.css ~/.config/gtk-3.0/
+cp gtk.css ~/.config/gtk-4.0/
 
 + QT app theme:
-	echo "[Qt]" >> ~/.config/Trolltech.conf
-	echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
-	echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
+echo "[Qt]" >> ~/.config/Trolltech.conf
+echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
+echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 
 + Đánh tiếng Việt: restart/logout rồi thêm keyboard Vietnamese(Bamboo)
 	
 + Settup fonts
-	 sudo cp -R Roboto /usr/share/fonts/
-	 //to get out: dconf dump / > dconf.dump
-	 //to load: dconf load / < dconf.dump
-	 cp -Rf  vlc ~/.config/
-	 cp -Rf  smplayer ~/.config/
+sudo cp -R Roboto /usr/share/fonts/
+//to get out: dconf dump / > dconf.dump
+//to load: dconf load / < dconf.dump
+cp -Rf  vlc ~/.config/
+cp -Rf  smplayer ~/.config/
 	
 + Use pamac to remove orphan apps
 
@@ -48,22 +43,22 @@
 + To make Timeshift work, make sure /etc/fstab use all UUID instead of label
 
 + Mount WORKSPACE & TNTDATA
-	cd /run/media
-	sudo mkdir /run/media/TNTDATA
-	sudo chown -R thanhtran:thanhtran TNTDATA
-	sudo chmod 555 TNTDATA
-	sudo mount /dev/sda1 /run/media/TNTDATA
+cd /run/media
+sudo mkdir /run/media/TNTDATA
+sudo chown -R thanhtran:thanhtran TNTDATA
+sudo chmod 555 TNTDATA
+sudo mount /dev/sda1 /run/media/TNTDATA
 	
-	sudo mkdir /run/media/WORKSPACE
-	sudo chown -R thanhtran:thanhtran WORKSPACE
-	sudo chmod 555 WORKSPACE
-	sudo mount /dev/nvme1n1p1 /run/media/WORKSPACE
+sudo mkdir /run/media/WORKSPACE
+sudo chown -R thanhtran:thanhtran WORKSPACE
+sudo chmod 555 WORKSPACE
+sudo mount /dev/nvme1n1p1 /run/media/WORKSPACE
 	
-	genfstab -U /
+genfstab -U /
 	
-	copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
+copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	
-	get userid groupid by:
-		id
-	add uid=xxxx,gid=yyyy to the options
+get userid groupid by:
+id
+add uid=xxxx,gid=yyyy to the options
 	
