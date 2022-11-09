@@ -28,11 +28,9 @@
 	cp gtk.css ~/.config/gtk-4.0/
 
 + QT app theme:
-	1> Create file ~/.config/Trolltech.conf with:
-		[Qt]
-		style=Adwaita-Dark
-	2> Add more item in ~/.bash_profile
-		export QT_STYLE_OVERRIDE=Adwaita-Dark 
+	echo "[Qt]" >> ~/.config/Trolltech.conf
+	echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
+	echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 
 + Đánh tiếng Việt: restart/logout rồi thêm keyboard Vietnamese(Bamboo)
 	
@@ -47,7 +45,7 @@
 
 + Set user become autologin
 
-+ To make Timeshift work, edit /etc/fstab to use all UUID instead of label
++ To make Timeshift work, make sure /etc/fstab use all UUID instead of label
 
 + Mount WORKSPACE & TNTDATA
 	cd /run/media
@@ -61,7 +59,7 @@
 	sudo chmod 555 WORKSPACE
 	sudo mount /dev/nvme1n1p1 /run/media/WORKSPACE
 	
-	genfstab -L /
+	genfstab -U /
 	
 	copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	
