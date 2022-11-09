@@ -47,6 +47,8 @@
 
 + Set user become autologin
 
++ To make Timeshift work, edit /etc/fstab to use all UUID instead of label
+
 + Mount WORKSPACE & TNTDATA
 	cd /run/media
 	sudo mkdir /run/media/TNTDATA
