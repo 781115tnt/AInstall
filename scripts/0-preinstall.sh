@@ -44,8 +44,8 @@ sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment
 # create partitions
 sgdisk -n 1::+1M --typecode=1:ef02 --change-name=1:'BIOSBOOT' ${DISK} # partition 1 (BIOS Boot Partition)
 sgdisk -n 2::+300M --typecode=2:ef00 --change-name=2:'EFIBOOT' ${DISK} # partition 2 (UEFI Boot Partition)
-sgdisk -n 3::+12G --typecode=3:8300 --change-name=3:'ROOT' ${DISK} # partition 3 (Root), default start, 30GB
-sgdisk -n 4::+2G --typecode=4:8200 --change-name=4:'SWAP' ${DISK} # partition 4 (Swap), default start, 16GB
+sgdisk -n 3::+35G --typecode=3:8300 --change-name=3:'ROOT' ${DISK} # partition 3 (Root), default start, 35GB
+sgdisk -n 4::+16G --typecode=4:8200 --change-name=4:'SWAP' ${DISK} # partition 4 (Swap), default start, 16GB
 sgdisk -n 5::-0 --typecode=5:8300 --change-name=5:'HOME' ${DISK} # partition 5 (Home), default start, remaining
 if [[ ! -d "/sys/firmware/efi" ]]; then # Checking for bios system
     sgdisk -A 1:set:2 ${DISK}
@@ -149,7 +149,7 @@ echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
 cp -R ${SCRIPT_DIR} /mnt/root/AInstall
 cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 
-genfstab -L /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 echo " 
   Generated /etc/fstab:
 "
