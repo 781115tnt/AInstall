@@ -659,7 +659,7 @@
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-#freetype-font=Serif Bold
+freetype-font=Nimbus Sans [UKWN]
 
 # Monospace Font (string)
 #freetype-monofont=Monospace
@@ -3979,7 +3979,7 @@ qt-privacy-ask=0
 #video-splitter=
 
 # Enable sub-pictures (boolean)
-#spu=1
+spu=0
 
 # On Screen Display (boolean)
 #osd=1
