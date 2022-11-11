@@ -64,17 +64,18 @@ subvolumesetup () {
     btrfs subvolume create /mnt/@
     btrfs subvolume create /mnt/@var
     btrfs subvolume create /mnt/@tmp
-    btrfs subvolume create /mnt/@.snapshots  
+#    btrfs subvolume create /mnt/@.snapshots  
 # unmount root to remount with subvolume 
     umount /mnt
 # mount @ subvolume
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
 # make directories home, .snapshots, var, tmp
-    mkdir -p /mnt/{home,var,tmp,.snapshots}
+#    mkdir -p /mnt/{home,var,tmp,.snapshots}
+    mkdir -p /mnt/{home,var,tmp}
 # mount subvolumes
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
-    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
+#    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
 # for /home
     mount -t btrfs ${partition5} /mnt/home
     btrfs subvolume create /mnt/home/@
@@ -149,7 +150,7 @@ echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
 cp -R ${SCRIPT_DIR} /mnt/root/AInstall
 cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab /mnt >> /mnt/etc/fstab
 echo " 
   Generated /etc/fstab:
 "
