@@ -5,8 +5,11 @@ udo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-
 + Install:
 sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer
 	
-yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita papirus-icon-theme freedownloadmanager timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita papirus-icon-theme freedownloadmanager timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap
 
++ Update debtab
+sudo debtab -u
+//Incase of any of the above packages can't be install, download it and then use: debtab pkgname.deb to create an pkgname.zst.  Then we can use: sudo pacman -U pkgname.zst to install the package.
 
 + Use firefox to install gnome extensions:
 	Dash to Panel by charlesg99
@@ -36,7 +39,7 @@ sudo cp -R Roboto /usr/share/fonts/
 cp -Rf  vlc ~/.config/
 cp -Rf  smplayer ~/.config/
 	
-+ Use pamac to remove orphan apps
++ Use pamac to remove orphan apps or: sudo pacman -Qtdq | sudo pacman -Rns -
 
 + Set user become autologin
 
@@ -47,14 +50,14 @@ cd /run/media
 sudo mkdir /run/media/TNTDATA
 sudo chown -R thanhtran:thanhtran TNTDATA
 sudo chmod 555 TNTDATA
-sudo mount /dev/sda1 /run/media/TNTDATA
+sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/sda1 /run/media/TNTDATA
 	
 sudo mkdir /run/media/WORKSPACE
 sudo chown -R thanhtran:thanhtran WORKSPACE
 sudo chmod 555 WORKSPACE
-sudo mount /dev/nvme1n1p1 /run/media/WORKSPACE
+sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
 	
-genfstab -U /
+genfstab /
 	
 copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	
