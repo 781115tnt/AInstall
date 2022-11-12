@@ -1,11 +1,11 @@
 + Remove unused apps
-udo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
+sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
 	
 
 + Install:
-sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer
+sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-boxes gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils
 	
-yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme morewaita papirus-icon-theme freedownloadmanager timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap
+yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme papirus-icon-theme timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap freedownloadmanager
 
 + Update debtab
 sudo debtab -u
@@ -22,6 +22,8 @@ sudo debtab -u
 + Use gnome-tweaks to select icons EPapirus-Dark
 
 + Make GTK slim
+mkdir ~/.config/gtk-3.0
+mkdir ~/.config/gtk-4.0
 cp gtk.css ~/.config/gtk-3.0/
 cp gtk.css ~/.config/gtk-4.0/
 
@@ -36,6 +38,7 @@ echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 sudo cp -R Roboto /usr/share/fonts/
 //to get out: dconf dump / > dconf.dump
 //to load: dconf load / < dconf.dump
+dconf load / < dconf.dump
 cp -Rf  vlc ~/.config/
 cp -Rf  smplayer ~/.config/
 	
@@ -46,6 +49,10 @@ cp -Rf  smplayer ~/.config/
 + To make Timeshift work, make sure /etc/fstab use all UUID instead of label
 
 + Mount WORKSPACE & TNTDATA
+get userid groupid by:
+id
+add uid=xxxx,gid=yyyy to the options
+
 cd /run/media
 sudo mkdir /run/media/TNTDATA
 sudo chown -R thanhtran:thanhtran TNTDATA
@@ -58,12 +65,12 @@ sudo chmod 555 WORKSPACE
 sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
 	
 genfstab /
+
+
 	
 copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	
-get userid groupid by:
-id
-add uid=xxxx,gid=yyyy to the options
+
 	
 + Change default audio sample rate
 Edit /etc/pulse/daemon.conf: default-sample-format = s32le, default-sample-rate = 96000, alternate-sample-rate = 48000
