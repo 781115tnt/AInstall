@@ -3,14 +3,14 @@ sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome
 	
 
 + Install:
-sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils gpu-passthrough-manager
+sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop
 
 #gnome-boxes 
 	
-yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme papirus-icon-theme timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap freedownloadmanager
+yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme papirus-icon-theme timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap gpu-passthrough-manager freedownloadmanager
 
 + Update debtab
-sudo debtab -u
+sudo debtap -u
 //Incase of any of the above packages can't be install, download it and then use: debtab pkgname.deb to create an pkgname.zst.  Then we can use: sudo pacman -U pkgname.zst to install the package.
 
 + Use firefox to install gnome extensions:
@@ -68,7 +68,7 @@ sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/sda1 /run/media/TNTDATA
 #sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
 	
 genfstab /
-
+-
 copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 
 
@@ -97,6 +97,18 @@ copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	# Show bridge network
 	sudo nmcli connection show
 	sudo nmcli connection up virbr0
+
+
+- Allow current user to access block devices:
+	+ List info of the block device
+	udevadm info -a -n /dev/nvme0n1
+	udevadm info -a -n /dev/nvme1n1
+	udevadm info -a -n /dev/sdx
+	+ Create a file in /etc/udev/rules.d/ let's name: 99-myrules.rules
+	#SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/chmod 777 /dev/$name"
+	SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/setfacl -m u:thanhtran:rw- /dev/$name"
+	Change uuid, wwid for each device
+	In case of SSD or HDD: use idProduct and serial instead
 
 	
 
@@ -135,4 +147,3 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 - Remove all orphans recursively:
 	sudo pacman -Qtdq | sudo pacman -Rns -
 	
-
