@@ -24,7 +24,7 @@ set_option() {
 }
 
 set_password() {
-	set_option PASSWORD "\\\\"
+	set_option PASSWORD "\\\\\\\\"
 }
 
 root_check() {
@@ -201,20 +201,7 @@ set_option KEYMAP "us"
 
 # @description Choose whether drive is SSD or not.
 drivessd () {
-echo -ne "
-Is this an ssd? yes/no:
-"
-
-options=("Yes" "No")
-select_option $? 1 "${options[@]}"
-
-case ${options[$?]} in
-    y|Y|yes|Yes|YES)
-    set_option MOUNT_OPTIONS "noatime,compress=zstd,ssd,commit=120";;
-    n|N|no|NO|No)
-    set_option MOUNT_OPTIONS "noatime,compress=zstd,commit=120";;
-    *) echo "Wrong option. Try again";drivessd;;
-esac
+set_option MOUNT_OPTIONS "noatime,compress=zstd,ssd,commit=120"
 }
 
 # @description Disk selection for drive to be used with installation.
@@ -250,33 +237,17 @@ set_option NAME_OF_MACHINE "TNTARCH"
 
 # @description Choose AUR helper. 
 aurhelper () {
-  # Let the user choose AUR helper from predefined list
-  echo -ne "Please enter your desired AUR helper:\n"
-  options=(paru yay picaur aura trizen pacaur none)
-  select_option $? 4 "${options[@]}"
-  aur_helper=${options[$?]}
-  set_option AUR_HELPER $aur_helper
+  set_option AUR_HELPER "yay"
 }
 
 # @description Choose Desktop Environment
 desktopenv () {
-  # Let the user choose Desktop Enviroment from predefined list
-  echo -ne "Please select your desired Desktop Enviroment:\n"
-  options=( `for f in pkg-files/*.txt; do echo "$f" | sed -r "s/.+\/(.+)\..+/\1/;/pkgs/d"; done` )
-  select_option $? 4 "${options[@]}"
-  desktop_env=${options[$?]}
-  set_option DESKTOP_ENV $desktop_env
+  set_option DESKTOP_ENV "gnome"
 }
 
 # @description Choose whether to do full or minimal installation. 
 installtype () {
-  echo -ne "Please select type of installation:\n\n
-  Full install: Installs full featured desktop enviroment, with added apps and themes needed for everyday use\n
-  Minimal Install: Installs only apps few selected apps to get you started\n"
-  options=(FULL MINIMAL)
-  select_option $? 4 "${options[@]}"
-  install_type=${options[$?]}
-  set_option INSTALL_TYPE $install_type
+  set_option INSTALL_TYPE "MINIMAL"
 }
 
 # More features in future
