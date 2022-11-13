@@ -15,7 +15,7 @@ window-size=(1289, 839)
 
 [org/gnome/boxes]
 first-run=false
-shared-folders="[<{'uuid': <'b374ad05-f179-4544-b244-3dec31b92471'>, 'path': <'/run/media/WORKSPACE'>, 'name': <'WORKSPACE'>}>]"
+shared-folders="[<{'uuid': <'b374ad05-f179-4544-b244-3dec31b92471'>, 'path': <'/run/media/WORKSPACE'>, 'name': <'WORKSPACE'>}>, <{'uuid': <'b374ad05-f179-4544-b244-3dec31b92471'>, 'path': <'/run/media/WORKSPACE'>, 'name': <'WORKSPACE'>}>]"
 view='icon-view'
 window-maximized=false
 window-position=[35, 32]
@@ -27,16 +27,29 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
-window-state=(980, 1304, false)
+last-panel='network'
+window-state=(1189, 677, false)
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+
+[org/gnome/desktop/a11y/interface]
+high-contrast=false
+
+[org/gnome/desktop/a11y/keyboard]
+stickykeys-enable=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', '3cb30205-9d68-420e-8e8c-48b66151c767']
+folder-children=['Utilities', 'YaST', '3cb30205-9d68-420e-8e8c-48b66151c767', '6e34f91b-de68-43a6-829d-feaa4fcda567']
 
 [org/gnome/desktop/app-folders/folders/3cb30205-9d68-420e-8e8c-48b66151c767]
 apps=['org.gnome.DiskUtility.desktop', 'gparted.desktop', 'org.gnome.baobab.desktop', 'timeshift-gtk.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop', 'lstopo.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Settings.desktop']
 name='System tools'
 translate=false
+
+[org/gnome/desktop/app-folders/folders/6e34f91b-de68-43a6-829d-feaa4fcda567]
+apps=['libreoffice-base.desktop', 'libreoffice-writer.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-math.desktop', 'libreoffice-impress.desktop', 'libreoffice-draw.desktop', 'libreoffice-calc.desktop']
+name='Office'
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'mpv.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'qv4l2.desktop', 'org.gnome.clocks.desktop', 'yelp.desktop']
@@ -72,13 +85,17 @@ gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 monospace-font-name='Monospace 10'
 text-scaling-factor=1.2
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gparted]
 application-id='gparted.desktop'
@@ -107,9 +124,15 @@ application-id='timeshift-gtk.desktop'
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=false
 
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Roboto Condensed, Bold 10'
+
+[org/gnome/evince/default]
+window-ratio=(2.4319327731092435, 1.1971496437054632)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -163,23 +186,46 @@ search-view='list-view'
 initial-size=(1310, 895)
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>}]
-disabled-extensions=['gsconnect@andyholmes.github.io', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'gtk4-ding@smedius.gitlab.com', 'gnome-ui-tune@itstime.tech', 'appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection']
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <5>}>}]
+disabled-extensions=['gsconnect@andyholmes.github.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['gtk4-ding@smedius.gitlab.com', 'gnome-ui-tune@itstime.tech', 'appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'hidetopbar@mathieu.bidon.ca', 'dash-to-panel@jderose9.github.com', 'rounded-window-corners@yilozt']
 favorite-apps=['org.gnome.Boxes.desktop', 'org.gnome.Terminal.desktop', 'org.manjaro.pamac.manager.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'vlc.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
+
+[org/gnome/shell/extensions/dash-to-dock]
+animation-time=0.20000000000000001
+autohide=true
+autohide-in-fullscreen=false
+background-opacity=0.80000000000000004
+dash-max-icon-size=48
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+hide-delay=0.20000000000000001
+intellihide=true
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+multi-monitor=true
+preferred-monitor=-2
+preferred-monitor-by-connector='DP-2'
+pressure-threshold=100.0
+require-pressure-to-show=true
+show-delay=0.25
+show-dock-urgent-notify=true
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=4
-appicon-padding=0
+appicon-padding=2
 available-monitors=[0]
 hotkeys-overlay-combo='TEMPORARILY'
 intellihide=true
+intellihide-behaviour='FOCUSED_WINDOWS'
 intellihide-hide-from-windows=true
+intellihide-use-pressure=false
 leftbox-padding=-1
 panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
+panel-positions='{"0":"BOTTOM"}'
 panel-sizes='{"0":48}'
 primary-monitor=0
 status-icon-padding=-1
@@ -193,6 +239,9 @@ name='TNTARCH'
 
 [org/gnome/shell/extensions/gtk4-ding]
 icon-size='small'
+
+[org/gnome/shell/extensions/hidetopbar]
+mouse-sensitive=false
 
 [org/gnome/shell/extensions/just-perfection]
 accessibility-menu=false
@@ -224,6 +273,12 @@ workspace=false
 workspace-background-corner-size=0
 workspace-popup=true
 workspaces-in-app-grid=false
+
+[org/gnome/shell/extensions/rounded-window-corners]
+border-width=0
+custom-rounded-corner-settings=@a{sv} {}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 9>, 'smoothing': <uint32 0>, 'enabled': <true>}
+settings-version=uint32 5
 
 [org/gnome/shell/extensions/user-theme]
 name=''
@@ -262,7 +317,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(35, 32)
+window-position=(955, 262)
 window-size=(1005, 716)
 
 [system/proxy]
