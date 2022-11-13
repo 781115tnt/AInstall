@@ -26,7 +26,11 @@ echo -ne "
     ( arch-chroot /mnt $HOME/AInstall/scripts/3-post-setup.sh )|& tee 3-post-setup.log
     cp -v *.log /mnt/home/$USERNAME
 
+
+timedatectl set-timezone Asia/Ho_Chi_Minh
+    
 echo -ne "
+
 -------------------------------------------------------------------------
                     Automated Arch Linux Installer
 -------------------------------------------------------------------------
