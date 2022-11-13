@@ -24,16 +24,7 @@ set_option() {
 }
 
 set_password() {
-    read -rs -p "Please enter password: " PASSWORD1
-    echo -ne "\n"
-    read -rs -p "Please re-enter password: " PASSWORD2
-    echo -ne "\n"
-    if [[ "$PASSWORD1" == "$PASSWORD2" ]]; then
-        set_option "$1" "$PASSWORD1"
-    else
-        echo -ne "ERROR! Passwords do not match. \n"
-        set_password
-    fi
+	set_option PASSWORD "\\\\"
 }
 
 root_check() {
@@ -197,58 +188,15 @@ echo -ne "
 # @description This function will handle file systems. At this movement we are handling only
 # btrfs and ext4. Others will be added in future.
 filesystem () {
-echo -ne "
-Please Select your file system for both boot and root
-"
-options=("btrfs" "ext4" "luks" "exit")
-select_option $? 1 "${options[@]}"
-
-case $? in
-0) set_option FS btrfs;;
-1) set_option FS ext4;;
-2) 
-    set_password "LUKS_PASSWORD"
-    set_option FS luks
-    ;;
-3) exit ;;
-*) echo "Wrong option please select again"; filesystem;;
-esac
+set_option FS "btrfs"
 }
 # @description Detects and sets timezone. 
 timezone () {
-# Added this from arch wiki https://wiki.archlinux.org/title/System_time
-time_zone="$(curl --fail https://ipapi.co/timezone)"
-echo -ne "
-System detected your timezone to be '$time_zone' \n"
-echo -ne "Is this correct?
-" 
-options=("Yes" "No")
-select_option $? 1 "${options[@]}"
-
-case ${options[$?]} in
-    y|Y|yes|Yes|YES)
-    echo "${time_zone} set as timezone"
-    set_option TIMEZONE $time_zone;;
-    n|N|no|NO|No)
-    echo "Please enter your desired timezone e.g. Europe/London :" 
-    read new_timezone
-    echo "${new_timezone} set as timezone"
-    set_option TIMEZONE $new_timezone;;
-    *) echo "Wrong option. Try again";timezone;;
-esac
+set_option TIMEZONE "Asia/Ho_Chi_Minh"
 }
 # @description Set user's keyboard mapping. 
 keymap () {
-echo -ne "
-Please select key board layout from this list"
-# These are default key maps as presented in official arch repo archinstall
-options=(us by ca cf cz de dk es et fa fi fr gr hu il it lt lv mk nl no pl ro ru sg ua uk)
-
-select_option $? 4 "${options[@]}"
-keymap=${options[$?]}
-
-echo -ne "Your key boards layout: ${keymap} \n"
-set_option KEYMAP $keymap
+set_option KEYMAP "us"
 }
 
 # @description Choose whether drive is SSD or not.
@@ -295,11 +243,9 @@ drivessd
 
 # @description Gather username and password to be used for installation. 
 userinfo () {
-read -p "Please enter your username: " username
-set_option USERNAME ${username,,} # convert to lower case as in issue #109 
-set_password "PASSWORD"
-read -rep "Please enter your hostname: " nameofmachine
-set_option NAME_OF_MACHINE $nameofmachine
+set_option USERNAME "ThanhTran"
+set_password
+set_option NAME_OF_MACHINE "TNTARCH"
 }
 
 # @description Choose AUR helper. 
