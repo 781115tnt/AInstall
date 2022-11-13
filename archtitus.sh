@@ -25,12 +25,6 @@ echo -ne "
     fi
     ( arch-chroot /mnt $HOME/AInstall/scripts/3-post-setup.sh )|& tee 3-post-setup.log
     cp -v *.log /mnt/home/$USERNAME
-
-
-timedatectl set-timezone Asia/Ho_Chi_Minh
-
-pacman -Sy
-pacman -S --noconfirm git 
     
 echo -ne "
 
