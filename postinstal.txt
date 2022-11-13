@@ -20,7 +20,7 @@ sudo debtab -u
 	AppIndicator and KStatusNotifierItem Support by 3v1n0
 	Arch Linux Updates Indicator by RaphaelR
 	
-+ Use gnome-tweaks to select icons EPapirus-Dark
++ Use gnome-tweaks to select icons Papirus-Dark
 
 + Make GTK slim
 mkdir ~/.config/gtk-3.0
