@@ -1,10 +1,10 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/background/primary-color'
-saved-view='/org/gnome/desktop/background/primary-color'
+saved-pathbar-path='/org/gnome/nautilus/preferences/'
+saved-view='/org/gnome/nautilus/preferences/'
 show-warning=false
-window-height=756
+window-height=838
 window-is-maximized=false
-window-width=1008
+window-width=1179
 
 [org/gnome/Console]
 last-window-size=(1222, 697)
@@ -19,7 +19,7 @@ shared-folders="[<{'uuid': <'b374ad05-f179-4544-b244-3dec31b92471'>, 'path': <'/
 view='icon-view'
 window-maximized=false
 window-position=[35, 32]
-window-size=[1282, 1017]
+window-size=[1335, 857]
 
 [org/gnome/clocks/state/window]
 maximized=false
@@ -27,7 +27,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='network'
+last-panel='notifications'
 window-state=(1189, 677, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -70,6 +70,7 @@ primary-color='#555555'
 
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
+show-all-sources=false
 sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
 xkb-options=@as []
 
@@ -78,6 +79,7 @@ clock-show-weekday=true
 color-scheme='prefer-dark'
 document-font-name='Roboto Condensed, 10'
 enable-animations=true
+enable-hot-corners=true
 font-antialiasing='rgba'
 font-hinting='slight'
 font-name='Roboto Condensed, 10'
@@ -88,8 +90,11 @@ text-scaling-factor=1.2
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor']
 show-banners=false
+
+[org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
+application-id='ca.desrt.dconf-editor.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -112,6 +117,9 @@ application-id='org.gnome.FileRoller.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
 [org/gnome/desktop/notifications/application/org-manjaro-pamac-manager]
 application-id='org.manjaro.pamac.manager.desktop'
 
@@ -124,8 +132,19 @@ application-id='timeshift-gtk.desktop'
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=false
 
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+remember-recent-files=false
+
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
@@ -135,7 +154,7 @@ titlebar-font='Roboto Condensed, Bold 10'
 window-ratio=(2.4319327731092435, 1.1971496437054632)
 
 [org/gnome/evolution-data-server]
-migrated=true
+migrated=false
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -167,30 +186,34 @@ col-6-width=0
 
 [org/gnome/mutter]
 center-new-windows=true
+edge-tiling=true
 
 [org/gnome/nautilus/compression]
 default-compression-format='zip'
 
-[org/gnome/nautilus/icon-view]
-default-zoom-level='small'
-
 [org/gnome/nautilus/list-view]
+default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='medium'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
 search-view='list-view'
+show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1310, 895)
+initial-size=(1310, 894)
 
 [org/gnome/shell]
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <5>}>}]
+disable-user-extensions=false
 disabled-extensions=['gsconnect@andyholmes.github.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
 enabled-extensions=['gtk4-ding@smedius.gitlab.com', 'gnome-ui-tune@itstime.tech', 'appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'hidetopbar@mathieu.bidon.ca', 'dash-to-panel@jderose9.github.com', 'rounded-window-corners@yilozt']
 favorite-apps=['org.gnome.Boxes.desktop', 'org.gnome.Terminal.desktop', 'org.manjaro.pamac.manager.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'vlc.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 animation-time=0.20000000000000001
@@ -212,10 +235,13 @@ show-delay=0.25
 show-dock-urgent-notify=true
 
 [org/gnome/shell/extensions/dash-to-panel]
+animate-app-switch=true
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=4
 appicon-padding=2
 available-monitors=[0]
+dot-position='TOP'
+dot-style-focused='DOTS'
 hotkeys-overlay-combo='TEMPORARILY'
 intellihide=true
 intellihide-behaviour='FOCUSED_WINDOWS'
@@ -223,6 +249,7 @@ intellihide-hide-from-windows=true
 intellihide-use-pressure=false
 leftbox-padding=-1
 panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"BOTTOM"}'
@@ -230,6 +257,8 @@ panel-sizes='{"0":48}'
 primary-monitor=0
 status-icon-padding=-1
 taskbar-locked=true
+trans-bg-color='#343434'
+trans-use-custom-bg=true
 tray-padding=-1
 window-preview-title-position='TOP'
 
@@ -238,6 +267,7 @@ id='b13ba932-63f6-4d52-b206-ea0836546f91'
 name='TNTARCH'
 
 [org/gnome/shell/extensions/gtk4-ding]
+arrangeorder='NAME'
 icon-size='small'
 
 [org/gnome/shell/extensions/hidetopbar]
@@ -277,6 +307,7 @@ workspaces-in-app-grid=false
 [org/gnome/shell/extensions/rounded-window-corners]
 border-width=0
 custom-rounded-corner-settings=@a{sv} {}
+enable-preferences-entry=false
 global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 9>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
 
@@ -290,8 +321,16 @@ locations=@av []
 check-timestamp=int64 1667806025
 first-run=false
 
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+default-size-columns=150
+default-size-rows=35
+
 [org/gnome/tweaks]
 show-extensions-notice=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0), (0.22745098173618317, 0.22745098173618317, 0.22745098173618317, 1.0), (0.22666667401790619, 0.22666667401790619, 0.22666667401790619, 1.0)]
+selected-color=(true, 0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -317,7 +356,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(955, 262)
+window-position=(35, 32)
 window-size=(1005, 716)
 
 [system/proxy]
