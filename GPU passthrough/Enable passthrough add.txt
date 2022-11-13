@@ -1,8 +1,8 @@
 - List pci audio/video to get deviceid:
 	lspci -nnk
-	(In this case: Intel Audio = 8086:43c8 and Intel Video = 8086:4c8b)
+	(In this case: Intel Audio = 8086:43c8 and Intel Video = 8086:4c8b, and KIOXIA = 1e0f:0009)
 
-- Enable passthrough add "intel_iommu=on iommu=pt vfio-pci.ids=8086:4c8b " and update grub
+- Enable passthrough add "intel_iommu=on iommu=pt vfio-pci.ids=1e0f:0009 " and update grub
 	sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 - Edit sudo nano /etc/mkinitcpio.conf:
@@ -17,5 +17,51 @@
 	
 - Check if passthrough is enable:
 	sudo cat /proc/cmdline
+	
 
-- 
+
+
+
+Step 1 – Create unix group to use
+
+First check if group already exist, if not create it
+
+sudo getent group | grep libvirt
+
+Some distributions may be using libvirt
+
+sudo getent group | grep libvirt
+
+If it doesn’t exist, add it as system group.
+
+sudo groupadd --system libvirt
+
+Step 2 – Add user account to the libvirt group
+
+Now that the group is available, add your user account to the group.
+
+sudo usermod -a -G libvirt $(whoami)
+newgrp libvirt
+
+Verify that user is added to libvirt group.
+
+$ id $(whoami)
+uid=1000(jmutai) gid=1000(jmutai) groups=1000(jmutai),998(wheel),992(kvm),988(storage),968(libvirt),108(vboxusers)
+
+Step 3 – Edit libvirtd configuration file to add group
+
+Open the file /etc/libvirt/libvirtd.conf for editing.
+
+sudo vim /etc/libvirt/libvirtd.conf
+
+Set the UNIX domain socket group ownership to libvirt, (around line 85)
+
+unix_sock_group = "libvirt"
+
+Set the UNIX socket permissions for the R/W socket (around line 102)
+
+unix_sock_rw_perms = "0770"
+
+Restart libvirt daemon after making the change.
+
+sudo systemctl restart libvirtd.service
