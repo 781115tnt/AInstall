@@ -28,6 +28,9 @@ echo -ne "
 
 
 timedatectl set-timezone Asia/Ho_Chi_Minh
+
+pacman -Sy
+pacman -S --noconfirm git 
     
 echo -ne "
 
