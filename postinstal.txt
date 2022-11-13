@@ -77,3 +77,33 @@ copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 Edit /etc/pulse/daemon.conf: default-sample-format = s32le, default-sample-rate = 96000, alternate-sample-rate = 48000
 Restart audio service: pulseaudio -k
 Check current bitrate: pactl list sink-inputs, pactl list sources
+
+
+
+
++ Pacman command options:
+- Update:
+	sudo pacman -Sy
+	sudo pacman -Syu
+- Clear:
+	sudo pacman -Sc
+- Remove package:
+	sudo pacman -R pkgname
+- Remove package and all it's dependencies
+	sudo pacman -Rcns pkgname
+- Install a package
+	sudo pacman -S pkgname
+- Install local package:
+	sudo pacman -U pkgname
+- Search for a package:
+	sudo pacman -Ss pkgname
+	pacsearch -n ^name
+	pacsearch -n name
+- Search for an installed package:
+	sudo pacman -Q pkgname
+	sudo pacman -Qi pkgname
+- Search all orphans
+	sudo pacman -Qdt
+- Remove all orphans recursively:
+	sudo pacman -Qtdq | sudo pacman -Rns -
+	
