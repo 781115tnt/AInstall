@@ -3,7 +3,7 @@ sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome
 	
 
 + Install:
-sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq
+sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils gpu-passthrough-manager
 
 #gnome-boxes 
 	
@@ -62,10 +62,10 @@ sudo chown -R thanhtran:thanhtran TNTDATA
 sudo chmod 555 TNTDATA
 sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/sda1 /run/media/TNTDATA
 	
-sudo mkdir /run/media/WORKSPACE
-sudo chown -R thanhtran:thanhtran WORKSPACE
-sudo chmod 555 WORKSPACE
-sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
+#sudo mkdir /run/media/WORKSPACE
+#sudo chown -R thanhtran:thanhtran WORKSPACE
+#sudo chmod 555 WORKSPACE
+#sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
 	
 genfstab /
 
@@ -73,6 +73,8 @@ copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 
 
 + Virt-manager
+- Enable virtual add "intel_iommu=on iommu=pt " and update grub
+	sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Change user and group in /etc/libvirt/qemu.conf to udi and gid
 - Enable libvirtd, and virtlogd services:
 	sudo systemctl enable libvirtd
@@ -81,7 +83,20 @@ copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	sudo systemctl start libvirtd
 	sudo systemctl start virtlogd
 	
+	# Start automatically NAT virtual network
+	sudo virsh net-autostart default
+	
+	# Start automatically bridge network
+	# Get its name first - in this case virbr0
+	sudo nmcli connection show
+	# Make it autostart
+	nmcli con mod virbr0 connection.autoconnect yes
+
+- If has guest's network problem, try:	
 	sudo virsh net-start default
+	# Show bridge network
+	sudo nmcli connection show
+	sudo nmcli connection up virbr0
 
 	
 
