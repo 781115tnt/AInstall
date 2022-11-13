@@ -107,3 +107,13 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 - Remove all orphans recursively:
 	sudo pacman -Qtdq | sudo pacman -Rns -
 	
+
+
++ Virt-manager
+- Change user and group in /etc/libvirt/qemu.conf to udi and gid
+- Enable libvirtd, and virtlogd services:
+	sudo systemctl enable libvirtd
+	sudo systemctl enable virtlogd
+- Start these services:
+	sudo systemctl start libvirtd
+	sudo systemctl start virtlogd
