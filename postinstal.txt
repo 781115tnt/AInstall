@@ -71,8 +71,12 @@ genfstab /
 -
 copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 
+sudo sensors-detect
+
 
 + Virt-manager
+- Make current user is in libvirt group
+	sudo usermod -a -G libvirt $(whoami)
 - Enable virtual add "intel_iommu=on iommu=pt " and update grub
 	sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Change user and group in /etc/libvirt/qemu.conf to udi and gid
@@ -109,8 +113,15 @@ copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 	SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/setfacl -m u:thanhtran:rw- /dev/$name"
 	Change uuid, wwid for each device
 	In case of SSD or HDD: use idProduct and serial instead
+- Windows guest will use channel as:
+	<channel type="spicevmc">
+	  <target type="virtio" name="com.redhat.spice.0" state="disconnected"/>
+	  <alias name="channel0"/>
+	  <address type="virtio-serial" controller="0" bus="0" port="1"/>
+	</channel>
 
-	
+
+
 
 	
 + Change default audio sample rate
@@ -147,4 +158,3 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 - Remove all orphans recursively:
 	sudo pacman -Qtdq | sudo pacman -Rns -
 	
-
