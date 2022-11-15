@@ -82,7 +82,7 @@ sudo sensors-detect
 	sudo usermod -a -G libvirt $(whoami)
 - Enable virtual add "intel_iommu=on iommu=pt " and update grub
 	sudo grub-mkconfig -o /boot/grub/grub.cfg
-- Change user and group in /etc/libvirt/qemu.conf to udi and gid
+- Change group in /etc/libvirt/qemu.conf to libvirt
 - Enable libvirtd, and virtlogd services:
 	sudo systemctl enable libvirtd
 	sudo systemctl enable virtlogd
@@ -112,8 +112,7 @@ sudo sensors-detect
 	udevadm info -a -n /dev/nvme1n1
 	udevadm info -a -n /dev/sdx
 	+ Create a file in /etc/udev/rules.d/ let's name: 99-myrules.rules
-	#SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/chmod 777 /dev/$name"
-	SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/setfacl -m u:thanhtran:rw- /dev/$name"
+	SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/setfacl -m g:libvirt:rw- /dev/$name"
 	Change uuid, wwid for each device
 	In case of SSD or HDD: use idProduct and serial instead
 - Windows guest will use channel as:
@@ -161,3 +160,8 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 - Remove all orphans recursively:
 	sudo pacman -Qtdq | sudo pacman -Rns -
 	
+
++ List all groups:
+	cut -d: -f1 /etc/group
++ List all users:
+	cut -d: -f1 /etc/passwd
