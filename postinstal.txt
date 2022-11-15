@@ -21,6 +21,9 @@ sudo debtap -u
 	Gnome 4x UI Improvements by AXP
 	AppIndicator and KStatusNotifierItem Support by 3v1n0
 	Arch Linux Updates Indicator by RaphaelR
+	Hide Top Bar by tuxor1337
+	Dash to Dock by michele_g
+	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
 
