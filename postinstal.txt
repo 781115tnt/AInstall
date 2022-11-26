@@ -7,7 +7,7 @@ sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib3
 
 #gnome-boxes 
 	
-yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme papirus-icon-theme timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap gpu-passthrough-manager freedownloadmanager
+yay -S pamac-aur gnome-browser-connector adw-gtk-theme papirus-icon-theme timeshift ibus-bamboo ibus-daemon adobe-source-han-serif-otc-fonts adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts debtap gpu-passthrough-manager freedownloadmanager
 
 + Update debtab
 sudo debtap -u
