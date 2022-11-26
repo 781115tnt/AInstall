@@ -45,7 +45,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='universal-access'
+last-panel='background'
 window-state=(940, 1020, false)
 
 [org/gnome/desktop/a11y]
@@ -110,7 +110,7 @@ enable-hot-corners=true
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Roboto Condensed, 11'
-gtk-theme='adw-gtk3-dark'
+gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 monospace-font-name='Monospace 11'
 text-scaling-factor=1.2000000000000002
