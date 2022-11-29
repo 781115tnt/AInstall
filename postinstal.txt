@@ -23,6 +23,7 @@ sudo debtap -u
 	Arch Linux Updates Indicator by RaphaelR
 	Hide Top Bar by tuxor1337
 	Dash to Dock by michele_g
+	Custom Hot Corners - Extended by GdH
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
