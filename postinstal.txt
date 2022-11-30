@@ -24,6 +24,7 @@ sudo debtap -u
 	Hide Top Bar by tuxor1337
 	Dash to Dock by michele_g
 	Custom Hot Corners - Extended by GdH
+	ArcMenu by andrew.zaech
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
