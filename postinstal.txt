@@ -25,6 +25,7 @@ sudo debtap -u
 	Dash to Dock by michele_g
 	Custom Hot Corners - Extended by GdH
 	ArcMenu by andrew.zaech
+	Vitals by corecoding
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
