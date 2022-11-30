@@ -26,6 +26,7 @@ sudo debtap -u
 	Custom Hot Corners - Extended by GdH
 	ArcMenu by andrew.zaech
 	Vitals by corecoding
+	Tiling Assistant by Leleat
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
