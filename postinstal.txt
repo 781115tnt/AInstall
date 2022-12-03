@@ -34,9 +34,9 @@ sudo debtap -u
 + Use gnome-tweaks to select icons Papirus-Dark
 
 + Make GTK slim
-#mkdir ~/.config/gtk-3.0
+mkdir ~/.config/gtk-3.0
+cp gtk.css ~/.config/gtk-3.0/
 #mkdir ~/.config/gtk-4.0
-#cp gtk.css ~/.config/gtk-3.0/
 #cp gtk.css ~/.config/gtk-4.0/
 
 + QT app theme:
