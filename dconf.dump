@@ -46,21 +46,16 @@ size=(870, 690)
 
 [org/gnome/control-center]
 last-panel='background'
-window-state=(940, 1020, false)
-
-[org/gnome/desktop/a11y]
-always-show-universal-access-status=false
+window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
-screen-magnifier-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
 high-contrast=false
 
 [org/gnome/desktop/a11y/keyboard]
-mousekeys-enable=false
 stickykeys-enable=false
 
 [org/gnome/desktop/app-folders]
@@ -88,12 +83,9 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/background]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/blobs-d.svg'
-primary-color='#241f31'
-secondary-color='#000000'
+picture-uri=''
+picture-uri-dark=''
+primary-color='#555555'
 
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
@@ -104,21 +96,21 @@ xkb-options=@as []
 [org/gnome/desktop/interface]
 clock-show-weekday=true
 color-scheme='prefer-dark'
-document-font-name='Roboto Condensed, 11'
+document-font-name='Roboto Condensed, 10'
 enable-animations=true
 enable-hot-corners=true
 font-antialiasing='grayscale'
 font-hinting='slight'
-font-name='Roboto Condensed, 11'
+font-name='Roboto Condensed, 10'
 gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
-monospace-font-name='Monospace 11'
-text-scaling-factor=1.2000000000000002
+monospace-font-name='Monospace 12'
+text-scaling-factor=1.2
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-texteditor', 'org-gnome-extensions']
-show-banners=true
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation']
+show-banners=false
 
 [org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
 application-id='ca.desrt.dconf-editor.desktop'
@@ -147,9 +139,6 @@ application-id='org.gnome.Console.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-extensions-desktop]
 application-id='org.gnome.Extensions.desktop.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-extensions]
-application-id='org.gnome.Extensions.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-fileroller]
 application-id='org.gnome.FileRoller.desktop'
 
@@ -158,9 +147,6 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-settings]
 application-id='org.gnome.Settings.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-texteditor]
-application-id='org.gnome.TextEditor.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
@@ -180,9 +166,6 @@ application-id='vmware-workstation.desktop'
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=false
 
-[org/gnome/desktop/peripherals/mouse]
-speed=0.63366336633663356
-
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
@@ -190,13 +173,6 @@ two-finger-scrolling-enabled=true
 old-files-age=uint32 30
 recent-files-max-age=-1
 remember-recent-files=false
-
-[org/gnome/desktop/screensaver]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
-primary-color='#241f31'
-secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -210,10 +186,10 @@ theme-name='__custom'
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
-titlebar-font='Roboto Condensed, Bold 11'
+titlebar-font='Roboto Condensed, Bold 10'
 
 [org/gnome/evince/default]
-window-ratio=(2.4330033651838567, 2.533079110699251)
+window-ratio=(2.4326218389575835, 5.1270352330801954)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -246,7 +222,7 @@ maximized=false
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1353, 1032, 35, 32)
+window-state=(916, 848, 35, 32)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -270,7 +246,7 @@ search-view='list-view'
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1178, 948)
+initial-size=(1132, 690)
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -279,7 +255,7 @@ night-light-enabled=false
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <5>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <6>}>, 'timeshift-gtk.desktop': <{'position': <7>}>}]
 disable-user-extensions=false
 disabled-extensions=['gsconnect@andyholmes.github.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com']
-enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'dash-to-panel@jderose9.github.com', 'rounded-window-corners@yilozt']
+enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'rounded-window-corners@yilozt', 'appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'vlc.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
@@ -295,7 +271,7 @@ autohide-in-fullscreen=false
 background-opacity=0.80000000000000004
 click-action='skip'
 custom-theme-shrink=false
-dash-max-icon-size=48
+dash-max-icon-size=64
 disable-overview-on-startup=true
 dock-fixed=true
 dock-position='BOTTOM'
@@ -333,11 +309,11 @@ workspace-agnostic-urgent-windows=false
 [org/gnome/shell/extensions/dash-to-panel]
 animate-app-switch=true
 animate-appicon-hover=true
-animate-appicon-hover-animation-convexity={'RIPPLE': 2.0, 'PLANK': 1.0}
+animate-appicon-hover-animation-convexity={'RIPPLE': 2.0, 'PLANK': 1.0, 'SIMPLE': 0.0}
 animate-appicon-hover-animation-duration={'SIMPLE': uint32 160, 'RIPPLE': 130, 'PLANK': 100}
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 animate-appicon-hover-animation-rotation={'SIMPLE': 0, 'RIPPLE': 10, 'PLANK': 0}
-animate-appicon-hover-animation-travel={'SIMPLE': 0.29999999999999999, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
+animate-appicon-hover-animation-travel={'SIMPLE': 0.5, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
 animate-appicon-hover-animation-type='SIMPLE'
 animate-appicon-hover-animation-zoom={'SIMPLE': 2.5, 'RIPPLE': 1.25, 'PLANK': 2.0}
 appicon-margin=4
@@ -365,10 +341,9 @@ progress-show-count=false
 show-apps-icon-file=''
 status-icon-padding=-1
 taskbar-locked=true
-trans-bg-color='#343434'
-trans-panel-opacity=0.25
-trans-use-custom-bg=false
-trans-use-custom-opacity=true
+trans-bg-color='#454545'
+trans-use-custom-bg=true
+trans-use-custom-opacity=false
 tray-padding=-1
 tray-size=24
 window-preview-title-position='TOP'
@@ -421,18 +396,12 @@ workspace-popup=true
 workspaces-in-app-grid=false
 
 [org/gnome/shell/extensions/rounded-window-corners]
-black-list=['com.desktop.ding']
-border-color=(0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0)
 border-width=0
 custom-rounded-corner-settings=@a{sv} {}
 enable-preferences-entry=false
-focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': 4, 'opacity': 60}
-global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>, 'enabled': <true>}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 9>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
-skip-libadwaita-app=true
-skip-libhandy-app=false
 tweak-kitty-terminal=false
-unfocused-shadow={'horizontal_offset': 0, 'vertical_offset': 2, 'blur_offset': 12, 'spread_radius': -1, 'opacity': 65}
 
 [org/gnome/shell/extensions/user-theme]
 name=''
@@ -452,8 +421,8 @@ default-size-rows=35
 show-extensions-notice=false
 
 [org/gtk/gtk4/settings/color-chooser]
-custom-colors=[(0.27058824896812439, 0.27058824896812439, 0.27058824896812439, 1.0), (0.5, 0.5, 0.5, 1.0), (0.27000001072883606, 0.27000001072883606, 0.27000001072883606, 1.0), (0.20392157137393951, 0.20392157137393951, 0.20392157137393951, 1.0), (0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0), (0.22745098173618317, 0.22745098173618317, 0.22745098173618317, 1.0), (0.22666667401790619, 0.22666667401790619, 0.22666667401790619, 1.0)]
-selected-color=(true, 0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0)
+custom-colors=[(0.5, 0.5, 0.5, 1.0), (0.27000001072883606, 0.27000001072883606, 0.27000001072883606, 1.0), (0.20392157137393951, 0.20392157137393951, 0.20392157137393951, 1.0), (0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0), (0.22745098173618317, 0.22745098173618317, 0.22745098173618317, 1.0), (0.22666667401790619, 0.22666667401790619, 0.22666667401790619, 1.0)]
+selected-color=(true, 0.20392157137393951, 0.20392157137393951, 0.20392157137393951, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -530,7 +499,7 @@ vm-window-size=(1301, 1110)
 autoconnect=1
 resize-guest=1
 scaling=1
-vm-window-size=(1723, 1403)
+vm-window-size=(1653, 1281)
 
 [system/proxy]
 mode='none'
