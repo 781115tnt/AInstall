@@ -15,7 +15,7 @@ yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme papirus-icon-the
 sudo debtap -u
 //Incase of any of the above packages can't be install, download it and then use: debtab pkgname.deb to create an pkgname.zst.  Then we can use: sudo pacman -U pkgname.zst to install the package.
 
-+ Use firefox to install gnome extensions:
++ Use firefox to install gnome extensions by extract extensions.zip into ~/.local/share/gnome-shell OR install the following extensions:
 	Rounded Window Corners by yilozt
 	Dash to Panel by charlesg99
 	Gtk4, GSconnect, Desktop Icons NG (DING) by smedius
