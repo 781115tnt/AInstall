@@ -149,7 +149,8 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 
 + To know how to use a command, just use: tldr command_name
 
-
++ To set Files can paste path:
+	gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 
 + Pacman command options:
 - Update:
