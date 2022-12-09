@@ -140,9 +140,6 @@ sudo sensors-detect
 	  <address type="virtio-serial" controller="0" bus="0" port="1"/>
 	</channel>
 
-
-
-
 	
 + Change default audio sample rate
 Edit /etc/pulse/daemon.conf: default-sample-format = s32le, default-sample-rate = 96000, alternate-sample-rate = 48000
@@ -192,8 +189,6 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	ffmpeg -i infile.xxx -ss 00:00:12 -to 00:05:17 -vn -ar 48000 -ac 2 -b:a 320k out_file.mp3
 + ffmpeg add audio to video
 	ffmpeg -i video.mp4 -i audio.wav -map 0:v -map 1:a -c:v copy -shortest output.mp4
-
-
 	
 + Useful software:
 	handBrake
