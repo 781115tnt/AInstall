@@ -113,9 +113,9 @@ sudo sensors-detect
 	
 	# Start automatically bridge network
 	# Get its name first - in this case virbr0
-	sudo nmcli connection show
+	# sudo nmcli connection show
 	# Make it autostart
-	nmcli con mod virbr0 connection.autoconnect yes
+	# nmcli con mod virbr0 connection.autoconnect yes
 
 - If has guest's network problem, try:	
 	sudo virsh net-start default
