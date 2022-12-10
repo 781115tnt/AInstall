@@ -280,7 +280,7 @@ night-light-enabled=false
 power-button-action='interactive'
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <5>}>, 'timeshift-gtk.desktop': <{'position': <6>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <6>}>, 'timeshift-gtk.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
 disabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'arcmenu@arcmenu.com']
 enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'dash-to-panel@jderose9.github.com', 'custom-hot-corners-extended@G-dH.github.com', 'tiling-assistant@leleat-on-github', 'power-profile-switcher@eliapasquali.github.io', 'gsconnect@andyholmes.github.io', 'rounded-window-corners@yilozt', 'add-to-desktop@tommimon.github.com']
