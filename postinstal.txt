@@ -209,4 +209,4 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	scribus
 	
 + Make iso file
-	mkisofs -o destination-filename.iso /path/folder
+	mkisofs -allow-leading-dots -ldots -allow-lowercase -allow-multidot -iso-level 4 -no-limit-pathtables -joliet-long -o destination-filename.iso /path/folder
