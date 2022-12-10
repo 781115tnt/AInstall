@@ -79,14 +79,17 @@ sudo chown -R thanhtran:thanhtran TNTDATA
 sudo chmod 555 TNTDATA
 sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/sda1 /run/media/TNTDATA
 	
-#sudo mkdir /run/media/WORKSPACE
-#sudo chown -R thanhtran:thanhtran WORKSPACE
-#sudo chmod 555 WORKSPACE
-#sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
-	
+sudo mkdir /run/media/WORKSPACE
+sudo chown -R thanhtran:thanhtran WORKSPACE
+sudo chmod 555 WORKSPACE
+sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
+
 genfstab /
 -
 copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
+
+ln -s /run/media/TNTDATA ~/Desktop/
+ln -s /run/media/WORKSPACE/ ~/Desktop/
 
 sudo sensors-detect
 
