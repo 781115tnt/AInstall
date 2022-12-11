@@ -29,6 +29,7 @@ sudo debtap -u
 	ArcMenu by andrew.zaech
 	Vitals by corecoding
 	Tiling Assistant by Leleat
+	Impatience by gfxmonk
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
