@@ -17,7 +17,7 @@ window-maximized=false
 window-width=1130
 
 [org/gnome/Console]
-last-window-size=(1375, 641)
+last-window-size=(1375, 440)
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/AInstall'
@@ -55,7 +55,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='multitasking'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -66,13 +66,14 @@ screen-reader-enabled=false
 high-contrast=false
 
 [org/gnome/desktop/a11y/keyboard]
+bouncekeys-enable=false
 stickykeys-enable=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', '3cb30205-9d68-420e-8e8c-48b66151c767', '6e34f91b-de68-43a6-829d-feaa4fcda567']
 
 [org/gnome/desktop/app-folders/folders/3cb30205-9d68-420e-8e8c-48b66151c767]
-apps=['org.gnome.DiskUtility.desktop', 'gparted.desktop', 'org.gnome.baobab.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop', 'lstopo.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Settings.desktop', 'yad-settings.desktop', 'yad-icon-browser.desktop']
+apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop', 'lstopo.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Settings.desktop']
 name='System tools'
 translate=false
 
@@ -114,19 +115,19 @@ clock-show-weekday=true
 color-scheme='prefer-dark'
 document-font-name='Roboto Condensed, 10'
 enable-animations=true
-enable-hot-corners=true
-font-antialiasing='rgba'
-font-hinting='slight'
+enable-hot-corners=false
+font-antialiasing='grayscale'
+font-hinting='medium'
 font-name='Roboto Condensed, 10'
 gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 locate-pointer=false
 monospace-font-name='Monospace 10'
-text-scaling-factor=1.2
+text-scaling-factor=1.2000000000000002
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
@@ -134,6 +135,9 @@ application-id='ca.desrt.dconf-editor.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -155,6 +159,9 @@ application-id='org.gnome.Console.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-extensions-desktop]
 application-id='org.gnome.Extensions.desktop.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-fileroller]
 application-id='org.gnome.FileRoller.desktop'
@@ -189,6 +196,9 @@ application-id='vmware-workstation.desktop'
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
 
+[org/gnome/desktop/peripherals/mouse]
+speed=0.28888888888888897
+
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
@@ -212,7 +222,7 @@ idle-delay=uint32 300
 
 [org/gnome/desktop/sound]
 event-sounds=true
-theme-name='freedesktop'
+theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
 maximize=@as []
@@ -223,7 +233,7 @@ button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Roboto Condensed, Bold 10'
 
 [org/gnome/evince/default]
-window-ratio=(2.3088235294117645, 1.1098484848484849)
+window-ratio=(2.4327139545042167, 1.2828309703903606)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -256,7 +266,7 @@ maximized=false
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(916, 848, 35, 32)
+window-state=(970, 742, 35, 32)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -288,7 +298,7 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1220, 802)
+initial-size=(1274, 797)
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -300,32 +310,53 @@ sleep-inactive-ac-type='nothing'
 [org/gnome/shell]
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <6>}>, 'timeshift-gtk.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
-disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io']
-enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'dash-to-panel@jderose9.github.com', 'custom-hot-corners-extended@G-dH.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'rounded-window-corners@yilozt', 'add-to-desktop@tommimon.github.com', 'arcmenu@arcmenu.com', 'RemoveAppMenu@Dragon8oy.com', 'impatience@gfxmonk.net']
+disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'impatience@gfxmonk.net', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'transparent-shell@siroj42.github.io', 'gsconnect@andyholmes.github.io', 'custom-hot-corners-extended@G-dH.github.com']
 favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=false
 
+[org/gnome/shell/extensions/arch-update]
+transient=false
+use-buildin-icons=true
+
 [org/gnome/shell/extensions/arcmenu]
-menu-background-color='rgba(48,48,49,0.98)'
-menu-border-color='rgb(60,60,60)'
+alphabetize-all-programs=true
+dash-to-panel-standalone=false
+disable-recently-installed-apps=true
+enable-menu-hotkey=false
+enable-standlone-runner-menu=false
+left-panel-width=315
+menu-arrow-rise=(false, 6)
+menu-background-color='rgba(28,28,28,0.98)'
+menu-border-color='rgb(63,62,64)'
 menu-button-appearance='Icon'
-menu-foreground-color='rgb(223,223,223)'
-menu-item-active-bg-color='rgb(25,98,163)'
+menu-foreground-color='rgb(211,218,227)'
+menu-height=650
+menu-item-active-bg-color='rgba(228,228,226,0.15)'
 menu-item-active-fg-color='rgb(255,255,255)'
-menu-item-hover-bg-color='rgb(21,83,158)'
+menu-item-grid-icon-size='Default'
+menu-item-hover-bg-color='rgba(238,238,236,0.08)'
 menu-item-hover-fg-color='rgb(255,255,255)'
-menu-separator-color='rgba(255,255,255,0.1)'
+menu-layout='Brisk'
+menu-separator-color='rgb(63,62,64)'
+mint-pinned-app-list=['Firefox', 'firefox', 'firefox.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Settings', 'emblem-system-symbolic', 'org.gnome.Settings.desktop', 'Software', '', 'org.manjaro.pamac.manager.desktop', 'Files', 'system-file-manager', 'org.gnome.Nautilus.desktop', 'Log Out', 'application-exit-symbolic', 'ArcMenu_LogOut', 'Lock', 'changes-prevent-symbolic', 'ArcMenu_Lock', 'Power Off', 'system-shutdown-symbolic', 'ArcMenu_PowerOff']
+override-menu-theme=false
 pinned-app-list=['Firefox', '', 'firefox.desktop', 'Files', '', 'org.gnome.Nautilus.desktop', 'Terminal', '', 'org.gnome.Terminal.desktop', 'ArcMenu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-extensions prefs arcmenu@arcmenu.com']
 prefs-visible-page=0
-recently-installed-apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-base.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'com.github.GradienceTeam.Gradience.desktop']
+right-panel-width=330
 search-entry-border-radius=(true, 25)
+show-activities-button=false
+unity-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents', 'ArcMenu_Documents', 'ArcMenu_Documents', 'Downloads', 'ArcMenu_Downloads', 'ArcMenu_Downloads', 'Software', '', 'org.manjaro.pamac.manager.desktop', 'Files', '', 'org.gnome.Nautilus.desktop', 'Log Out', 'application-exit-symbolic', 'ArcMenu_LogOut', 'Lock', 'changes-prevent-symbolic', 'ArcMenu_Lock', 'Power Off', 'system-shutdown-symbolic', 'ArcMenu_PowerOff']
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/misc]
+buttons-trigger-on-press=false
 show-osd-monitor-indexes=false
 supported-active-extensions=['ArcMenu']
+watch-corners=false
+win-switch-wrap=false
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-0]
 action='toggle-overview'
@@ -399,16 +430,22 @@ appicon-margin=4
 appicon-padding=4
 available-monitors=[0]
 dot-position='TOP'
-dot-style-focused='DOTS'
+dot-style-focused='METRO'
 dot-style-unfocused='METRO'
+group-apps=true
+hide-overview-on-startup=false
 hotkeys-overlay-combo='TEMPORARILY'
 intellihide=true
+intellihide-animation-time=250
 intellihide-behaviour='FOCUSED_WINDOWS'
 intellihide-hide-from-windows=true
+intellihide-key-toggle=@as []
+intellihide-key-toggle-text=''
 intellihide-show-in-fullscreen=false
 intellihide-use-pressure=false
 leftbox-padding=-1
 leftbox-size=0
+middle-click-action='LAUNCH'
 panel-anchors='{"0":"MIDDLE"}'
 panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"systemMenu","visible":true,"position":"stackedTL"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
@@ -417,11 +454,23 @@ panel-positions='{"0":"BOTTOM"}'
 panel-sizes='{"0":48}'
 primary-monitor=0
 progress-show-count=false
+secondarymenu-contains-appmenu=false
+shift-click-action='MINIMIZE'
+shift-middle-click-action='LAUNCH'
+show-appmenu=false
 show-apps-icon-file=''
+show-favorites=true
+show-favorites-all-monitors=true
+show-running-apps=true
+show-window-previews=true
+showdesktop-button-width=16
 status-icon-padding=-1
+stockgs-keep-dash=false
+stockgs-keep-top-panel=false
+stockgs-panelbtn-click-only=false
 taskbar-locked=true
 trans-bg-color='#454545'
-trans-panel-opacity=0.59999999999999998
+trans-panel-opacity=0.29999999999999999
 trans-use-custom-bg=false
 trans-use-custom-gradient=false
 trans-use-custom-opacity=true
@@ -439,7 +488,7 @@ name='TNTARCH'
 [org/gnome/shell/extensions/gsconnect/device/E8CF6BE98A7A45A2A22CFE77392B0A27]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIDEjCCAfoCAQowDQYJKoZIhvcNAQEEBQAwTzEUMBIGA1UECwwLS2RlIGNvbm5l\nY3QxDDAKBgNVBAoMA0tERTEpMCcGA1UEAwwgRThDRjZCRTk4QTdBNDVBMkEyMkNG\nRTc3MzkyQjBBMjcwHhcNMjIwOTA1MTMyNjI0WhcNMjMwOTA1MTMyNjI0WjBPMRQw\nEgYDVQQLDAtLZGUgY29ubmVjdDEMMAoGA1UECgwDS0RFMSkwJwYDVQQDDCBFOENG\nNkJFOThBN0E0NUEyQTIyQ0ZFNzczOTJCMEEyNzCCASIwDQYJKoZIhvcNAQEBBQAD\nggEPADCCAQoCggEBAL1KaljLKwydRX+rfD88JDTK0KUyI4E9a85cJPbGnHpaONQy\n5IcgY9IC+SSvS91R1Mz07NdwD4RxRKyGf3sUbVC+d6k+4PJBm6IhnLa8mCoYXYDn\nSTVxzpDYQ8NbnCdryWlQxP2YsWCcVfyAuxUzbT3eLjVKZfzK7hXCayiBy+OLENCM\nRHzm545lqAPljgSCQEsHzoKtnyB7vUOCW9XYPBqSx6HOGXw4hszdraN7U+mSLTV+\nz1CMH85W6nLo+aD3XVo2PXz+W5HPsHzBbYvc1ygKWHJoQZ0nwXbFJkPDeVhgzabi\nxVqraaAI7q4BfyHsqgKUeEtJnYQ6MXozJ2awHRkCAwEAATANBgkqhkiG9w0BAQQF\nAAOCAQEAeSwTMPqZ70XUQEZJHEq3hTs7sSUt2VWS0h9u9X7FRLlvgQceDOfankUo\ncaljKBXRinEYV1RVMKXQwSB7vX4j4lS4yONj79OUY9ZnhVw3YfqQpEduZCtpMgmk\nWRu1HUNIOyjlNCQHLw1LP8PkXFXFO3GI1tHcuBTyvO7NSysqFvux8abjI/EDM26E\nQx7/wkLZ5TISgKMvF4SKGqijpDxCv8bsn3mSMOVK3GOQnXKr7kx3e7au5JGb/6BY\nll0hVmpqybutdsshePsiPmRaevtE4pf+UlZ9mIhbrLPTt33btcRty6rRfh0YYWpL\n9o5bakyt9Y9Pl/dXMJxlAY/x5V3pcw==\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.findmyphone.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.share.request']
-last-connection='lan://192.168.1.9:1716'
+last-connection='lan://192.168.1.3:1716'
 name='iPhone'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.share.request']
 paired=true
@@ -503,20 +552,21 @@ workspace-popup=true
 workspaces-in-app-grid=false
 
 [org/gnome/shell/extensions/net/gfxmonk/impatience]
-speed-factor=1.5160142348754448
+speed-factor=1.2953736654804271
 
 [org/gnome/shell/extensions/rounded-window-corners]
 black-list=['com.desktop.ding']
+border-color=(0.0, 0.0, 0.0, 1.0)
 border-width=0
 custom-rounded-corner-settings=@a{sv} {}
 enable-preferences-entry=false
-focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': -60, 'opacity': 60}
-global-rounded-corner-settings={'padding': <{'left': <uint32 0>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 9>, 'smoothing': <uint32 0>, 'enabled': <true>}
+focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': 4, 'opacity': 80}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <true>, 'fullscreen': <true>}>, 'border_radius': <uint32 9>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
 skip-libadwaita-app=false
 skip-libhandy-app=false
 tweak-kitty-terminal=false
-unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 12, 'spread_radius': -60, 'opacity': 65}
+unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 24, 'spread_radius': 4, 'opacity': 80}
 
 [org/gnome/shell/extensions/tiling-assistant]
 activate-layout0=@as []
@@ -559,6 +609,11 @@ tiling-popup-all-workspace=true
 toggle-always-on-top=@as []
 toggle-tiling-popup=@as []
 
+[org/gnome/shell/extensions/transparent-shell]
+dash=true
+search=true
+top-panel=true
+
 [org/gnome/shell/extensions/user-theme]
 name=''
 
@@ -591,8 +646,8 @@ default-size-rows=30
 show-extensions-notice=false
 
 [org/gtk/gtk4/settings/color-chooser]
-custom-colors=[(0.61960786581039429, 0.37647059559822083, 0.67058825492858887, 1.0), (0.30588236451148987, 0.08235294371843338, 0.364705890417099, 1.0), (0.22745098173618317, 0.16862745583057404, 0.23529411852359772, 1.0), (0.40784314274787903, 0.0, 0.011764706112444401, 1.0), (0.5, 0.5, 0.5, 1.0), (0.27000001072883606, 0.27000001072883606, 0.27000001072883606, 1.0), (0.20392157137393951, 0.20392157137393951, 0.20392157137393951, 1.0), (0.20333333313465118, 0.20333333313465118, 0.20333333313465118, 1.0)]
-selected-color=(true, 0.10196078568696976, 0.37254902720451355, 0.70588237047195435, 1.0)
+custom-colors=[(0.89411765336990356, 0.89411765336990356, 0.88627451658248901, 0.15000000596046448), (0.93333333730697632, 0.93333333730697632, 0.92549020051956177, 0.079999998211860657), (0.61960786581039429, 0.37647059559822083, 0.67058825492858887, 1.0), (0.30588236451148987, 0.08235294371843338, 0.364705890417099, 1.0), (0.22745098173618317, 0.16862745583057404, 0.23529411852359772, 1.0), (0.40784314274787903, 0.0, 0.011764706112444401, 1.0), (0.5, 0.5, 0.5, 1.0), (0.27000001072883606, 0.27000001072883606, 0.27000001072883606, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -607,10 +662,14 @@ sort-order='ascending'
 type-format='category'
 window-size=(887, 374)
 
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.6705882352941176, 0.094117647058823528, 0.32156862745098042, 1.0)]
+selected-color=(true, 0.6705882352941176, 0.094117647058823528, 0.32156862745098042, 1.0)
+
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=204
@@ -670,7 +729,7 @@ vm-window-size=(1301, 1110)
 autoconnect=1
 resize-guest=1
 scaling=1
-vm-window-size=(1568, 1155)
+vm-window-size=(1617, 1054)
 
 [org/virt-manager/virt-manager/vms/df1a2c7797a4438fa62ad9c0a4619611]
 autoconnect=1
