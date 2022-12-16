@@ -40,10 +40,10 @@ echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
 echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 
 + Đánh tiếng Việt: restart/logout rồi thêm keyboard Vietnamese(Bamboo)
-	sudo cp /usr/lib/systemd/user/ibus\@.service /etc/systemd/ibus.service
-	sudo cp /usr/lib/systemd/user/ibus-config\@.service /etc/systemd/system
-	sudo systemctl enable ibus
-	sudo systemctl start ibus
+	ibus-setup
+	echo "export GTK_IM_MODULE=ibus" >> ~/.bashrc
+	echo "export XMODIFIERS=@im=ibus" >> ~/.bashrc
+	echo "export QT_IM_MODULE=ibus" >> ~/.bashrc
 	
 + Settup fonts
 #sudo cp -R 'location of fonts dir/fonts/*' /usr/share/fonts/
