@@ -335,7 +335,7 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(1308, 900)
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -713,10 +713,10 @@ show-type-column=true
 sidebar-width=209
 sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 window-position=(35, 32)
-window-size=(1005, 710)
+window-size=(991, 710)
 
 [org/virt-manager/virt-manager]
 manager-window-height=531
@@ -772,7 +772,7 @@ vm-window-size=(1617, 1054)
 [org/virt-manager/virt-manager/vms/a0f8f79eea8a43caa8a7fd613e21abbd]
 autoconnect=1
 scaling=1
-vm-window-size=(1140, 977)
+vm-window-size=(1140, 926)
 
 [org/virt-manager/virt-manager/vms/df1a2c7797a4438fa62ad9c0a4619611]
 autoconnect=1
