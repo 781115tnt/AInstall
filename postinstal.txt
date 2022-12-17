@@ -208,3 +208,6 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	
 + Make iso file
 	mkisofs -allow-leading-dots -ldots -allow-lowercase -allow-multidot -iso-level 4 -no-limit-pathtables -joliet-long -o destination-filename.iso /path/folder
+	
++  If you mount the drive with the -o noacl option, everybody will have full read/write access. If you only want people to be able to read the drive, chmod a+r /mnt/storage
+
