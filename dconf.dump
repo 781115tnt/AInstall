@@ -27,8 +27,9 @@ last-save-directory='file:///home/thanhtran/AInstall'
 show-line-numbers=true
 
 [org/gnome/baobab/ui]
+active-chart='rings'
 is-maximized=false
-window-size=(1289, 839)
+window-size=(1589, 1101)
 
 [org/gnome/boxes]
 first-run=false
@@ -58,7 +59,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='datetime'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -100,8 +101,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2022-12-16-23-29-47-blobs-l.svg'
-picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2022-12-16-23-29-47-blobs-l.svg'
+picture-uri='file:///home/thanhtran/.local/share/backgrounds/2022-12-18-19-26-06-blobs-l.svg'
+picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2022-12-18-19-26-06-blobs-l.svg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -118,16 +119,16 @@ xkb-options=@as []
 [org/gnome/desktop/interface]
 clock-show-weekday=true
 color-scheme='prefer-dark'
-document-font-name='Roboto Condensed, 10'
+document-font-name='Roboto Condensed, 11'
 enable-animations=true
 enable-hot-corners=false
 font-antialiasing='grayscale'
 font-hinting='medium'
-font-name='Roboto Condensed, 10'
+font-name='Roboto Condensed, 11'
 gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 locate-pointer=false
-monospace-font-name='Monospace 10'
+monospace-font-name='Monospace 11'
 text-scaling-factor=1.2
 toolkit-accessibility=false
 
@@ -218,7 +219,7 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2022-12-16-23-29-47-blobs-l.svg'
+picture-uri='file:///home/thanhtran/.local/share/backgrounds/2022-12-18-19-26-06-blobs-l.svg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -238,7 +239,7 @@ unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,close'
-titlebar-font='Roboto Condensed, Bold 10'
+titlebar-font='Roboto Condensed, Bold 11'
 
 [org/gnome/epiphany]
 ask-for-default=false
@@ -347,8 +348,8 @@ sleep-inactive-ac-type='nothing'
 [org/gnome/shell]
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <6>}>, 'timeshift-gtk.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
-disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'gtk4-ding@smedius.gitlab.com']
-enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'transparent-shell@siroj42.github.io', 'gsconnect@andyholmes.github.io', 'custom-hot-corners-extended@G-dH.github.com']
+disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net']
+enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'dash-to-panel@jderose9.github.com', 'transparent-shell@siroj42.github.io', 'gsconnect@andyholmes.github.io', 'custom-hot-corners-extended@G-dH.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'gtk4-ding@smedius.gitlab.com']
 favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Epiphany.desktop']
 welcome-dialog-last-shown-version='43.1'
 
@@ -774,11 +775,21 @@ autoconnect=1
 scaling=1
 vm-window-size=(1140, 926)
 
+[org/virt-manager/virt-manager/vms/a5ef84cfea2c4c1096c0c5d5ba6d1bac]
+autoconnect=1
+scaling=1
+vm-window-size=(1262, 970)
+
 [org/virt-manager/virt-manager/vms/df1a2c7797a4438fa62ad9c0a4619611]
 autoconnect=1
 resize-guest=1
 scaling=1
 vm-window-size=(1653, 1281)
+
+[org/virt-manager/virt-manager/vms/e0eb8606dcb8488d9a49fb85ae3c1df5]
+autoconnect=1
+scaling=1
+vm-window-size=(1024, 810)
 
 [system/proxy]
 mode='none'
