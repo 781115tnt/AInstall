@@ -44,10 +44,11 @@ sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment
 # create partitions
 sgdisk -n 1::+1M --typecode=1:ef02 --change-name=1:'BIOSBOOT' ${DISK} # partition 1 (BIOS Boot Partition)
 sgdisk -n 2::+300M --typecode=2:ef00 --change-name=2:'EFIBOOT' ${DISK} # partition 2 (UEFI Boot Partition)
-sgdisk -n 3::+35G --typecode=3:8300 --change-name=3:'ROOT' ${DISK} # partition 3 (Root), default start, 35GB
+sgdisk -n 3::+40G --typecode=3:8300 --change-name=3:'ROOT' ${DISK} # partition 3 (Root), default start, 40GB
 sgdisk -n 4::+8G --typecode=4:8200 --change-name=4:'SWAP' ${DISK} # partition 4 (Swap), default start, 8GB
-sgdisk -n 5::+90G --typecode=5:8300 --change-name=5:'HOME' ${DISK} # partition 5 (Home), default start, 90GB
-sgdisk -n 6::-0 --typecode=6:8300 --change-name=6:'VM' ${DISK} # partition 6 (VM), default start, remaining
+sgdisk -n 5::+90G --typecode=5:8300 --change-name=5:'VM' ${DISK} # partition 5 (VM), default start, 90GB
+sgdisk -n 6::-0 --typecode=6:8300 --change-name=6:'HOME' ${DISK} # partition 6 (Home), default start, remaining
+
 if [[ ! -d "/sys/firmware/efi" ]]; then # Checking for bios system
     sgdisk -A 1:set:2 ${DISK}
 fi
@@ -65,22 +66,23 @@ subvolumesetup () {
     btrfs subvolume create /mnt/@
     btrfs subvolume create /mnt/@var
     btrfs subvolume create /mnt/@tmp
-    btrfs subvolume create /mnt/@.snapshots  
+#    btrfs subvolume create /mnt/@.snapshots  
 # unmount root to remount with subvolume 
     umount /mnt
 # mount @ subvolume
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
 # make directories home, .snapshots, var, tmp
-    mkdir -p /mnt/{home,var,tmp,.snapshots}
+#   mkdir -p /mnt/{home,var,tmp,.snapshots}
+    mkdir -p /mnt/{home,var,tmp}
 # mount subvolumes
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
-    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
+#   mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
 # for /home
-    mount -t btrfs ${partition5} /mnt/home
+    mount -t btrfs ${partition6} /mnt/home
     btrfs subvolume create /mnt/home/@
     umount /mnt/home
-    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@ ${partition5} /mnt/home
+    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@ ${partition6} /mnt/home
 }
 
 if [[ "${DISK}" =~ "nvme" ]]; then
@@ -101,7 +103,7 @@ if [[ "${FS}" == "btrfs" ]]; then
     mkfs.vfat -F32 -n "EFIBOOT" ${partition2}
     mkfs.btrfs -L ROOT ${partition3} -f
     mkswap -c ${partition4}
-    mkfs.btrfs -L HOME ${partition5} -f
+    mkfs.btrfs -L HOME ${partition6} -f
     mount -t btrfs ${partition3} /mnt
     swapon ${partition4}
     subvolumesetup
@@ -109,10 +111,10 @@ elif [[ "${FS}" == "ext4" ]]; then
     mkfs.vfat -F32 -n "EFIBOOT" ${partition2}
     mkfs.ext4 -L ROOT ${partition3}
     mkswap -c ${partition4}
-    mkfs.ext4 -L HOME ${partition5}
+    mkfs.ext4 -L HOME ${partition6}
     mount -t ext4 ${partition3} /mnt
     swapon ${partition4}
-    mount -t ext4 ${partition5} /mnt/home
+    mount -t ext4 ${partition6} /mnt/home
 elif [[ "${FS}" == "luks" ]]; then
     mkfs.vfat -F32 -n "EFIBOOT" ${partition2}
 # enter luks password to cryptsetup and format root partition
@@ -122,7 +124,7 @@ elif [[ "${FS}" == "luks" ]]; then
 # now format that container
     mkfs.btrfs -L ROOT ${partition3}
     mkswap -c ${partition4}
-    mkfs.btrfs -L HOME ${partition5}
+    mkfs.btrfs -L HOME ${partition6}
 # create subvolumes for btrfs
     mount -t btrfs ${partition3} /mnt
     swapon ${partition4}
