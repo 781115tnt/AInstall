@@ -30,6 +30,7 @@ sudo debtap -u
 	Vitals by corecoding
 	Tiling Assistant by Leleat
 	Impatience by gfxmonk
+	Clipboard Indicator by Tudmotu
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
