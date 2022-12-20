@@ -43,7 +43,7 @@ echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
 echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 
 + Đánh tiếng Việt: restart/logout rồi thêm keyboard Vietnamese(Bamboo)
-#env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
+env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 	
 + Settup fonts
 #sudo cp -R 'location of fonts dir/fonts/*' /usr/share/fonts/
