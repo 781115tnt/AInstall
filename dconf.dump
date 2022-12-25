@@ -20,7 +20,7 @@ window-width=1130
 preload-engines=['BambooUs', 'Bamboo']
 
 [org/gnome/Console]
-last-window-size=(1432, 680)
+last-window-size=(1504, 600)
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/AInstall'
@@ -63,7 +63,7 @@ last-panel='datetime'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=false
+screen-keyboard-enabled=true
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
@@ -130,7 +130,7 @@ icon-theme='Papirus-Dark'
 locate-pointer=false
 monospace-font-name='Monospace 11'
 text-scaling-factor=1.2
-toolkit-accessibility=false
+toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp']
@@ -206,7 +206,7 @@ application-id='vmware-workstation.desktop'
 numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
-speed=0.28888888888888897
+speed=0.45641025641025634
 
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
@@ -238,7 +238,9 @@ maximize=@as []
 unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
-button-layout='appmenu:minimize,close'
+auto-raise=true
+button-layout='appmenu:minimize,maximize,close'
+focus-mode='click'
 titlebar-font='Roboto Condensed, Bold 11'
 
 [org/gnome/epiphany]
@@ -271,7 +273,7 @@ serif-font='Roboto Condensed, 12'
 use-gnome-fonts=false
 
 [org/gnome/evince/default]
-window-ratio=(2.4327139545042167, 1.2828309703903606)
+window-ratio=(2.7188889733551256, 1.081012977195414)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -336,7 +338,7 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1308, 900)
+initial-size=(1366, 786)
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -348,8 +350,8 @@ sleep-inactive-ac-type='nothing'
 [org/gnome/shell]
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <6>}>, 'timeshift-gtk.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
-disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net']
-enabled-extensions=['arch-update@RaphaelRochet', 'just-perfection-desktop@just-perfection', 'appindicatorsupport@rgcjonas.gmail.com', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'dash-to-panel@jderose9.github.com', 'transparent-shell@siroj42.github.io', 'gsconnect@andyholmes.github.io', 'custom-hot-corners-extended@G-dH.github.com', 'arcmenu@arcmenu.com', 'clipboard-indicator@tudmotu.com', 'gtk4-ding@smedius.gitlab.com']
+disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gsconnect@andyholmes.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt']
 favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Epiphany.desktop']
 welcome-dialog-last-shown-version='43.1'
 
@@ -544,7 +546,7 @@ receive-directory='/home/thanhtran/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/preferences]
 window-maximized=false
-window-size=(764, 659)
+window-size=(794, 659)
 
 [org/gnome/shell/extensions/gtk4-ding]
 arrangeorder='NAME'
@@ -711,7 +713,7 @@ location-mode='path-bar'
 show-hidden=true
 show-size-column=true
 show-type-column=true
-sidebar-width=209
+sidebar-width=217
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
@@ -748,7 +750,7 @@ media-default='/run/media/thanhtran/MISCDATA/OS/Windows 10'
 perms-fix-ignore=['/run/media/thanhtran']
 
 [org/virt-manager/virt-manager/urls]
-isos=['/run/media/thanhtran/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso', '/run/media/TNTDATA/OS/Windows 10/W10EntActivation.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/driver.iso', '/run/media/thanhtran/MISCDATA/OS/Windows 10/W10EntLTS-MSMG.iso.iso', '/run/media/thanhtran/MISCDATA/OS/Linux/archlinux-2022.10.01-x86_64.iso', '/run/media/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso', '/run/media/TNTDATA/OS/Linux/archlinux-2022.10.01-x86_64.iso']
+isos=['/run/media/thanhtran/TNTDATA/OS/Linux/archlinux-2022.12.01-x86_64.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/driver.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso', '/run/media/thanhtran/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso', '/run/media/TNTDATA/OS/Windows 10/W10EntActivation.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/driver.iso', '/run/media/thanhtran/MISCDATA/OS/Windows 10/W10EntLTS-MSMG.iso.iso', '/run/media/thanhtran/MISCDATA/OS/Linux/archlinux-2022.10.01-x86_64.iso', '/run/media/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso']
 
 [org/virt-manager/virt-manager/vmlist-fields]
 disk-usage=false
@@ -777,8 +779,9 @@ vm-window-size=(1140, 926)
 
 [org/virt-manager/virt-manager/vms/a5ef84cfea2c4c1096c0c5d5ba6d1bac]
 autoconnect=1
+resize-guest=1
 scaling=1
-vm-window-size=(1262, 970)
+vm-window-size=(1479, 1061)
 
 [org/virt-manager/virt-manager/vms/df1a2c7797a4438fa62ad9c0a4619611]
 autoconnect=1
@@ -790,6 +793,11 @@ vm-window-size=(1653, 1281)
 autoconnect=1
 scaling=1
 vm-window-size=(1024, 810)
+
+[org/virt-manager/virt-manager/vms/f0fb1412c34248e8a7a462e02f4478ff]
+autoconnect=1
+scaling=1
+vm-window-size=(1633, 1403)
 
 [system/proxy]
 mode='none'
