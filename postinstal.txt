@@ -97,8 +97,10 @@ sudo sensors-detect
 + Virt-manager
 - Make current user is in libvirt group
 	sudo usermod -a -G libvirt $(whoami)
-- sudo nano /etc/default/grub Enable virtual add "intel_iommu=on iommu=pt " in GRUB_CMDLINE_LINUX_DEFAULT and update grub
-	sudo grub-mkconfig -o /boot/grub/grub.cfg
+- sudo nano /etc/default/grub change GRUB_CMDLINE_LINUX_DEFAULT as:
+	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 splash intel_iommu=on iommu=pt "
+	then update grub:
+		sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Change group: sudo nano /etc/libvirt/qemu.conf to libvirt; change user to user id
 - Enable libvirtd, and virtlogd services:
 	sudo systemctl enable libvirtd
