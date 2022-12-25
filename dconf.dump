@@ -59,7 +59,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='universal-access'
+last-panel='display'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -123,7 +123,7 @@ cursor-size=24
 document-font-name='Roboto Condensed, 11'
 enable-animations=true
 enable-hot-corners=false
-font-antialiasing='grayscale'
+font-antialiasing='rgba'
 font-hinting='medium'
 font-name='Roboto Condensed, 11'
 gtk-enable-primary-paste=false
@@ -312,7 +312,7 @@ maximized=false
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1330, 998, 35, 32)
+window-state=(790, 731, 35, 32)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -345,7 +345,7 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(845, 726)
+initial-size=(900, 895)
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -358,7 +358,7 @@ sleep-inactive-ac-type='nothing'
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <6>}>, 'timeshift-gtk.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gsconnect@andyholmes.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt']
+enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'gsconnect@andyholmes.github.io']
 favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Epiphany.desktop']
 welcome-dialog-last-shown-version='43.1'
 
@@ -398,6 +398,11 @@ search-entry-border-radius=(true, 25)
 show-activities-button=false
 unity-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents', 'ArcMenu_Documents', 'ArcMenu_Documents', 'Downloads', 'ArcMenu_Downloads', 'ArcMenu_Downloads', 'Software', '', 'org.manjaro.pamac.manager.desktop', 'Files', '', 'org.gnome.Nautilus.desktop', 'Log Out', 'application-exit-symbolic', 'ArcMenu_LogOut', 'Lock', 'changes-prevent-symbolic', 'ArcMenu_Lock', 'Power Off', 'system-shutdown-symbolic', 'ArcMenu_PowerOff']
 
+[org/gnome/shell/extensions/clipboard-indicator]
+confirm-clear=false
+disable-down-arrow=true
+history-size=10
+
 [org/gnome/shell/extensions/custom-hot-corners-extended/misc]
 buttons-trigger-on-press=false
 show-osd-monitor-indexes=false
@@ -405,18 +410,37 @@ supported-active-extensions=['ArcMenu']
 watch-corners=false
 win-switch-wrap=false
 
+[org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-bottom-left-6]
+ctrl=true
+
+[org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-bottom-right-6]
+ctrl=true
+
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-0]
+action='disabled'
+barrier-size-h=1
+barrier-size-v=1
+
+[org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-1]
 action='toggle-overview'
+ctrl=false
+h-expand=false
+v-expand=false
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-6]
 ctrl=true
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-right-0]
-action='keyboard'
+action='disabled'
 fullscreen=true
 pressure-threshold=100
 
+[org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-right-1]
+action='keyboard'
+ctrl=false
+
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-right-6]
+action='disabled'
 ctrl=true
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -631,6 +655,7 @@ default-move-mode=0
 dynamic-keybinding-behaviour=0
 import-layout-examples=false
 last-version-installed=39
+move-adaptive-tiling-mod=3
 restore-window=['<Super>Down']
 search-popup-layout=@as []
 tile-bottom-half=['<Super>KP_2']
