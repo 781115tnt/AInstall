@@ -20,7 +20,7 @@ window-width=1130
 preload-engines=['BambooUs', 'Bamboo']
 
 [org/gnome/Console]
-last-window-size=(1504, 600)
+last-window-size=(1560, 656)
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/AInstall'
@@ -59,11 +59,11 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='datetime'
+last-panel='display'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=true
+screen-keyboard-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
@@ -130,7 +130,7 @@ icon-theme='Papirus-Dark'
 locate-pointer=false
 monospace-font-name='Monospace 11'
 text-scaling-factor=1.2
-toolkit-accessibility=true
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp']
@@ -338,7 +338,7 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1366, 786)
+initial-size=(1519, 703)
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
