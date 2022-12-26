@@ -184,7 +184,8 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 - To generate mirror lists go to https://archlinux.org/mirrorlist/
 - To rank mirrors:
 	sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak 
-	sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+	sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.bak > ~/mirrorlist
+	sudo cp ~/mirrorlist /etc/pacman.d/mirrorlist
 	pacman -Syu pacman-mirrorlist
 
 + List all groups:
