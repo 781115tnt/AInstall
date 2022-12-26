@@ -182,6 +182,9 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 - Remove all orphans recursively:
 	sudo pacman -Qtdq | sudo pacman -Rns -
 - To generate mirror lists go to https://archlinux.org/mirrorlist/
+- To rank mirrors:
+	sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak 
+	sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 
 + List all groups:
 	cut -d: -f1 /etc/group
