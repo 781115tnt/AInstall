@@ -59,11 +59,11 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='default-apps'
+last-panel='network'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=true
+screen-keyboard-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
@@ -120,19 +120,19 @@ xkb-options=@as []
 clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=24
-document-font-name='Roboto Condensed, 11'
+document-font-name='Roboto Condensed, 10'
 enable-animations=true
 enable-hot-corners=false
 font-antialiasing='rgba'
 font-hinting='medium'
-font-name='Roboto Condensed, 11'
+font-name='Roboto Condensed, 10'
 gtk-enable-primary-paste=false
 gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 locate-pointer=true
-monospace-font-name='Monospace 11'
+monospace-font-name='Monospace 10'
 text-scaling-factor=1.2000000000000002
-toolkit-accessibility=true
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp']
@@ -247,7 +247,7 @@ button-layout='appmenu:minimize,maximize,close'
 focus-mode='click'
 mouse-button-modifier='<Alt>'
 resize-with-right-button=false
-titlebar-font='Roboto Condensed, Bold 11'
+titlebar-font='Roboto Condensed, Bold 10'
 
 [org/gnome/epiphany]
 ask-for-default=false
@@ -279,7 +279,7 @@ serif-font='Roboto Condensed, 12'
 use-gnome-fonts=false
 
 [org/gnome/evince/default]
-window-ratio=(2.7188889733551256, 1.081012977195414)
+window-ratio=(2.1214223269603556, 1.2095250094494141)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -345,7 +345,11 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(900, 895)
+initial-size=(1038, 963)
+
+[org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -359,7 +363,7 @@ app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-4
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'Vitals@CoreCoding.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'gsconnect@andyholmes.github.io']
-favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Epiphany.desktop']
+favorite-apps=['virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'chromium.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
@@ -580,8 +584,13 @@ window-maximized=false
 window-size=(794, 659)
 
 [org/gnome/shell/extensions/gtk4-ding]
+add-volumes-opposite=true
 arrangeorder='NAME'
 icon-size='small'
+show-drop-place=false
+show-home=true
+show-link-emblem=true
+show-volumes=true
 
 [org/gnome/shell/extensions/hidetopbar]
 enable-active-window=false
@@ -782,7 +791,7 @@ media-default='/run/media/thanhtran/MISCDATA/OS/Windows 10'
 perms-fix-ignore=['/run/media/thanhtran']
 
 [org/virt-manager/virt-manager/urls]
-isos=['/run/media/thanhtran/TNTDATA/OS/Linux/archlinux-2022.12.01-x86_64.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/driver.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso', '/run/media/thanhtran/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso', '/run/media/TNTDATA/OS/Windows 10/W10EntActivation.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/driver.iso', '/run/media/thanhtran/MISCDATA/OS/Windows 10/W10EntLTS-MSMG.iso.iso', '/run/media/thanhtran/MISCDATA/OS/Linux/archlinux-2022.10.01-x86_64.iso', '/run/media/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso']
+isos=['/run/media/thanhtran/TNTDATA/SOFTWARE/ADOBE/Adobe_Photoshop_CC_2019_20.0.10.120_x64_Multilingual.iso', '/run/media/thanhtran/TNTDATA/SOFTWARE/ADOBE/Adobe_Illustrator_2019_v23.1.0.670_Multilingual.iso', '/run/media/thanhtran/TNTDATA/SOFTWARE/ADOBE/Adobe.Acrobat.Pro.v11.0.23.Multilingual_Downloadly.ir.iso', '/run/media/thanhtran/TNTDATA/OS/Windows 10/W10EntActivation.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/archlinux-2022.12.01-x86_64.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/driver.iso', '/run/media/thanhtran/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso', '/run/media/thanhtran/TNTDATA/OS/Windows 10/Windows 10 Enterprise LTSC x64.iso', '/run/media/TNTDATA/OS/Windows 10/W10EntActivation.iso', '/run/media/TNTDATA/OS/Linux/Virt KVM Windows Guest Driver/virtio-win-0.1.221.iso']
 
 [org/virt-manager/virt-manager/vmlist-fields]
 disk-usage=false
@@ -813,7 +822,7 @@ vm-window-size=(1140, 926)
 autoconnect=1
 resize-guest=1
 scaling=1
-vm-window-size=(1479, 1061)
+vm-window-size=(1547, 944)
 
 [org/virt-manager/virt-manager/vms/df1a2c7797a4438fa62ad9c0a4619611]
 autoconnect=1
