@@ -3,7 +3,7 @@ sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome
 	
 
 + Install:
-sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop bashtop gdb
+sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop
 
 sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
@@ -73,12 +73,11 @@ sudo mkdir /run/media/TNTDATA
 sudo chown -R thanhtran:thanhtran TNTDATA
 sudo chmod 555 TNTDATA
 sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/sda1 /run/media/TNTDATA
-
-//using btrfs
+	
 sudo mkdir /run/media/WORKSPACE
 sudo chown -R thanhtran:thanhtran WORKSPACE
 sudo chmod 555 WORKSPACE
-sudo mount -o rw,noatime,compress=zstd:3,ssd,noacl,space_cache=v2,commit=120 /dev/nvme1n1p1 /run/media/WORKSPACE
+sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
 
 genfstab /
 -
@@ -97,10 +96,8 @@ sudo sensors-detect
 + Virt-manager
 - Make current user is in libvirt group
 	sudo usermod -a -G libvirt $(whoami)
-- sudo nano /etc/default/grub change GRUB_CMDLINE_LINUX_DEFAULT as:
-	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 splash intel_iommu=on iommu=pt "
-	then update grub:
-		sudo grub-mkconfig -o /boot/grub/grub.cfg
+- sudo nano /etc/default/grub Enable virtual add "intel_iommu=on iommu=pt " in GRUB_CMDLINE_LINUX_DEFAULT and update grub
+	sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Change group: sudo nano /etc/libvirt/qemu.conf to libvirt; change user to user id
 - Enable libvirtd, and virtlogd services:
 	sudo systemctl enable libvirtd
@@ -183,9 +180,9 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	sudo pacman -Qtdq | sudo pacman -Rns -
 - To generate mirror lists go to https://archlinux.org/mirrorlist/
 - To rank mirrors:
-	sudo cp ./mirrorlist.bak /etc/pacman.d/ 
-	sudo rankmirrors -n 6 -v /etc/pacman.d/mirrorlist.bak
-	- Then sudo nano /etc/pacman.d/mirrorlist, and put 6 highest speed mirrors to the file
+	sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak 
+	sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.bak > ~/mirrorlist
+	sudo cp ~/mirrorlist /etc/pacman.d/mirrorlist
 	pacman -Syu pacman-mirrorlist
 
 + List all groups:
@@ -196,7 +193,7 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 + ffmpeg convert file
 	ffmpeg -i infile.xxx -ss 00:00:12 -to 00:05:17 -vn -ar 48000 -ac 2 -b:a 320k out_file.mp3
 + ffmpeg add audio to video
-	ffmpeg -i video.mp4 -i audio.wav -map 0:v -map 1:a -c:v copy -shortest output.mp4
+	ffmpeg -i 1.mp4 -i 1a.wav -map 0:v -map 1:a -c:v copy -shortest 'React Course - Beginner Tutorial for React JavaScript Library [2022].mp4'
 + concat videos
 	for f in *.mkv; do echo "file '$f'" >> mylist.txt; done
 	ffmpeg -safe 0 -f concat -i mylist.txt -c copy out.mkv
@@ -223,4 +220,8 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	mkisofs -allow-leading-dots -ldots -allow-lowercase -allow-multidot -iso-level 4 -no-limit-pathtables -joliet-long -o destination-filename.iso /path/folder
 	
 +  If you mount the drive with the -o noacl option, everybody will have full read/write access. If you only want people to be able to read the drive, chmod a+r /mnt/storage
+
+
+
+env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
