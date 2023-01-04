@@ -194,6 +194,8 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	
 + ffmpeg convert file
 	ffmpeg -i infile.xxx -ss 00:00:12 -to 00:05:17 -vn -ar 48000 -ac 2 -b:a 320k out_file.mp3
++ Convert all opus to mp3 in a directory:
+	for fullname in *.opus; do name=$"${fullname%.*}"; ffmpeg -i "$fullname" -vn -ar 48000 -ac 2 -b:a 320k "$name.mp3"; done
 + ffmpeg add audio to video
 	ffmpeg -i 1.mp4 -i 1a.wav -map 0:v -map 1:a -c:v copy -shortest 'React Course - Beginner Tutorial for React JavaScript Library [2022].mp4'
 + concat videos
