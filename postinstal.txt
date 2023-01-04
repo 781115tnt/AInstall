@@ -227,3 +227,9 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
++ Get file names and extensions in for loop bash
+	for fullname in *.opus; do fname="${fullname%.*}"; echo $fname; done
+	File name (w/o extension) is "${fullname%.*}" and extension is "${fullname##*.}"
+	
+
+
