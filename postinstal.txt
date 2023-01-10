@@ -33,6 +33,7 @@ sudo debtap -u
 	Tiling Assistant by Leleat
 	Impatience by gfxmonk
 	Clipboard Indicator by Tudmotu
+	NoAnnoyance by sindex
 	
 	
 + Use gnome-tweaks to select icons Papirus-Dark
