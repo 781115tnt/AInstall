@@ -3,11 +3,11 @@ sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome
 	
 
 + For intel VGA: 
-sudo pacman -S libva-intel-driver vulkan-intel
+sudo pacman -S vulkan-intel libva-intel-driver vulkan-intel xf86-video-intel intel-media-driver 
 + For AMD:
 sudo pacman -S xf86-video-amdgpu vulkan-radeon
 
-sudo pacman -S mesa mesa-vdpau opencl-mesa vulkan-mesa-layers libva-vdpau-driver  libva-mesa-driver mesa-vdpau lib32-libva-mesa-driver lib32-mesa-vdpau gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc
+sudo pacman -S mesa mesa-vdpau opencl-mesa vulkan-mesa-layers libva libva-vdpau-driver  libva-mesa-driver gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc
 
 sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
