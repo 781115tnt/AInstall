@@ -239,7 +239,8 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 + Read kernel logs:
 	sudo journalctl -k
 	sudo dmesg -l err,warn -H
-
++ Read cpu cores clock every 1s:
+	watch -n1 "cat /proc/cpuinfo | grep MHz | awk '{print $1}'"
 
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
