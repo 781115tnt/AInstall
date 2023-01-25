@@ -106,6 +106,9 @@ sudo sensors-detect
 	sudo usermod -a -G libvirt $(whoami)
 - sudo nano /etc/default/grub edit:
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 splash intel_iommu=on iommu=pt pcie_aspm=off processor.max_cstate=6 intel_idle.max_cstate=6 "
+
+- To know all support processor.max_cstate:  grep . /sys/devices/system/cpu/cpu0/cpuidle/state*/name
+- To know maximum supported intel_idle.max_cstate: cat /sys/module/intel_idle/parameters/max_cstate
 	Then update grub:
 		sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Change group: sudo nano /etc/libvirt/qemu.conf to libvirt; change user to user id
@@ -199,7 +202,7 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	cut -d: -f1 /etc/group
 + List all users:
 	cut -d: -f1 /etc/passwd
-	
+
 + ffmpeg convert file
 	ffmpeg -i infile.xxx -ss 00:00:12 -to 00:05:17 -vn -ar 48000 -ac 2 -b:a 320k out_file.mp3
 + Convert all opus to mp3 in a directory:
