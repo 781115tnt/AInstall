@@ -115,6 +115,8 @@ sudo sensors-detect
 - sudo nano /etc/default/grub edit:
 	#GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 splash intel_iommu=on iommu=pt pcie_aspm=off processor.max_cstate=6 intel_idle.max_cstate=6 mce=nobootlog "
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 splash pcie_aspm=off processor.max_cstate=3 intel_idle.max_cstate=3 mce=nobootlog "
+	
+	i915.enable_rc6=0
 
 - To know all support processor.max_cstate:  grep . /sys/devices/system/cpu/cpu0/cpuidle/state*/name
 - To know maximum supported intel_idle.max_cstate: cat /sys/module/intel_idle/parameters/max_cstate
