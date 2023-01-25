@@ -7,7 +7,7 @@ sudo pacman -S vulkan-intel libva-intel-driver vulkan-intel xf86-video-intel int
 + For AMD:
 sudo pacman -S xf86-video-amdgpu vulkan-radeon
 
-sudo pacman -S mesa mesa-vdpau opencl-mesa vulkan-mesa-layers libva libva-vdpau-driver  libva-mesa-driver gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode
+sudo pacman -S mesa mesa-vdpau opencl-mesa vulkan-mesa-layers libva libva-vdpau-driver  libva-mesa-driver gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils virt-manager dnsmasq bridge-utils qemu-desktop hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower
 
 sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
@@ -43,7 +43,6 @@ sudo debtap -u
 For better performance, diable C1E in BIOS
 List all cpu scaling_available_governors: sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
 Get current mode: sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-Install cpupower: sudo pacman -S cpupower
 Change settings: sudo nano /etc/default/cpupower -> change governor='powersave'; min_freq="1200MHz" max_freq="5GHz"
 Enable cpupower service: sudo systemctl enable cpupower
 Start service: sudo systemctl start cpupower
