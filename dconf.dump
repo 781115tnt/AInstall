@@ -78,7 +78,7 @@ stickykeys-enable=false
 folder-children=['Utilities', 'YaST', '3cb30205-9d68-420e-8e8c-48b66151c767', '6e34f91b-de68-43a6-829d-feaa4fcda567']
 
 [org/gnome/desktop/app-folders/folders/3cb30205-9d68-420e-8e8c-48b66151c767]
-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop', 'lstopo.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Settings.desktop']
+apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop', 'lstopo.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Settings.desktop', 'virt-manager.desktop']
 name='System tools'
 translate=false
 
@@ -101,8 +101,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-16-59-44-blobs-l.svg'
-picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-16-59-44-blobs-l.svg'
+picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-22-49-54-blobs-l.svg'
+picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-22-49-54-blobs-l.svg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -135,7 +135,7 @@ text-scaling-factor=1.2000000000000002
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp', 'vlc']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
@@ -201,6 +201,9 @@ application-id='smplayer.desktop'
 [org/gnome/desktop/notifications/application/timeshift-gtk]
 application-id='timeshift-gtk.desktop'
 
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
+
 [org/gnome/desktop/notifications/application/vmware-workstation]
 application-id='vmware-workstation.desktop'
 
@@ -222,7 +225,7 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-16-59-44-blobs-l.svg'
+picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-22-49-54-blobs-l.svg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -350,7 +353,7 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 959)
+initial-size=(890, 617)
 
 [org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
 ignore-ca-cert=false
@@ -368,7 +371,7 @@ app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-4
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'noannoyance@sindex.com']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'virt-manager.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'smplayer.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'vlc.desktop', 'smplayer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
@@ -637,7 +640,7 @@ workspace-popup=true
 workspaces-in-app-grid=false
 
 [org/gnome/shell/extensions/net/gfxmonk/impatience]
-speed-factor=1.5302491103202847
+speed-factor=1.2597864768683273
 
 [org/gnome/shell/extensions/rounded-window-corners]
 black-list=['com.desktop.ding']
