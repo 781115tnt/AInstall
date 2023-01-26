@@ -113,10 +113,11 @@ sudo sensors-detect
 - Make current user is in libvirt group
 	sudo usermod -a -G libvirt $(whoami)
 - sudo nano /etc/default/grub edit:
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 intel_iommu=on iommu=pt "
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 intel_iommu=on iommu=pt pcie_aspm=off processor.max_cstate=3 intel_idle.max_cstate=3 i915.enable_psr=0 mce=nobootlog "
+	#GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 intel_iommu=on iommu=pt "
+	#GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 intel_iommu=on iommu=pt pcie_aspm=off processor.max_cstate=3 intel_idle.max_cstate=3 i915.enable_psr=0 mce=nobootlog "
+	#GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 pcie_aspm=off i915.enable_psr=0 splash mce=nobootlog  "
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 pcie_aspm=off processor.max_cstate=3 intel_idle.max_cstate=3 i915.enable_psr=0 mce=nobootlog "
-	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 pcie_aspm=off i915.enable_psr=0 splash mce=nobootlog  "
+	
 
 - To know all support processor.max_cstate:  grep . /sys/devices/system/cpu/cpu0/cpuidle/state*/name
 - To know maximum supported intel_idle.max_cstate: cat /sys/module/intel_idle/parameters/max_cstate
