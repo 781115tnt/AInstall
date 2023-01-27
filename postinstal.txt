@@ -8,7 +8,7 @@ sudo pacman -S intel-gpu-tools intel-media-driver libva-utils libva-mesa-driver 
 + For AMD:
 sudo pacman -S xf86-video-amdgpu vulkan-radeon mesa vulkan-mesa-layers
 
-sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g
+sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa-utils
 
 sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
