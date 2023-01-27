@@ -223,8 +223,9 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	for fullname in *.opus; do name=$"${fullname%.*}"; ffmpeg -i "$fullname" -vn -ar 48000 -ac 2 -b:a 320k "$name.mp3"; done
 + ffmpeg add audio to video
 	ffmpeg -i 1.mp4 -i 1a.wav -map 0:v -map 1:a -c:v copy -shortest 'React Course - Beginner Tutorial for React JavaScript Library [2022].mp4'
-+ convert ts to mkv
-	ffmpeg -i input.ts -map 0 -c copy output.mkv
++ convert ts to mp4
+	name="xxxxxxx"
+	ffmpeg -i "$name.ts" "$name.mp4"
 	
 	name=""
 	ffmpeg -i 1.mp4 -i 1.opus -map 0:v -map 1:a -c:v copy -shortest "$name".mp4
