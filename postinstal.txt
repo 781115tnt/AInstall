@@ -43,7 +43,7 @@ sudo debtap -u
 + To Change CPU Power for M910q E-2286M:  diable C1E in BIOS, only enable C1.  Configure grub kernel parameter: processor.max_cstate=1 intel_idle.max_cstate=1 mce=nobootlog
 List all cpu scaling_available_governors: sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
 Get current mode: sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-Change settings: sudo nano /etc/default/cpupower -> change governor='powersave'; min_freq="0.9GHz" max_freq="5GHz"
+Change settings: sudo nano /etc/default/cpupower -> change governor='powersave'; min_freq="1.2GHz" max_freq="5GHz"
 Enable cpupower service: sudo systemctl enable cpupower
 Start service: sudo systemctl start cpupower
 
