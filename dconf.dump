@@ -20,7 +20,7 @@ window-width=1130
 preload-engines=['BambooUs', 'Bamboo']
 
 [org/gnome/Console]
-last-window-size=(1560, 656)
+last-window-size=(1193, 851)
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/AInstall'
@@ -59,7 +59,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='power'
 window-state=(940, 1022, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -101,8 +101,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-22-49-54-blobs-l.svg'
-picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-22-49-54-blobs-l.svg'
+picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-26-17-27-33-blobs-l.svg'
+picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2023-01-26-17-27-33-blobs-l.svg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -131,12 +131,12 @@ gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 locate-pointer=true
 monospace-font-name='Monospace 10'
-text-scaling-factor=1.2000000000000002
+text-scaling-factor=1.2
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp', 'vlc']
-show-banners=false
+show-banners=true
 
 [org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
 application-id='ca.desrt.dconf-editor.desktop'
@@ -225,7 +225,7 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-25-22-49-54-blobs-l.svg'
+picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-26-17-27-33-blobs-l.svg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -282,7 +282,7 @@ serif-font='Roboto Condensed, 12'
 use-gnome-fonts=false
 
 [org/gnome/evince/default]
-window-ratio=(2.1214223269603556, 1.2095250094494141)
+window-ratio=(2.1241830065359477, 1.2095959595959596)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -323,7 +323,7 @@ col-6-width=0
 
 [org/gnome/gnome-system-monitor/proctree]
 columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=8
+sort-col=0
 sort-order=0
 
 [org/gnome/mutter]
@@ -353,11 +353,28 @@ show-create-link=false
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 617)
+initial-size=(1241, 798)
+maximized=false
 
 [org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/bc754c45-e4d3-44e1-baaf-cc8ef79622ab]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c5f02c95-77ac-45d7-a2e9-66e05aff0df9]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ebc0425e-7d62-4594-b3ae-5885f7f2ba20]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/power-manager]
+info-history-type='charge'
+info-stats-type='discharge-accuracy'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -370,7 +387,7 @@ sleep-inactive-ac-type='nothing'
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <5>}>, 'timeshift-gtk.desktop': <{'position': <6>}>, 'vlc.desktop': <{'position': <7>}>}]
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'noannoyance@sindex.com']
+enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'noannoyance@sindex.com', 'cpufreq@konkor']
 favorite-apps=['org.gnome.DiskUtility.desktop', 'vlc.desktop', 'smplayer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
@@ -414,6 +431,16 @@ unity-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents', 'Arc
 confirm-clear=false
 disable-down-arrow=true
 history-size=10
+
+[org/gnome/shell/extensions/cpufreq]
+profile-id='user'
+save-settings=true
+user-profile='{"name":"Saved settings","minf":0,"maxf":100,"turbo":false,"cpu":16,"acpi":false,"guid":"user","core":[{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000},{"g":"powersave","a":900000,"b":5000000}]}'
+window-height=720
+window-maximized=false
+window-width=669
+window-x=0
+window-y=0
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/misc]
 buttons-trigger-on-press=false
@@ -562,6 +589,9 @@ tray-padding=-1
 tray-size=24
 window-preview-title-position='TOP'
 
+[org/gnome/shell/extensions/freq-boost-switch]
+boost=true
+
 [org/gnome/shell/extensions/gsconnect]
 devices=['E8CF6BE98A7A45A2A22CFE77392B0A27']
 enabled=false
@@ -599,6 +629,7 @@ show-drop-place=false
 show-home=true
 show-link-emblem=true
 show-volumes=true
+start-corner='top-left'
 
 [org/gnome/shell/extensions/hidetopbar]
 enable-active-window=false
@@ -768,7 +799,7 @@ sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 window-position=(35, 32)
-window-size=(991, 710)
+window-size=(991, 948)
 
 [org/virt-manager/virt-manager]
 manager-window-height=531
