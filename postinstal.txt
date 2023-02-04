@@ -275,3 +275,7 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 + Extract multiple parts rar:
 	- Create a directory and then move all parts into the directory.  Let's say all parts are named as xxx1.rar, xxx2.rar, ...
 	- Use command: unrar x xxx1.rar
+	
+	
++ Scan virus
+	clamscan --infected --recursive=yes ./DirName
