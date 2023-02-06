@@ -199,6 +199,12 @@ Check current bitrate: pactl list sink-inputs, pactl list sources
 	sudo pacman -S pkgname
 - Install local package:
 	sudo pacman -U pkgname
+	
+sudo pacman -Syu kicad
+# if you want to install the official libraries (recommended):
+sudo pacman -Syu --asdeps kicad-library kicad-library-3d
+--asdeps means the packages are installed as a dependecy of KiCad, meaning they will be uninstalled automatically when uninstalling it.
+
 - Search for a package:
 	sudo pacman -Ss pkgname
 	pacsearch -n ^name
