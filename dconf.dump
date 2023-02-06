@@ -1,3 +1,30 @@
+[apps/psensor]
+graph-alpha-channel-enabled=false
+graph-background-alpha=1.0
+graph-background-color='#e8f4e8f4a8f5'
+graph-foreground-color='#000000000000'
+graph-monitoring-duration=20
+graph-smooth-curves-enabled=true
+graph-update-interval=2
+interface-hide-on-startup=false
+interface-window-divider-pos=0
+interface-window-h=837
+interface-window-restore-enabled=true
+interface-window-w=387
+interface-window-x=35
+interface-window-y=32
+notif-script=''
+provider-atiadlsdk-enabled=true
+provider-gtop2-enabled=true
+provider-hddtemp-enabled=false
+provider-libatasmart-enabled=false
+provider-lmsensors-enabled=true
+provider-nvctrl-enabled=true
+provider-udisks2-enabled=true
+sensor-update-interval=2
+slog-enabled=false
+slog-interval=300
+
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/nautilus/window-state/initial-size'
 saved-view='/org/gnome/nautilus/window-state/initial-size'
@@ -59,8 +86,8 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='power'
-window-state=(940, 1022, false)
+last-panel='network'
+window-state=(940, 678, false)
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -101,10 +128,10 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-26-17-27-33-blobs-l.svg'
-picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2023-01-26-17-27-33-blobs-l.svg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/drool-d.svg'
+primary-color='#86b6ef'
+secondary-color='#000000'
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
@@ -131,7 +158,7 @@ gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
 locate-pointer=true
 monospace-font-name='Monospace 10'
-text-scaling-factor=1.2
+text-scaling-factor=1.0999999999999999
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
@@ -225,9 +252,9 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-01-26-17-27-33-blobs-l.svg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
+primary-color='#86b6ef'
+secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -282,7 +309,7 @@ serif-font='Roboto Condensed, 12'
 use-gnome-fonts=false
 
 [org/gnome/evince/default]
-window-ratio=(2.1241830065359477, 1.2095959595959596)
+window-ratio=(1.6134453781512605, 0.99287410926365793)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -347,16 +374,23 @@ default-zoom-level='medium'
 always-use-location-entry=false
 default-folder-viewer='list-view'
 migrated-gtk-settings=true
+recursive-search='always'
 search-filter-time-type='last_modified'
 search-view='list-view'
 show-create-link=false
+show-directory-item-counts='local-only'
 show-hidden-files=true
+show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1241, 798)
+initial-size=(1160, 862)
 maximized=false
 
 [org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/b5890c58-ec6d-3351-a479-d5470c8d7f69]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -384,11 +418,11 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <5>}>, 'timeshift-gtk.desktop': <{'position': <6>}>, 'vlc.desktop': <{'position': <7>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <5>}>, 'timeshift-gtk.desktop': <{'position': <6>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <7>}>}]
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'rounded-window-corners@yilozt', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'noannoyance@sindex.com', 'cpufreq@konkor']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'vlc.desktop', 'smplayer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
+enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arcmenu@arcmenu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'impatience@gfxmonk.net', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'noannoyance@sindex.com', 'cpufreq@konkor', 'rounded-window-corners@yilozt']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'vlc.desktop', 'smplayer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'chromium.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
@@ -680,13 +714,13 @@ border-width=0
 custom-rounded-corner-settings=@a{sv} {}
 debug-mode=false
 enable-preferences-entry=true
-focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': 4, 'opacity': 80}
+focused-shadow={'vertical_offset': 0, 'horizontal_offset': 0, 'blur_offset': 0, 'spread_radius': 0, 'opacity': 0}
 global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <true>, 'fullscreen': <true>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
 skip-libadwaita-app=false
 skip-libhandy-app=false
 tweak-kitty-terminal=false
-unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 24, 'spread_radius': 4, 'opacity': 80}
+unfocused-shadow={'vertical_offset': 0, 'horizontal_offset': 0, 'blur_offset': 0, 'spread_radius': 0, 'opacity': 0}
 
 [org/gnome/shell/extensions/tiling-assistant]
 activate-layout0=@as []
@@ -794,11 +828,11 @@ show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=217
-sort-column='name'
+sort-column='modified'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(35, 32)
+window-position=(1313, 223)
 window-size=(991, 948)
 
 [org/virt-manager/virt-manager]
