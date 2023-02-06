@@ -86,7 +86,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='wifi'
 window-state=(940, 1249, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -710,7 +710,7 @@ speed-factor=1.2597864768683273
 [org/gnome/shell/extensions/rounded-window-corners]
 black-list=['com.desktop.ding']
 border-color=(0.35666665434837341, 0.35666665434837341, 0.35666665434837341, 1.0)
-border-width=2
+border-width=-1
 custom-rounded-corner-settings=@a{sv} {}
 debug-mode=false
 enable-preferences-entry=true
