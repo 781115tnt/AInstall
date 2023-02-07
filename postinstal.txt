@@ -124,7 +124,7 @@ sudo pacman -S virt-manager dnsmasq bridge-utils qemu-desktop
 	
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 mce=nobootlog acpi_mask_gpe=0x62 "
 	
-	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 mce=nobootlog pcie_aspm=off acpi_mask_gpe=0x62 processor.max_cstate=1 intel_idle.max_cstate=1 "
+	GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 mce=nobootlog pcie_aspm=off acpi_mask_gpe=0x62 "
 
 - To know all support processor.max_cstate:  grep . /sys/devices/system/cpu/cpu0/cpuidle/state*/name
 - To know maximum supported intel_idle.max_cstate: cat /sys/module/intel_idle/parameters/max_cstate
