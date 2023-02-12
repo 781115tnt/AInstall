@@ -288,3 +288,9 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 	
 + Scan virus
 	clamscan --infected --recursive=yes ./DirName
+
++ clear journalctl: (xd=xdays, xh=xhours,xw=xweeks,...) 
+	sudo journalctl --vacuum-time=8h
++ show journalctl after a specific time
+	journalctl -S "2023-02-12 00:00:00"
+	
