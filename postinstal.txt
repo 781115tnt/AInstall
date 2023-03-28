@@ -297,4 +297,7 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 + Change boot order:
 	sudo efibootmgr
 	Then copy the BootOrder: "sequence"
-	change the sequence in: sudo efibootmgr -o "sequence"
+	Change the sequence in: sudo efibootmgr -o "changed_sequence"
++ Delete a boot entry
+	Get the entry number by: sudo efibootmgr
+	sudo efibootmgr -b <bootnum> -B
