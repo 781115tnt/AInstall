@@ -26,8 +26,8 @@ slog-enabled=false
 slog-interval=300
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/nautilus/window-state/initial-size'
-saved-view='/org/gnome/nautilus/window-state/initial-size'
+saved-pathbar-path='/org/gnome/desktop/background/primary-color'
+saved-view='/org/gnome/desktop/background/primary-color'
 show-warning=false
 window-height=838
 window-is-maximized=false
@@ -51,7 +51,7 @@ recording-output-format='mp4'
 preload-engines=['BambooUs', 'Bamboo']
 
 [org/gnome/Console]
-last-window-size=(1230, 1044)
+last-window-size=(1230, 578)
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/AInstall'
@@ -90,7 +90,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='background'
 window-state=(916, 1076, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -132,10 +132,10 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-03-30-22-11-17-blobs-l.svg'
-picture-uri-dark='file:///home/thanhtran/.local/share/backgrounds/2023-03-30-22-11-17-blobs-l.svg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
+picture-uri-dark=''
+primary-color='#454545'
+secondary-color='#000000'
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
@@ -262,9 +262,9 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/thanhtran/.local/share/backgrounds/2023-03-30-22-11-17-blobs-l.svg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
+primary-color='#241f31'
+secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -393,7 +393,7 @@ show-hidden-files=true
 show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1311, 1018)
+initial-size=(1032, 957)
 maximized=false
 
 [org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
@@ -844,7 +844,7 @@ sort-column='modified'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(785, 223)
+window-position=(1047, 203)
 window-size=(991, 948)
 
 [org/virt-manager/virt-manager]
