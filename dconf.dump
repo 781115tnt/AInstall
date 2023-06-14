@@ -51,11 +51,15 @@ recording-output-format='mp4'
 preload-engines=['BambooUs', 'Bamboo']
 
 [org/gnome/Console]
-last-window-size=(1230, 578)
+last-window-size=(1694, 1041)
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/AInstall'
 show-line-numbers=true
+
+[org/gnome/Totem]
+active-plugins=['vimeo', 'variable-rate', 'skipto', 'screenshot', 'screensaver', 'save-file', 'rotation', 'recent', 'movie-properties', 'open-directory', 'mpris', 'autoload-subtitles', 'apple-trailers']
+subtitle-encoding='UTF-8'
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -90,11 +94,11 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='info-overview'
 window-state=(916, 1076, false)
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=true
+screen-keyboard-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
@@ -131,17 +135,17 @@ translate=true
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
-picture-uri-dark=''
-primary-color='#454545'
+picture-options='stretched'
+picture-uri='file:///usr/share/backgrounds/gnome/dune-d.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/blobs-d.svg'
+primary-color='#241f31'
 secondary-color='#000000'
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
+mru-sources=[('ibus', 'Bamboo'), ('xkb', 'us')]
 per-window=true
 show-all-sources=false
 sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
@@ -159,14 +163,14 @@ font-hinting='medium'
 font-name='Roboto Condensed, 10'
 gtk-enable-primary-paste=false
 gtk-theme='Adw-dark'
-icon-theme='Papirus-Dark'
+icon-theme='Adwaita'
 locate-pointer=true
 monospace-font-name='Monospace 10'
 text-scaling-factor=1.2
-toolkit-accessibility=true
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp', 'vlc', 'org-gnome-eog', 'com-uploadedlobster-peek']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp', 'vlc', 'org-gnome-eog', 'com-uploadedlobster-peek', 'org-gnome-totem', 'libreoffice-startcenter']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
@@ -192,6 +196,9 @@ application-id='gparted.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-calc]
 application-id='libreoffice-calc.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-startcenter]
+application-id='libreoffice-startcenter.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
@@ -225,6 +232,9 @@ application-id='org.gnome.Shell.Extensions.GSConnect.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-texteditor]
 application-id='org.gnome.TextEditor.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-totem]
+application-id='org.gnome.Totem.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
@@ -262,7 +272,7 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
+picture-uri='file:///usr/share/backgrounds/gnome/dune-d.svg'
 primary-color='#241f31'
 secondary-color='#000000'
 
@@ -270,11 +280,11 @@ secondary-color='#000000'
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 300
+idle-delay=uint32 0
 
 [org/gnome/desktop/sound]
 event-sounds=true
-theme-name='__custom'
+theme-name='freedesktop'
 
 [org/gnome/desktop/wm/keybindings]
 maximize=@as []
@@ -393,10 +403,14 @@ show-hidden-files=true
 show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1032, 957)
+initial-size=(1256, 750)
 maximized=false
 
 [org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/a1b1c12c-5884-45dc-9d3a-f498dac37386]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -428,11 +442,11 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <6>}>, 'chromium.desktop': <{'position': <7>}>, 'smplayer.desktop': <{'position': <8>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, 'org.gnome.Contacts.desktop': <{'position': <6>}>, 'org.gnome.Weather.desktop': <{'position': <7>}>, 'smplayer.desktop': <{'position': <8>}>, 'org.gnome.Maps.desktop': <{'position': <9>}>, 'org.gnome.Photos.desktop': <{'position': <10>}>, 'org.gnome.Totem.desktop': <{'position': <11>}>, 'org.gnome.Cheese.desktop': <{'position': <12>}>, 'uxterm.desktop': <{'position': <13>}>, 'vim.desktop': <{'position': <14>}>, 'xterm.desktop': <{'position': <15>}>, 'org.gnome.Calendar.desktop': <{'position': <16>}>, 'org.gnome.Music.desktop': <{'position': <17>}>, 'org.gnome.Software.desktop': <{'position': <18>}>, 'org.gnome.Epiphany.desktop': <{'position': <19>}>}]
 disable-user-extensions=false
-disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'noannoyance@sindex.com', 'impatience@gfxmonk.net']
-enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'gtk4-ding@smedius.gitlab.com', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'cpufreq@konkor', 'rounded-window-corners@yilozt']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'chromium.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
+disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'noannoyance@sindex.com', 'impatience@gfxmonk.net', 'gtk4-ding@smedius.gitlab.com']
+enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'cpufreq@konkor', 'rounded-window-corners@yilozt']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'smplayer.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
@@ -719,7 +733,7 @@ workspaces-in-app-grid=false
 speed-factor=1.2597864768683273
 
 [org/gnome/shell/extensions/rounded-window-corners]
-black-list=['com.desktop.ding']
+black-list=['']
 border-color=(0.40666666626930237, 0.40666666626930237, 0.40666666626930237, 1.0)
 border-width=-1
 custom-rounded-corner-settings=@a{sv} {}
@@ -747,8 +761,9 @@ debugging-show-tiled-rects=@as []
 default-move-mode=0
 dynamic-keybinding-behaviour=0
 import-layout-examples=false
-last-version-installed=39
+last-version-installed=41
 move-adaptive-tiling-mod=3
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.maximize': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 restore-window=['<Super>Down']
 search-popup-layout=@as []
 tile-bottom-half=['<Super>KP_2']
@@ -801,7 +816,7 @@ edge-tiling=false
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1670517720
+check-timestamp=int64 1685330984
 first-run=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
@@ -840,11 +855,11 @@ show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=217
-sort-column='modified'
+sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1047, 203)
+window-position=(35, 32)
 window-size=(991, 948)
 
 [org/virt-manager/virt-manager]
