@@ -94,7 +94,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='info-overview'
+last-panel='applications'
 window-state=(916, 1076, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -159,11 +159,11 @@ document-font-name='Roboto Condensed, 10'
 enable-animations=true
 enable-hot-corners=false
 font-antialiasing='rgba'
-font-hinting='medium'
+font-hinting='slight'
 font-name='Roboto Condensed, 10'
 gtk-enable-primary-paste=false
 gtk-theme='Adw-dark'
-icon-theme='Adwaita'
+icon-theme='Papirus-Dark'
 locate-pointer=true
 monospace-font-name='Monospace 10'
 text-scaling-factor=1.2
@@ -442,11 +442,11 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, 'org.gnome.Contacts.desktop': <{'position': <6>}>, 'org.gnome.Weather.desktop': <{'position': <7>}>, 'smplayer.desktop': <{'position': <8>}>, 'org.gnome.Maps.desktop': <{'position': <9>}>, 'org.gnome.Photos.desktop': <{'position': <10>}>, 'org.gnome.Totem.desktop': <{'position': <11>}>, 'org.gnome.Cheese.desktop': <{'position': <12>}>, 'uxterm.desktop': <{'position': <13>}>, 'vim.desktop': <{'position': <14>}>, 'xterm.desktop': <{'position': <15>}>, 'org.gnome.Calendar.desktop': <{'position': <16>}>, 'org.gnome.Music.desktop': <{'position': <17>}>, 'org.gnome.Software.desktop': <{'position': <18>}>, 'org.gnome.Epiphany.desktop': <{'position': <19>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <6>}>}]
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'noannoyance@sindex.com', 'impatience@gfxmonk.net', 'gtk4-ding@smedius.gitlab.com']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'cpufreq@konkor', 'rounded-window-corners@yilozt']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'smplayer.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
+favorite-apps=['libreoffice-startcenter.desktop', 'smplayer.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop', 'chromium.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
@@ -616,7 +616,7 @@ leftbox-padding=-1
 leftbox-size=0
 middle-click-action='LAUNCH'
 panel-anchors='{"0":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"systemMenu","visible":true,"position":"stackedTL"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"systemMenu","visible":true,"position":"stackedTL"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"BOTTOM"}'
@@ -637,7 +637,7 @@ status-icon-padding=-1
 stockgs-keep-dash=false
 stockgs-keep-top-panel=false
 stockgs-panelbtn-click-only=false
-taskbar-locked=true
+taskbar-locked=false
 trans-bg-color='#454545'
 trans-panel-opacity=0.29999999999999999
 trans-use-custom-bg=false
@@ -735,12 +735,12 @@ speed-factor=1.2597864768683273
 [org/gnome/shell/extensions/rounded-window-corners]
 black-list=['']
 border-color=(0.40666666626930237, 0.40666666626930237, 0.40666666626930237, 1.0)
-border-width=-1
+border-width=1
 custom-rounded-corner-settings=@a{sv} {}
 debug-mode=false
 enable-preferences-entry=true
 focused-shadow={'vertical_offset': 0, 'horizontal_offset': 0, 'blur_offset': 0, 'spread_radius': 0, 'opacity': 0}
-global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <true>, 'fullscreen': <true>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>, 'enabled': <true>}
+global-rounded-corner-settings={'padding': <{'left': <uint32 0>, 'right': <uint32 0>, 'top': <uint32 0>, 'bottom': <uint32 0>}>, 'keep_rounded_corners': <{'maximized': <true>, 'fullscreen': <true>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
 skip-libadwaita-app=false
 skip-libhandy-app=false
@@ -842,7 +842,7 @@ sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 view-type='list'
-window-size=(887, 423)
+window-size=(887, 935)
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.6705882352941176, 0.094117647058823528, 0.32156862745098042, 1.0)]
@@ -859,7 +859,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(35, 32)
+window-position=(880, 142)
 window-size=(991, 948)
 
 [org/virt-manager/virt-manager]
