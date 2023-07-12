@@ -306,3 +306,7 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 
 + Create USB Installation:
 	sudo dd bs=4M if=./archlinux-*-x86_64.iso of=/dev/sdc conv=fsync oflag=direct status=progress
+
+
++ Convert epub to pdf:
+	ebook-convert name.epub name.pdf --paper-size a4 --pdf-default-font-size 14
