@@ -56,6 +56,7 @@ width=800
 
 [com/github/johnfactotum/Foliate/view]
 bg-color='#fff'
+brightness=1.1010638297872339
 fg-color='#000'
 invert=false
 layout='continuous'
@@ -64,10 +65,10 @@ prefer-dark-theme=false
 
 [com/github/johnfactotum/Foliate/window-state]
 fullscreen=false
-height=1177
-last-file="/run/media/1TDATA/Anne M. Van Leeuwen - Davis's Comprehensive Manual of Laboratory and Diagnostic Tests With Nursing Implications-F.A. Davis Company (2021).epub"
+height=1169
+last-file='/run/media/1TDATA/Joseph Truglio (editor), Rita S. Lee (editor), Barbara E. Warren (editor), Rainier Patrick Soriano (editor) - Sexual and Reproductive Health_ A Practical Guide for Primary Care-Springer (2022).epub'
 maximized=false
-width=1630
+width=1076
 
 [com/uploadedlobster/peek]
 persist-window-geometry=(179, 217, 1637, 1018)
@@ -120,7 +121,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='multitasking'
+last-panel='sharing'
 window-state=(916, 1113, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -139,7 +140,7 @@ stickykeys-enable=false
 folder-children=['Utilities', 'YaST', '3cb30205-9d68-420e-8e8c-48b66151c767', '6e34f91b-de68-43a6-829d-feaa4fcda567', '2b4b9e92-055f-4292-bba2-ec3fe483a310', '6dcebf68-b938-4ce9-aafe-7b7d7e52b231', '8a8a6a54-0d37-4417-831b-e3a9bcfb41c0']
 
 [org/gnome/desktop/app-folders/folders/2b4b9e92-055f-4292-bba2-ec3fe483a310]
-apps=['calibre-ebook-viewer.desktop', 'calibre-ebook-edit.desktop', 'calibre-lrfviewer.desktop', 'calibre-gui.desktop']
+apps=['com.github.johnfactotum.Foliate.desktop', 'calibre-ebook-viewer.desktop', 'calibre-ebook-edit.desktop', 'calibre-lrfviewer.desktop', 'calibre-gui.desktop']
 name='EBook'
 translate=false
 
@@ -186,7 +187,7 @@ secondary-color='#000000'
 show-weekdate=false
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('ibus', 'Bamboo'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
 per-window=true
 show-all-sources=false
 sources=[('xkb', 'us'), ('ibus', 'Bamboo')]
@@ -196,12 +197,12 @@ xkb-options=@as []
 clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=24
-document-font-name='Roboto Condensed, 12'
+document-font-name='Roboto Condensed, 11'
 enable-animations=true
 enable-hot-corners=false
 font-antialiasing='rgba'
 font-hinting='slight'
-font-name='Roboto Condensed, 12'
+font-name='Roboto Condensed, 11'
 gtk-enable-primary-paste=false
 gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
@@ -381,7 +382,7 @@ serif-font='Roboto Condensed, 12'
 use-gnome-fonts=false
 
 [org/gnome/evince/default]
-window-ratio=(4.0025641025641026, 1.8176186690870546)
+window-ratio=(2.7220731454738707, 1.7741319269092779)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -428,7 +429,7 @@ sort-order=0
 [org/gnome/mutter]
 attach-modal-dialogs=true
 center-new-windows=true
-dynamic-workspaces=true
+dynamic-workspaces=false
 edge-tiling=false
 overlay-key='Super_L'
 
@@ -462,7 +463,7 @@ show-hidden-files=true
 show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(858, 1024)
+initial-size=(1555, 673)
 maximized=false
 
 [org/gnome/nm-applet/eap/2d05ed02-d1be-38e7-98d7-bca00fbc648e]
@@ -501,7 +502,7 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <6>}>, '6dcebf68-b938-4ce9-aafe-7b7d7e52b231': <{'position': <7>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <6>}>, '6dcebf68-b938-4ce9-aafe-7b7d7e52b231': <{'position': <7>}>, '2b4b9e92-055f-4292-bba2-ec3fe483a310': <{'position': <8>}>}]
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'noannoyance@sindex.com', 'impatience@gfxmonk.net', 'gtk4-ding@smedius.gitlab.com']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'cpufreq@konkor', 'rounded-window-corners@yilozt', 'dash-to-panel@jderose9.github.com']
@@ -547,7 +548,7 @@ unity-pinned-app-list=['Home', 'ArcMenu_Home', 'ArcMenu_Home', 'Documents', 'Arc
 [org/gnome/shell/extensions/clipboard-indicator]
 confirm-clear=false
 disable-down-arrow=true
-history-size=10
+history-size=15
 
 [org/gnome/shell/extensions/cpufreq]
 profile-id='user'
@@ -579,10 +580,13 @@ barrier-size-h=1
 barrier-size-v=1
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-1]
-action='toggle-overview'
+action='disabled'
 ctrl=false
 h-expand=false
 v-expand=false
+
+[org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-2]
+action='toggle-overview'
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-left-6]
 ctrl=true
@@ -593,6 +597,11 @@ fullscreen=true
 pressure-threshold=100
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-right-1]
+action='disabled'
+ctrl=false
+fullscreen=false
+
+[org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-top-right-2]
 action='keyboard'
 ctrl=false
 
@@ -918,7 +927,7 @@ sort-column='modified'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(35, 32)
+window-position=(1185, 342)
 window-size=(1177, 710)
 
 [org/virt-manager/virt-manager]
