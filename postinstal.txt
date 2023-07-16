@@ -310,3 +310,8 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 
 + Convert epub to pdf:
 	ebook-convert name.epub name.pdf --paper-size a4 --pdf-default-font-size 14
+
++ Delete all empty directories:
+	find . -type d -empty -print -delete
++ Delete all empty files:
+	find . -type f -empty -print -delete
