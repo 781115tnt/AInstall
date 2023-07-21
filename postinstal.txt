@@ -96,8 +96,8 @@ sudo chown -R thanhtran:thanhtran WORKSPACE
 sudo chmod 555 WORKSPACE
 sudo mount -o nofail,rw,noatime,uid=1000,gid=1001 /dev/nvme1n1p1 /run/media/WORKSPACE
 
-+ mount options for data HDD (not SSD) btrfs: autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120
-+ mount options for root SSD btrfs: rw,noatime,compress=zstd:3,ssd,space_cache=v2,commit=120
++ mount options for data HDD (not SSD) btrfs: nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120
++ mount options for root SSD btrfs: nofail,rw,noatime,compress=zstd:3,ssd,space_cache=v2,commit=120
 
 genfstab /
 -
