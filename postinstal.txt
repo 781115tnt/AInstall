@@ -329,3 +329,9 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 
 + Find all files have the same size
 	ls -l | awk '$1!~/^d/{if(size[$5]!=""){ print}size[$5]=$8}'
+
++ Regular expression
+	Match for any ./then any char - 
+		\./.*\s-\s
+	Match for any - SpringerThenAnyChar (2019).
+		-(Springer.*)\s\(2019\)\.
