@@ -323,17 +323,32 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 	pdftk ./out/p_*.pdf output ./out/out.pdf
 + Update TOC and document info
 	pdftk ./out/out.pdf update_info ./out/doc_data.txt output NEW-"$file"
+	
 
+#! /bin/bash
+mkdir ./out
+mkdir ./old
 for file in *.pdf
-do 
-pdftk "$file" burst output ./out/p_%05d.pdf
-pdftk ./out/p_*.pdf output ./out/out.pdf
-pdftk ./out/out.pdf update_info ./out/doc_data.txt output NEW-"$file"
-rm ./out/*
+do
+###########using gs
+gs -dSAFER -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4  -dPDFSETTINGS=/prepress -o ./out/"$file" "$file"
+mv "$file" ./old
+###########using pdftk
+#pdftk tmp-"$file" burst output ./out/p_%05d.pdf
+#pdftk ./out/p_*.pdf output ./out/out.pdf
+#mv "$file" ./old
+#pdftk ./out/out.pdf update_info ./out/doc_data.txt output "$file" compress
+#rm ./out/*
+############
 done
 
+
++ Extract TOC and annotations
+	pdftk in.pdf dump_data output
 + Remove all annotations
 	pdftk "$file"  output - uncompress | sed '/^\/Annots/d' | pdftk - output NEW-"$file" compress
+	
+	
 
 + Compare two directories
 	diff -qr dir1 dir2
