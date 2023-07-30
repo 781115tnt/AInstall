@@ -344,7 +344,7 @@ done
 
 
 + Extract TOC and annotations
-	pdftk in.pdf dump_data output
+	pdftk in.pdf dump_data out.txt
 + Remove all annotations
 	pdftk "$file"  output - uncompress | sed '/^\/Annots/d' | pdftk - output NEW-"$file" compress
 	
