@@ -323,6 +323,15 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 	pdftk ./out/p_*.pdf output ./out/out.pdf
 + Update TOC and document info
 	pdftk ./out/out.pdf update_info ./out/doc_data.txt output NEW-"$file"
+
+for file in *.pdf
+do 
+pdftk "$file" burst output ./out/p_%05d.pdf
+pdftk ./out/p_*.pdf output ./out/out.pdf
+pdftk ./out/out.pdf update_info ./out/doc_data.txt output NEW-"$file"
+rm ./out/*
+done
+
 + Remove all annotations
 	pdftk "$file"  output - uncompress | sed '/^\/Annots/d' | pdftk - output NEW-"$file" compress
 
