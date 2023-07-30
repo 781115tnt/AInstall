@@ -326,20 +326,20 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 	
 
 #! /bin/bash
-mkdir ./out
+mkdir ./tmp
 mkdir ./old
+mkdir ./OK
 for file in *.pdf
 do
 ###########using gs
-gs -dSAFER -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4  -dPDFSETTINGS=/prepress -o ./out/"$file" "$file"
-mv "$file" ./old
-###########using pdftk
-#pdftk tmp-"$file" burst output ./out/p_%05d.pdf
-#pdftk ./out/p_*.pdf output ./out/out.pdf
+#gs -dSAFER -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4  -dPDFSETTINGS=/prepress -o ./OK/"$file" "$file"
 #mv "$file" ./old
-#pdftk ./out/out.pdf update_info ./out/doc_data.txt output "$file" compress
-#rm ./out/*
-############
+###########using pdftk
+pdftk "$file" burst output ./tmp/p_%05d.pdf
+pdftk ./tmp/p_*.pdf output ./tmp/out.pdf
+mv "$file" ./old
+pdftk ./tmp/out.pdf update_info ./tmp/doc_data.txt output "$file" compress
+rm ./tmp/*
 done
 
 
