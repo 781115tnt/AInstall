@@ -363,7 +363,6 @@ done
 	Match for any - SpringerThenAnyChar (2019).
 		-(Springer.*)\s\(2019\)\.
 
-
 +  Create soft link to medicals books: 1st argument = english keyword; 2nd argument = Vietnamese keyword; 3rd argument = set folder
 #!	/bin/bash
 kword=$1
@@ -376,11 +375,13 @@ else
 	folder="$3"
 fi
 
-mkdir "$folder"
+subfolder="CATEGORIES"
+
+mkdir "./$subfolder/$folder"
+
 for f in *$kword*
 do 
 	if [ ! -d  "$f" ]; then 
-		ln -sr  "./$f" "./$folder/$f"
+		ln -sr  "./$f" "./$subfolder/$folder/$f"
 	fi
 done
-
