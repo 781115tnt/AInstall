@@ -364,11 +364,23 @@ done
 		-(Springer.*)\s\(2019\)\.
 
 
-+  Create soft link to medicals books: 1st argument = english keyword; 2nd argument = Vietnamese keyword
++  Create soft link to medicals books: 1st argument = english keyword; 2nd argument = Vietnamese keyword; 3rd argument = set folder
 #!	/bin/bash
 kword=$1
 vkword=$2
-folder="$kword - $vkword"
+
+if [ -z "$3" ]
+then
+	folder="$kword - $vkword"
+else 
+	folder="$3"
+fi
+
 mkdir "$folder"
-for f in *$kword*; do ln -sr  "./$f" "./$folder/$f"; done
-rm "./$folder/$folder"
+for f in *$kword*
+do 
+	if [ ! -d  "$f" ]; then 
+		ln -sr  "./$f" "./$folder/$f"
+	fi
+done
+
