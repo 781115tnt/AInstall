@@ -363,25 +363,36 @@ done
 	Match for any - SpringerThenAnyChar (2019).
 		-(Springer.*)\s\(2019\)\.
 
-+  Create soft link to medicals books: 1st argument = english keyword; 2nd argument = Vietnamese keyword; 3rd argument = set folder
-#!	/bin/bash
-kword=$1
-vkword=$2
 
-if [ -z "$3" ]
+
++  Create soft link to medicals books: 1st argument = keyword; 2nd argument = Vietnamese; 3rd argument = override folder; 4th argument = sub folder
+#!	/bin/bash
+keyWord=$1
+vietWord=$2
+
+catFolder="./CATEGORIES"
+
+destFolder="$keyWord - $vietWord"
+
+if [ -n "$3" ]
 then
-	folder="$kword - $vkword"
-else 
-	folder="$3"
+	destFolder="$3"	
 fi
 
-subfolder="CATEGORIES"
+if [ -n "$4" ]
+then
+	destFolder="$destFolder/$4"	
+fi
 
-mkdir "./$subfolder/$folder"
+destFolder="$catFolder/$destFolder"
 
-for f in *$kword*
+echo $destFolder
+
+mkdir -p "$destFolder"
+
+for f in *$keyWord*
 do 
 	if [ ! -d  "$f" ]; then 
-		ln -sr  "./$f" "./$subfolder/$folder/$f"
+		ln -sr  "./$f" "$destFolder/$f"
 	fi
 done
