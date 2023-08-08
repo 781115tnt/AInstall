@@ -365,32 +365,33 @@ done
 
 
 
-+  Create soft link to medicals books: 1st argument = keyword; 2nd argument = Vietnamese; 3rd argument = override folder; 4th argument = sub folder
++  Create soft link to medicals books: 1st argument = keyword; 2nd argument = folder; 3rd argument = sub folder
 #!	/bin/bash
-keyWord=$1
-vietWord=$2
+
+#$1 key word
+#$2 folder
+#$3 sub folder
 
 catFolder="./CATEGORIES"
 
-destFolder="$keyWord - $vietWord"
+if [ -z "$2" ]
+then
+	echo "ERROR - EMPTY FOLDER NAME"
+	exit
+fi
+
+destFolder="$catFolder/$2"
 
 if [ -n "$3" ]
 then
-	destFolder="$3"	
+	destFolder="$destFolder/$3"	
 fi
-
-if [ -n "$4" ]
-then
-	destFolder="$destFolder/$4"	
-fi
-
-destFolder="$catFolder/$destFolder"
 
 echo $destFolder
 
 mkdir -p "$destFolder"
 
-for f in *$keyWord*
+for f in *$1*
 do 
 	if [ ! -d  "$f" ]; then 
 		ln -sr  "./$f" "$destFolder/$f"
