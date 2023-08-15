@@ -12,7 +12,7 @@ sudo pacman -S xf86-video-amdgpu vulkan-radeon vulkan-mesa-layers
 + To verify hardware rendering: reboot then
 glxinfo | grep "direct rendering"
 
-sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld
+sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent
 
 sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
@@ -362,38 +362,3 @@ done
 		\./.*\s-\s
 	Match for any - SpringerThenAnyChar (2019).
 		-(Springer.*)\s\(2019\)\.
-
-
-
-+  Create soft link to medicals books: 1st argument = keyword; 2nd argument = folder; 3rd argument = sub folder
-#!	/bin/bash
-
-#$1 key word
-#$2 folder
-#$3 sub folder
-
-catFolder="./CATEGORIES"
-
-if [ -z "$2" ]
-then
-	echo "ERROR - EMPTY FOLDER NAME"
-	exit
-fi
-
-destFolder="$catFolder/$2"
-
-if [ -n "$3" ]
-then
-	destFolder="$destFolder/$3"	
-fi
-
-echo $destFolder
-
-mkdir -p "$destFolder"
-
-for f in *$1*
-do 
-	if [ ! -d  "$f" ]; then 
-		ln -sr  "./$f" "$destFolder/$f"
-	fi
-done
