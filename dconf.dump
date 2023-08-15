@@ -121,7 +121,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='sharing'
+last-panel='background'
 window-state=(916, 1113, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -150,7 +150,7 @@ name='System tools'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/6dcebf68-b938-4ce9-aafe-7b7d7e52b231]
-apps=['smplayer.desktop', 'xdvi.desktop']
+apps=['xdvi.desktop']
 name='Media'
 translate=false
 
@@ -178,9 +178,9 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/drool-d.svg'
-primary-color='#86b6ef'
+picture-uri='file:///usr/share/backgrounds/gnome/dune-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/dune-d.svg'
+primary-color='#f7a957'
 secondary-color='#000000'
 
 [org/gnome/desktop/calendar]
@@ -212,7 +212,7 @@ text-scaling-factor=1.2
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp', 'vlc', 'org-gnome-eog', 'com-uploadedlobster-peek', 'org-gnome-totem', 'libreoffice-startcenter', 'org-gnome-evince', 'calibre-gui', 'sigil']
+application-children=['org-gnome-console', 'org-manjaro-pamac-manager', 'org-gnome-fileroller', 'smplayer', 'org-gnome-boxes', 'org-gnome-nautilus', 'gparted', 'timeshift-gtk', 'firefox', 'gnome-power-panel', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'org-gnome-baobab', 'org-gnome-settings', 'org-gnome-extensions-desktop', 'libreoffice-calc', 'vmware-workstation', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-texteditor', 'org-gnome-extensions', 'gnome-network-panel', 'gimp', 'vlc', 'org-gnome-eog', 'com-uploadedlobster-peek', 'org-gnome-totem', 'libreoffice-startcenter', 'org-gnome-evince', 'calibre-gui', 'sigil', 'org-qbittorrent-qbittorrent']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/ca-desrt-dconf-editor]
@@ -290,6 +290,9 @@ application-id='org.gnome.tweaks.desktop'
 [org/gnome/desktop/notifications/application/org-manjaro-pamac-manager]
 application-id='org.manjaro.pamac.manager.desktop'
 
+[org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
+application-id='org.qbittorrent.qBittorrent.desktop'
+
 [org/gnome/desktop/notifications/application/sigil]
 application-id='sigil.desktop'
 
@@ -324,8 +327,8 @@ remember-recent-files=false
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
-primary-color='#86b6ef'
+picture-uri='file:///usr/share/backgrounds/gnome/dune-l.svg'
+primary-color='#f7a957'
 secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
@@ -502,11 +505,11 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-system-monitor.desktop': <{'position': <4>}>, 'timeshift-gtk.desktop': <{'position': <5>}>, '6e34f91b-de68-43a6-829d-feaa4fcda567': <{'position': <6>}>, '6dcebf68-b938-4ce9-aafe-7b7d7e52b231': <{'position': <7>}>, '2b4b9e92-055f-4292-bba2-ec3fe483a310': <{'position': <8>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '3cb30205-9d68-420e-8e8c-48b66151c767': <{'position': <1>}>, '2b4b9e92-055f-4292-bba2-ec3fe483a310': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'htop.desktop': <{'position': <4>}>, 'gnome-system-monitor.desktop': <{'position': <5>}>, 'timeshift-gtk.desktop': <{'position': <6>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <7>}>, 'org.gnome.Meld.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
 disabled-extensions=['gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'dash-to-dock@micxgx.gmail.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'power-profile-switcher@eliapasquali.github.io', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'dock-from-dash@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com', 'noannoyance@sindex.com', 'impatience@gfxmonk.net', 'gtk4-ding@smedius.gitlab.com']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'add-to-desktop@tommimon.github.com', 'RemoveAppMenu@Dragon8oy.com', 'transparent-shell@siroj42.github.io', 'ddterm@amezin.github.com', 'clipboard-indicator@tudmotu.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'custom-hot-corners-extended@G-dH.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'Vitals@CoreCoding.com', 'cpufreq@konkor', 'rounded-window-corners@yilozt', 'dash-to-panel@jderose9.github.com']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'vlc.desktop', 'com.github.xournalpp.xournalpp.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Terminal.desktop', 'smplayer.desktop', 'vlc.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'freedownloadmanager.desktop', 'org.gnome.TextEditor.desktop']
 welcome-dialog-last-shown-version='43.1'
 
 [org/gnome/shell/app-switcher]
@@ -688,7 +691,7 @@ panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"posit
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"BOTTOM"}'
-panel-sizes='{"0":48}'
+panel-sizes='{"0":64}'
 primary-monitor=0
 progress-show-count=false
 secondarymenu-contains-appmenu=false
@@ -927,7 +930,7 @@ sort-column='modified'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(1185, 342)
+window-position=(1255, 423)
 window-size=(1177, 710)
 
 [org/virt-manager/virt-manager]
