@@ -1,0 +1,36 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# UUID=559c4c09-9042-4556-8a06-260074ce8559 LABEL=ROOT
+/dev/nvme0n1p3      	/         	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=256,subvol=/@	0 0
+
+# UUID=557B-259C LABEL=EFIBOOT
+/dev/nvme0n1p2      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# UUID=559c4c09-9042-4556-8a06-260074ce8559 LABEL=ROOT
+/dev/nvme0n1p3      	/tmp      	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=258,subvol=/@tmp	0 0
+
+# UUID=559c4c09-9042-4556-8a06-260074ce8559 LABEL=ROOT
+/dev/nvme0n1p3      	/var      	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=257,subvol=/@var	0 0
+
+# UUID=559c4c09-9042-4556-8a06-260074ce8559 LABEL=ROOT
+/dev/nvme0n1p3      	/home     	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=259,subvol=/@home	0 0
+
+# UUID=15c1b44c-ea60-4952-ae93-1750a15b02e8
+/dev/nvme0n1p4      	none      	swap      	defaults  	0 0
+
+# UUID=aef7a19c-b3e0-40eb-808e-ed5e1f3d734d LABEL=1TBDATA
+/dev/sda2           	/run/media/1TDATA	btrfs     	nofail,rw,noatime,nodiratime,compress=zstd:3,noacl,space_cache=v2,autodefrag,commit=120,subvolid=5,subvol=/	0 0
+
+# UUID=EBC0-6A88 LABEL=DEV
+/dev/nvme0n1p6      	/run/media/DEV	vfat      	rw,nosuid,nodev,relatime,uid=1000,gid=1001,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,showexec,utf8,flush,errors=remount-ro	0 2
+
+# /dev/sdc1 LABEL=4TBN300
+UUID=f39e49a2-f224-45e3-a357-c9a4ba982045	/run/media/thanhtran/4TBN300	btrfs    	nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120,subvolid=5,subvol=/	0 0
+
+# /dev/sdc1 LABEL=4TBRED
+UUID=6c67eb3d-8a69-43ae-ab37-feacb402d139       /run/media/thanhtran/4TBRED    btrfs           nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120,subvolid=5,subvol=/     0 0
+
+/dev/disk/by-id/usb-TO_Exter_nal_USB_3.0_2015033100081-0:0-part1 /mnt/usb-TO_Exter_nal_USB_3.0_2015033100081-0:0-part1 auto nosuid,nodev,nofail,noauto 0 0
+/dev/disk/by-id/wwn-0x5000039acb901066-part2 /mnt/wwn-0x5000039acb901066-part2 auto nosuid,nodev,nofail,noauto 0 0
