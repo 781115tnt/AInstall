@@ -66,19 +66,19 @@ subvolumesetup () {
     btrfs subvolume create /mnt/@var
     btrfs subvolume create /mnt/@tmp
     btrfs subvolume create /mnt/@home
-#    btrfs subvolume create /mnt/@.snapshots  
+    btrfs subvolume create /mnt/@.snapshots  
 # unmount root to remount with subvolume 
     umount /mnt
 # mount @ subvolume
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
 # make directories home, .snapshots, var, tmp
-#    mkdir -p /mnt/{home,var,tmp,.snapshots}
-    mkdir -p /mnt/{home,var,tmp}
+    mkdir -p /mnt/{home,var,tmp,.snapshots}
+#    mkdir -p /mnt/{home,var,tmp}
 # mount subvolumes
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
     mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
-#    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
+    mount -t btrfs -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
 }
 
 if [[ "${DISK}" =~ "nvme" ]]; then
