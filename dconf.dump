@@ -3,10 +3,11 @@ preload-engines=['BambooUs', 'Bamboo']
 
 [org/gnome/Console]
 font-scale=1.3000000000000003
+last-window-size=(1141, 1170)
 theme='auto'
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='universal-access'
 window-state=(980, 1250, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -87,6 +88,12 @@ application-id='org.gnome.Settings.desktop'
 
 [org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
 application-id='org.qbittorrent.qBittorrent.desktop'
+
+[org/gnome/desktop/peripherals/mouse]
+speed=0.44186046511627897
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
