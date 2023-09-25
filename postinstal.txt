@@ -1,6 +1,17 @@
 + Remove unused apps
 sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
 
+sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent timeshift btrfs-progs syslinux ripgrep-all gnome-themes-extra gnome-browser-connector ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
+
+#sudo pacman -S adobe-source-han-sans-hk-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-hk-fonts adobe-source-han-serif-kr-fonts adobe-source-han-serif-tw-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-han-sans-hk-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-tw-fonts adobe-source-han-serif-hk-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+
+#gnome-boxes 
+
+yay -S  ibus-bamboo ibus-daemon debtap freedownloadmanager adwaita-qt5-git adwaita-qt6-git
+
++ Update debtab
+sudo debtap -u
+//Incase of any of the above packages can't be install, download it and then use: debtab pkgname.deb to create an pkgname.zst.  Then we can use: sudo pacman -U pkgname.zst to install the package.
 
 + For intel VGA: 
 sudo pacman -S intel-gpu-tools intel-media-driver mesa-vdpau libva libva-mesa-driver libva-vdpau-driver libva-utils xf86-video-intel
@@ -12,20 +23,6 @@ sudo pacman -S xf86-video-amdgpu vulkan-radeon vulkan-mesa-layers
 + To verify hardware rendering: reboot then
 glxinfo | grep "direct rendering"
 
-sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor adwaita-qt5 adwaita-qt6 smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent timeshift btrfs-progs syslinux ripgrep-all gnome-themes-extra
-
-sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
-
-#sudo pacman -S adobe-source-han-sans-hk-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-hk-fonts adobe-source-han-serif-kr-fonts adobe-source-han-serif-tw-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-han-sans-hk-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-tw-fonts adobe-source-han-serif-hk-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
-
-#gnome-boxes 
-
-#yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme ibus-bamboo ibus-daemon debtap freedownloadmanager
-yay -S gnome-browser-connector ibus-bamboo ibus-daemon debtap freedownloadmanager
-
-+ Update debtab
-sudo debtap -u
-//Incase of any of the above packages can't be install, download it and then use: debtab pkgname.deb to create an pkgname.zst.  Then we can use: sudo pacman -U pkgname.zst to install the package.
 
 + Use firefox to install gnome extensions by extract extensions.zip into ~/.local/share/gnome-shell OR install the following extensions:
 	Rounded Window Corners by Luo Yi
@@ -61,6 +58,14 @@ echo "[Qt]" >> ~/.config/Trolltech.conf
 echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
 echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 
+sudo cp -R Roboto /usr/share/fonts/
+//to get out: dconf dump / > dconf.dump
+//to load: dconf load / < dconf.dump
+//dconf load / < dconf.dump
+cp -Rf  vlc ~/.config/
+cp -Rf  smplayer ~/.config/
+
+
 + Đánh tiếng Việt: restart/logout rồi thêm keyboard Vietnamese(Bamboo)
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 	
@@ -69,12 +74,7 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 #sudo cp -R 'location of fonts dir/fontconfig_conf.avail/*' /usr/share/fontconfig/conf.avail/
 #sudo cp -R 'location of fonts dir/fontconfig_conf.default/*' /usr/share/fontconfig/conf.default/
 
-#sudo cp -R Roboto /usr/share/fonts/
-//to get out: dconf dump / > dconf.dump
-//to load: dconf load / < dconf.dump
-dconf load / < dconf.dump
-cp -Rf  vlc ~/.config/
-cp -Rf  smplayer ~/.config/
+
 	
 + Use pamac to remove orphan apps or: sudo pacman -Qtdq | sudo pacman -Rns -
 
