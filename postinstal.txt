@@ -21,7 +21,7 @@ sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf
 #gnome-boxes 
 
 #yay -S pamac-aur gnome-browser-connector adw-gtk3 adw-gtk-theme ibus-bamboo ibus-daemon debtap freedownloadmanager
-yay -S gnome-browser-connector ibus-bamboo ibus-daemon debtap freedownloadmanager adwaita-qt6-git adwaita-qt5-git
+yay -S gnome-browser-connector ibus-bamboo ibus-daemon debtap freedownloadmanager
 
 + Update debtab
 sudo debtap -u
