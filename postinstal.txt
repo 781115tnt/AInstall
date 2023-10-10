@@ -57,6 +57,7 @@ Start service: sudo systemctl start cpupower
 echo "[Qt]" >> ~/.config/Trolltech.conf
 echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
 echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
+echo "export MOZ_ENABLE_WAYLAND=1" >> ~/.bash_profile
 
 sudo cp -R Roboto /usr/share/fonts/
 //to reset all gnome
