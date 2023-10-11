@@ -1,46 +1,72 @@
 [ca/desrt/dconf-editor]
 saved-pathbar-path='/org/gnome/nautilus/list-view/default-visible-columns'
 saved-view='/org/gnome/nautilus/list-view/default-visible-columns'
-window-height=818
+window-height=748
 window-is-maximized=false
-window-width=1098
+window-width=905
 
 [org/gnome/Console]
-last-window-size=(1200, 636)
+last-window-size=(812, 552)
 
 [org/gnome/control-center]
-last-panel='keyboard'
-window-state=(992, 1232, false)
+last-panel='background'
+window-state=(980, 1026, false)
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=true
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=false
-
-[org/gnome/desktop/a11y/keyboard]
-enable=true
+screen-keyboard-enabled=true
 
 [org/gnome/desktop/app-folders]
-folder-children=['b17fc4aa-506f-4211-82d8-d82057e12f8b', '72c26e13-9dcb-4252-a264-7791c255247b', 'd737d135-580d-46d8-900b-081ee5496912']
+folder-children=['Utilities', 'YaST', 'Pardus', '22cab079-3cc7-4675-bb11-0201787e2ce0', '8bf7705a-bede-4718-be50-41e069d33365', 'bfd26b7e-2a77-4448-b4c4-0f2113009d55', 'e8cf0532-0860-4afc-9074-caa80aaaaea7', '61337d24-a20f-4c4d-bdff-4cbf907d4e6e']
 
-[org/gnome/desktop/app-folders/folders/72c26e13-9dcb-4252-a264-7791c255247b]
-apps=['org.gnome.Settings.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.baobab.desktop', 'avahi-discover.desktop', 'bvnc.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Extensions.desktop', 'yelp.desktop', 'bssh.desktop', 'org.gnome.Calculator.desktop', 'cmake-gui.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'htop.desktop', 'qvidcap.desktop', 'yad-settings.desktop', 'org.gnome.tweaks.desktop', 'qv4l2.desktop', 'mpv.desktop', 'org.gnome.eog.desktop', 'lstopo.desktop', 'yad-icon-browser.desktop', 'org.gnome.Logs.desktop', 'org.gnome.clocks.desktop']
+[org/gnome/desktop/app-folders/folders/22cab079-3cc7-4675-bb11-0201787e2ce0]
+apps=['gnome-system-monitor.desktop', 'org.gnome.eog.desktop', 'yelp.desktop']
+name='Gnome Apps'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/61337d24-a20f-4c4d-bdff-4cbf907d4e6e]
+apps=['org.gnome.Settings.desktop', 'htop.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop']
 name='System Apps'
 translate=false
 
-[org/gnome/desktop/app-folders/folders/b17fc4aa-506f-4211-82d8-d82057e12f8b]
-apps=['calibre-ebook-viewer.desktop', 'calibre-ebook-edit.desktop', 'calibre-gui.desktop', 'org.gnome.Evince.desktop', 'com.github.johnfactotum.Foliate.desktop', 'calibre-lrfviewer.desktop']
-name='EBook'
+[org/gnome/desktop/app-folders/folders/8bf7705a-bede-4718-be50-41e069d33365]
+apps=['calibre-ebook-edit.desktop', 'com.github.johnfactotum.Foliate.desktop', 'calibre-ebook-viewer.desktop', 'org.gnome.Evince.desktop', 'calibre-lrfviewer.desktop', 'calibre-gui.desktop']
+name='Ebooks'
 translate=false
 
-[org/gnome/desktop/app-folders/folders/d737d135-580d-46d8-900b-081ee5496912]
-apps=['libreoffice-calc.desktop', 'libreoffice-base.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-writer.desktop', 'libreoffice-startcenter.desktop']
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'yad-icon-browser.desktop', 'avahi-discover.desktop', 'bvnc.desktop', 'lstopo.desktop', 'qvidcap.desktop', 'qv4l2.desktop', 'yad-settings.desktop', 'cmake-gui.desktop', 'mpv.desktop']
+categories=['X-GNOME-Utilities']
+excluded-apps=['org.gnome.Evince.desktop']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/bfd26b7e-2a77-4448-b4c4-0f2113009d55]
+apps=['libreoffice-math.desktop', 'libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-draw.desktop', 'libreoffice-calc.desktop', 'libreoffice-base.desktop', 'libreoffice-startcenter.desktop']
 name='Office'
+
+[org/gnome/desktop/app-folders/folders/e8cf0532-0860-4afc-9074-caa80aaaaea7]
+apps=['smplayer.desktop', 'vlc.desktop']
+name='Sound & Video'
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/drool-d.svg'
-primary-color='#86b6ef'
+picture-uri='file:///usr/share/backgrounds/gnome/morphogenesis-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/morphogenesis-d.svg'
+primary-color='#e18477'
 secondary-color='#000000'
 
 [org/gnome/desktop/input-sources]
@@ -49,48 +75,31 @@ sources=[('xkb', 'us'), ('ibus', 'Bamboo::Us')]
 
 [org/gnome/desktop/interface]
 color-scheme='prefer-dark'
-document-font-name='Roboto Condensed, 12'
+document-font-name='Roboto Condensed, 11'
 font-antialiasing='rgba'
-font-hinting='medium'
-font-name='Roboto Condensed, 12'
+font-hinting='slight'
+font-name='Roboto Condensed, 11'
 gtk-theme='Adwaita-dark'
 icon-theme='Papirus-Dark'
-monospace-font-name='Source Code Pro 11'
 text-scaling-factor=1.2
-toolkit-accessibility=false
+toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
-application-children=['org-qbittorrent-qbittorrent', 'vlc', 'gnome-power-panel', 'firefox', 'org-gnome-settings']
-show-banners=false
+application-children=['org-gnome-extensions-desktop']
 
-[org/gnome/desktop/notifications/application/firefox]
-application-id='firefox.desktop'
-
-[org/gnome/desktop/notifications/application/gnome-power-panel]
-application-id='gnome-power-panel.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-settings]
-application-id='org.gnome.Settings.desktop'
-
-[org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
-application-id='org.qbittorrent.qBittorrent.desktop'
-
-[org/gnome/desktop/notifications/application/vlc]
-application-id='vlc.desktop'
+[org/gnome/desktop/notifications/application/org-gnome-extensions-desktop]
+application-id='org.gnome.Extensions.desktop.desktop'
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
-primary-color='#86b6ef'
+picture-uri='file:///usr/share/backgrounds/gnome/morphogenesis-l.svg'
+primary-color='#e18477'
 secondary-color='#000000'
-
-[org/gnome/desktop/session]
-idle-delay=uint32 120
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
-titlebar-font='Roboto Condensed, Bold 12'
+titlebar-font='Roboto Condensed, Bold 11'
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -107,24 +116,19 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1269, 962)
-maximized=false
-
-[org/gnome/settings-daemon/plugins/power]
-power-button-action='interactive'
-sleep-inactive-ac-type='nothing'
+initial-size=(1350, 892)
 
 [org/gnome/shell]
-app-picker-layout=[{'timeshift-gtk.desktop': <{'position': <0>}>, 'org.gnome.Meld.desktop': <{'position': <1>}>, '72c26e13-9dcb-4252-a264-7791c255247b': <{'position': <2>}>, 'b17fc4aa-506f-4211-82d8-d82057e12f8b': <{'position': <3>}>, 'd737d135-580d-46d8-900b-081ee5496912': <{'position': <4>}>}]
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Console.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-startcenter.desktop', 'vlc.desktop', 'smplayer.desktop', 'org.gnome.TextEditor.desktop', 'freedownloadmanager.desktop', 'firefox.desktop', 'org.qbittorrent.qBittorrent.desktop']
+app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.clocks.desktop': <{'position': <1>}>, '8bf7705a-bede-4718-be50-41e069d33365': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <4>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'mpv.desktop': <{'position': <7>}>, 'firefox.desktop': <{'position': <8>}>, 'timeshift-gtk.desktop': <{'position': <9>}>, 'org.gnome.Meld.desktop': <{'position': <10>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <11>}>}]
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'clipboard-indicator@tudmotu.com']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'smplayer.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.qbittorrent.qBittorrent.desktop', 'freedownloadmanager.desktop', 'firefox.desktop']
 welcome-dialog-last-shown-version='45.0'
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover=true
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
-animate-appicon-hover-animation-travel={'SIMPLE': 0.75, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
-animate-appicon-hover-animation-zoom={'SIMPLE': 2.0, 'RIPPLE': 1.25, 'PLANK': 2.0}
+animate-appicon-hover-animation-travel={'SIMPLE': 0.5, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
+animate-appicon-hover-animation-zoom={'SIMPLE': 1.5, 'RIPPLE': 1.25, 'PLANK': 2.0}
 appicon-margin=0
 appicon-padding=4
 available-monitors=[0]
@@ -139,11 +143,10 @@ panel-lengths='{"0":100}'
 panel-sizes='{"0":48}'
 primary-monitor=0
 status-icon-padding=-1
-trans-bg-color='#000000'
 trans-panel-opacity=0.29999999999999999
-trans-use-custom-bg=false
 trans-use-custom-opacity=true
 tray-padding=-1
+tray-size=24
 window-preview-title-position='TOP'
 
 [org/gnome/shell/world-clocks]
@@ -152,23 +155,6 @@ locations=@av []
 [org/gnome/tweaks]
 show-extensions-notice=false
 
-[org/gtk/gtk4/settings/color-chooser]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
-
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=false
 sort-directories-first=false
-
-[org/gtk/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
-show-hidden=false
-show-size-column=true
-show-type-column=true
-sidebar-width=175
-sort-column='name'
-sort-directories-first=false
-sort-order='ascending'
-type-format='category'
-window-position=(368, 0)
-window-size=(1873, 1345)
