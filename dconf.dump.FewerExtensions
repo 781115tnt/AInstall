@@ -16,7 +16,7 @@ window-state=(980, 1026, false)
 always-show-universal-access-status=true
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=true
+screen-keyboard-enabled=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus', '22cab079-3cc7-4675-bb11-0201787e2ce0', '8bf7705a-bede-4718-be50-41e069d33365', 'bfd26b7e-2a77-4448-b4c4-0f2113009d55', 'e8cf0532-0860-4afc-9074-caa80aaaaea7', '61337d24-a20f-4c4d-bdff-4cbf907d4e6e']
@@ -64,9 +64,9 @@ name='Sound & Video'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/morphogenesis-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/morphogenesis-d.svg'
-primary-color='#e18477'
+picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/drool-d.svg'
+primary-color='#86b6ef'
 secondary-color='#000000'
 
 [org/gnome/desktop/input-sources]
@@ -76,26 +76,48 @@ sources=[('xkb', 'us'), ('ibus', 'Bamboo::Us')]
 [org/gnome/desktop/interface]
 color-scheme='prefer-dark'
 document-font-name='Roboto Condensed, 11'
+enable-hot-corners=true
 font-antialiasing='rgba'
 font-hinting='slight'
 font-name='Roboto Condensed, 11'
 gtk-theme='Adwaita-dark'
-icon-theme='Papirus-Dark'
+icon-theme='ePapirus-Dark'
+monospace-font-name='Monospace 11'
 text-scaling-factor=1.2
-toolkit-accessibility=true
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-extensions-desktop']
+application-children=['org-gnome-extensions-desktop', 'vlc', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus']
+show-banners=false
 
 [org/gnome/desktop/notifications/application/org-gnome-extensions-desktop]
 application-id='org.gnome.Extensions.desktop.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
+application-id='org.qbittorrent.qBittorrent.desktop'
+
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+click-method='none'
+two-finger-scrolling-enabled=true
+
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/morphogenesis-l.svg'
-primary-color='#e18477'
+picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
+primary-color='#86b6ef'
 secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 60
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
@@ -116,7 +138,11 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1350, 892)
+initial-size=(1831, 1047)
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.clocks.desktop': <{'position': <1>}>, '8bf7705a-bede-4718-be50-41e069d33365': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <4>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'mpv.desktop': <{'position': <7>}>, 'firefox.desktop': <{'position': <8>}>, 'timeshift-gtk.desktop': <{'position': <9>}>, 'org.gnome.Meld.desktop': <{'position': <10>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <11>}>}]
@@ -152,9 +178,12 @@ window-preview-title-position='TOP'
 [org/gnome/shell/world-clocks]
 locations=@av []
 
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+default-size-columns=120
+
 [org/gnome/tweaks]
 show-extensions-notice=false
 
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=false
-sort-directories-first=false
+sort-directories-first=true
