@@ -249,6 +249,15 @@ sudo pacman -Syu --asdeps kicad-library kicad-library-3d
 + concat videos
 	for f in *.mkv; do echo "file '$f'" >> mylist.txt; done
 	ffmpeg -safe 0 -f concat -i mylist.txt -c copy out.mkv
+
++ split file
+start=9:20
+end=19:20
+infile="FILE.mp4"
+outfile="_$infile"
+ffmpeg -ss $start -t $end -i "$infile" -acodec copy -vcodec copy "$outfile"
+mv "$outfile" "$infile"
+	
 	
 + Useful software:
 	handBrake
