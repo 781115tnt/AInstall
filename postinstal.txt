@@ -1,7 +1,9 @@
 + Remove unused apps
 sudo pacman -R gnome-calendar cheese gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-photos gnome-software xterm totem gnome-weather epiphany vim
 
-sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent timeshift btrfs-progs syslinux ripgrep-all gnome-themes-extra gnome-browser-connector ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
+sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent timeshift btrfs-progs syslinux ripgrep-all gnome-themes-extra gnome-browser-connector 
+
+#sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
 #sudo pacman -S adobe-source-han-sans-hk-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-hk-fonts adobe-source-han-serif-kr-fonts adobe-source-han-serif-tw-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-han-sans-hk-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-tw-fonts adobe-source-han-serif-hk-fonts adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
 
