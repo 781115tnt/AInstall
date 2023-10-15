@@ -61,9 +61,8 @@ echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
 echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 echo "export MOZ_ENABLE_WAYLAND=1" >> ~/.bash_profile
 
-sudo cp -R Roboto /usr/share/fonts/
-//to reset all gnome
-dconf reset -f /
+sudo cp -R fonts/* /usr/share/fonts/
+//to reset all gnome: dconf reset -f /
 //to get out: dconf dump / > dconf.dump
 //to load: dconf load / < dconf.dump
 //dconf load / < dconf.dump
