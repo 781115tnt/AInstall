@@ -236,6 +236,20 @@ sudo pacman -Syu --asdeps kicad-library kicad-library-3d
 + List all users:
 	cut -d: -f1 /etc/passwd
 
+
++ HDD low level format
+	1> Display if the hdd is locked:
+		sudo hdparm -I /dev/sdx
+	2> If the drive shows "frozen" you must first "un-freeze" it:
+		sudo hdparm --user-master u --security-set-pass llformat /dev/sdx
+		sudo hdparm --user-master m --security-unlock llformat /dev/sdx
+		sudo hdparm --user-master m --security-disable llformat /dev/sdx
+	3> Then show if it is un-freeze/unlocked: 
+		sudo hdparm -I /dev/sdx
+	4> Perform low level format:
+		sudo hdparm --user-master u --security-erase llformat /dev/sdx
+
+
 + ffmpeg convert file
 	ffmpeg -i infile.xxx -ss 00:00:12 -to 00:05:17 -vn -ar 48000 -ac 2 -b:a 320k out_file.mp3
 + Convert all opus to mp3 in a directory:
