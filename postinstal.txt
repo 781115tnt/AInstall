@@ -86,6 +86,14 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 
 + To make Timeshift work, make sure /etc/fstab use all UUID instead of label
 
+
++ HDD standby settings:
+	- Enable standby: sudo hdparm --yes-i-know-what-i-am-doing -s 1 /dev/sdx
+	- Disable standby: sudo hdparm -s 0 /dev/sdx
+	- Set time to standby: sudo hdparm -S 12*minutes /dev/sdx
+
+
+
 + Mount WORKSPACE & TNTDATA
 get userid groupid by:
 id
@@ -393,3 +401,5 @@ done
 		\./.*\s-\s
 	Match for any - SpringerThenAnyChar (2019).
 		-(Springer.*)\s\(2019\)\.
+
+
