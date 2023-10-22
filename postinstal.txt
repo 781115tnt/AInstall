@@ -402,4 +402,10 @@ done
 	Match for any - SpringerThenAnyChar (2019).
 		-(Springer.*)\s\(2019\)\.
 
-
++ TORRENT:
+	Viettel router:
+		- Firewall Setup/NAT Forwarding/Port Forwarding: 6800->6900 192.168.1.6 6800->6900
+		- Firewall Setup/UPnP -> Enable
+	QTorrent:
+		- Incoming port: 6885
+		- Use UPnP
