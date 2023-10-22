@@ -409,3 +409,9 @@ done
 	QTorrent:
 		- Incoming port: 6885
 		- Use UPnP
+
+
++ Power off a HDD:
+#!/bin/bash
+sudo umount /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262ec
+sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262ec
