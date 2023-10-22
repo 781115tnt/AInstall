@@ -403,7 +403,7 @@ done
 		-(Springer.*)\s\(2019\)\.
 + TORRENT:
 	Viettel router:
-		- Firewall Setup/NAT Forwarding/Port Forwarding: 6000->8000 192.168.1.6 6000->8000
+		- Firewall Setup/NAT Forwarding/Port Forwarding: 6881->6889 192.168.1.6 6881->6889
 		- Firewall Setup/UPnP -> Enable
 	QTorrent:
 		- Incoming port: 6888
