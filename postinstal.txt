@@ -274,12 +274,24 @@ sudo pacman -Syu --asdeps kicad-library kicad-library-3d
 	ffmpeg -safe 0 -f concat -i mylist.txt -c copy out.mkv
 
 + split file
-start=9:20
-end=19:20
-infile="FILE.mp4"
-outfile="_$infile"
-ffmpeg -ss $start -t $end -i "$infile" -acodec copy -vcodec copy "$outfile"
-mv "$outfile" "$infile"
+	infile="filename.mp4"
+	
+	sm=02
+	ss=45
+	em=24
+	es=20
+	
+	sh=00
+	eh=00
+	
+	start=$sh:$sm:$ss
+	end=$eh:$em:$es
+	
+	dest=/run/media/thanhtran/4TBRED/SX/tmp
+	
+	ffmpeg -ss $start -to $end -i "$infile" -acodec copy -vcodec copy "$dest"/"$infile"
+	
+	rm -rf "$infile"
 	
 	
 + Useful software:
