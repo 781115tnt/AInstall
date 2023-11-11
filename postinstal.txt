@@ -82,6 +82,9 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 	
 + Use pamac to remove orphan apps or: sudo pacman -Qtdq | sudo pacman -Rns -
 
++ Remove an app and all dependencies:
+	sudo pacman -Rcns app_name
+
 + Set user become autologin
 
 + To make Timeshift work, make sure /etc/fstab use all UUID instead of label
