@@ -7,7 +7,7 @@ window-is-maximized=false
 window-width=905
 
 [org/gnome/Console]
-last-window-size=(1181, 640)
+last-window-size=(1097, 661)
 
 [org/gnome/Disks/benchmark]
 do-write=false
@@ -23,7 +23,7 @@ is-maximized=false
 window-size=(960, 600)
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='power'
 window-state=(1280, 951, false)
 
 [org/gnome/desktop/a11y]
@@ -42,7 +42,7 @@ name='Gnome Apps'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/61337d24-a20f-4c4d-bdff-4cbf907d4e6e]
-apps=['org.gnome.Settings.desktop', 'htop.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop', 'bssh.desktop']
+apps=['org.gnome.Settings.desktop', 'htop.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop', 'bssh.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop']
 name='System Apps'
 translate=false
 
@@ -59,7 +59,7 @@ translate=true
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'yad-icon-browser.desktop', 'avahi-discover.desktop', 'bvnc.desktop', 'lstopo.desktop', 'qvidcap.desktop', 'qv4l2.desktop', 'yad-settings.desktop', 'cmake-gui.desktop', 'mpv.desktop', 'org.gnome.clocks.desktop']
 categories=['X-GNOME-Utilities']
-excluded-apps=['org.gnome.Evince.desktop', 'org.gnome.baobab.desktop']
+excluded-apps=['org.gnome.Evince.desktop', 'org.gnome.baobab.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop']
 name='X-GNOME-Utilities.directory'
 translate=true
 
@@ -92,7 +92,7 @@ sources=[('xkb', 'us'), ('ibus', 'Bamboo::Us')]
 color-scheme='prefer-dark'
 document-font-name='Roboto Condensed, 11'
 enable-hot-corners=true
-font-antialiasing='rgba'
+font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Roboto Condensed, 11'
 gtk-theme='Adwaita-dark'
@@ -189,7 +189,7 @@ show-sidebar=true
 sidebar-page='links'
 sidebar-size=391
 sizing-mode='free'
-window-ratio=(1.8948004836759371, 0.96186440677966101)
+window-ratio=(2.5441176470588234, 1.7133838383838385)
 zoom=0.33908420138888895
 
 [org/gnome/evolution-data-server]
@@ -244,7 +244,7 @@ show-create-link=true
 show-delete-permanently=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(918, 659)
+initial-size=(999, 499)
 maximized=false
 
 [org/gnome/nm-applet/eap/4170a3a9-aa4e-3a5d-b42e-659204952933]
@@ -264,7 +264,7 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'8bf7705a-bede-4718-be50-41e069d33365': <{'position': <0>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <1>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <6>}>, 'org.gnome.baobab.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'gimp.desktop': <{'position': <9>}>}]
+app-picker-layout=[{'8bf7705a-bede-4718-be50-41e069d33365': <{'position': <0>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <1>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'org.gnome.Snapshot.desktop': <{'position': <6>}>, 'org.gnome.baobab.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'e8cf0532-0860-4afc-9074-caa80aaaaea7': <{'position': <9>}>}]
 disable-user-extensions=false
 disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'gtk4-ding@smedius.gitlab.com', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com']
@@ -278,8 +278,10 @@ reload-button-visible=true
 restart-counter=8
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/misc]
+panel-menu-enable=false
 show-osd-monitor-indexes=false
 supported-active-extensions=@as []
+watch-corners=false
 
 [org/gnome/shell/extensions/custom-hot-corners-extended/monitor-0-bottom-left-6]
 ctrl=true
@@ -316,7 +318,7 @@ animate-appicon-hover=true
 animate-appicon-hover-animation-duration={'SIMPLE': uint32 160, 'RIPPLE': 130, 'PLANK': 100}
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 animate-appicon-hover-animation-rotation={'SIMPLE': 0, 'RIPPLE': 10, 'PLANK': 0}
-animate-appicon-hover-animation-travel={'SIMPLE': 0.29999999999999999, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
+animate-appicon-hover-animation-travel={'SIMPLE': 0.5, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
 animate-appicon-hover-animation-zoom={'SIMPLE': 2.0, 'RIPPLE': 1.25, 'PLANK': 2.0}
 appicon-margin=0
 appicon-padding=4
@@ -356,6 +358,10 @@ overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.d
 
 [org/gnome/shell/world-clocks]
 locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1699769048
+first-run=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 default-size-columns=120
