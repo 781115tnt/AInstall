@@ -443,10 +443,9 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 + Wine:
 	sudo pacman -S wine zenity winetricks
 	yay -S winegui
+	+ IMPORTANT!!!:  DO NOT REMOVE MAPPING Z: FOR /
 	+ Set render OpenGL: WINEARCH=win64  winetricks renderer=gl
-
-
-
+	+ Use winegui to install .net 4.5
 
 
 
