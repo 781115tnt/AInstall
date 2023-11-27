@@ -196,10 +196,14 @@ sudo pacman -S virt-manager dnsmasq bridge-utils qemu-desktop
 	In case of SSD or HDD: use idProduct and serial instead
 - Windows guest will use channel as:
 	<channel type="spicevmc">
-	  <target type="virtio" name="com.redhat.spice.0" state="disconnected"/>
-	  <alias name="channel0"/>
+	  <target type="virtio" name="com.redhat.spice.0"/>
 	  <address type="virtio-serial" controller="0" bus="0" port="1"/>
 	</channel>
+- Windows guest will use Video QXL as:
+	<video>
+	  <model type="qxl" ram="262144" vram="262144" vgamem="65536" heads="1" primary="yes"/>
+	  <address type="pci" domain="0x0000" bus="0x00" slot="0x01" function="0x0"/>
+	</video>
 
 	
 + Change default audio sample rate
