@@ -132,6 +132,10 @@ nofail,rw,noatime,nodiratime,compress=zstd:3,noacl,space_cache=v2,autodefrag,com
 + mount options for root SSD btrfs: nofail,rw,noatime,compress=zstd:3,ssd,space_cache=v2,commit=120
 
 genfstab /
+
+Reload fstab: 
+	sudo systemctl daemon-reload
+	sudo mount -a
 -
 copy to new fstab for TNTDATA & WORKSPACE to /etc/fstab
 
