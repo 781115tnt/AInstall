@@ -1,19 +1,24 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/background/secondary-color'
-saved-view='/org/gnome/desktop/background/secondary-color'
+saved-pathbar-path='/org/gnome/nautilus/preferences/click-policy'
+saved-view='/org/gnome/nautilus/preferences/'
 show-warning=false
-window-height=748
+window-height=1113
 window-is-maximized=false
 window-width=905
 
 [org/gnome/Console]
-last-window-size=(1097, 661)
+last-window-size=(1132, 1052)
 
 [org/gnome/Disks/benchmark]
 do-write=false
 num-access-samples=1000
 num-samples=100
 sample-size-mib=10
+
+[org/gnome/Snapshot]
+is-maximized=false
+window-height=640
+window-width=800
 
 [org/gnome/TextEditor]
 last-save-directory='file:///home/thanhtran/Documents'
@@ -23,7 +28,7 @@ is-maximized=false
 window-size=(960, 600)
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='sound'
 window-state=(1280, 951, false)
 
 [org/gnome/desktop/a11y]
@@ -34,11 +39,16 @@ screen-keyboard-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus', '22cab079-3cc7-4675-bb11-0201787e2ce0', '8bf7705a-bede-4718-be50-41e069d33365', 'bfd26b7e-2a77-4448-b4c4-0f2113009d55', 'e8cf0532-0860-4afc-9074-caa80aaaaea7', '61337d24-a20f-4c4d-bdff-4cbf907d4e6e']
+folder-children=['Utilities', 'YaST', 'Pardus', '22cab079-3cc7-4675-bb11-0201787e2ce0', '8bf7705a-bede-4718-be50-41e069d33365', 'bfd26b7e-2a77-4448-b4c4-0f2113009d55', 'e8cf0532-0860-4afc-9074-caa80aaaaea7', '61337d24-a20f-4c4d-bdff-4cbf907d4e6e', '48a5f10d-cfbf-4464-a07b-53bead2c0bca']
 
 [org/gnome/desktop/app-folders/folders/22cab079-3cc7-4675-bb11-0201787e2ce0]
-apps=['gnome-system-monitor.desktop', 'org.gnome.eog.desktop', 'yelp.desktop']
+apps=['gnome-system-monitor.desktop', 'org.gnome.eog.desktop', 'yelp.desktop', 'org.gnome.Snapshot.desktop']
 name='Gnome Apps'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/48a5f10d-cfbf-4464-a07b-53bead2c0bca]
+apps=['wine-Programs-DipTrace-PCB Layout.desktop', 'wine-Programs-DipTrace-Schematic.desktop', 'wine-Programs-DipTrace-Pattern Editor.desktop', 'wine-Programs-DipTrace-DipTrace Launcher.desktop', 'wine-Programs-DipTrace-Component Editor.desktop', 'winetricks.desktop', 'wine-Programs-DipTrace-Tutorial.desktop']
+name='Wine'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/61337d24-a20f-4c4d-bdff-4cbf907d4e6e]
@@ -98,7 +108,7 @@ font-name='Roboto Condensed, 11'
 gtk-theme='Adwaita-dark'
 icon-theme='ePapirus-Dark'
 monospace-font-name='Monospace 11'
-text-scaling-factor=1.2
+text-scaling-factor=1.1499999999999999
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
@@ -110,6 +120,9 @@ application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-system-monitor]
 application-id='gnome-system-monitor.desktop'
@@ -237,6 +250,7 @@ default-zoom-level='large'
 use-tree-view=false
 
 [org/gnome/nautilus/preferences]
+always-use-location-entry=false
 default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
@@ -244,7 +258,7 @@ show-create-link=true
 show-delete-permanently=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(999, 499)
+initial-size=(1384, 821)
 maximized=false
 
 [org/gnome/nm-applet/eap/4170a3a9-aa4e-3a5d-b42e-659204952933]
@@ -264,10 +278,10 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'8bf7705a-bede-4718-be50-41e069d33365': <{'position': <0>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <1>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'org.gnome.Snapshot.desktop': <{'position': <6>}>, 'org.gnome.baobab.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'e8cf0532-0860-4afc-9074-caa80aaaaea7': <{'position': <9>}>}]
+app-picker-layout=[{'8bf7705a-bede-4718-be50-41e069d33365': <{'position': <0>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <1>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'org.gnome.baobab.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <8>}>, '48a5f10d-cfbf-4464-a07b-53bead2c0bca': <{'position': <9>}>, 'gimp.desktop': <{'position': <10>}>, 'virt-manager.desktop': <{'position': <11>}>}]
 disable-user-extensions=false
-disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'gtk4-ding@smedius.gitlab.com', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com']
+disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gtk4-ding@smedius.gitlab.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com']
 favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'smplayer.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'freedownloadmanager.desktop', 'org.qbittorrent.qBittorrent.desktop', 'firefox.desktop']
 welcome-dialog-last-shown-version='45.0'
 
@@ -345,11 +359,16 @@ stockgs-force-hotcorner=false
 stockgs-keep-dash=false
 stockgs-keep-top-panel=false
 stockgs-panelbtn-click-only=false
-trans-panel-opacity=0.29999999999999999
+trans-panel-opacity=0.5
+trans-use-custom-gradient=false
 trans-use-custom-opacity=true
+trans-use-dynamic-opacity=false
 tray-padding=-1
 tray-size=24
 window-preview-title-position='TOP'
+
+[org/gnome/shell/extensions/gtk4-ding]
+icon-size='tiny'
 
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(53,132,228)'
@@ -390,13 +409,49 @@ selected-color=(true, 0.98039215686274506, 0.74509803921568629, 0.74509803921568
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=209
 sort-column='name'
-sort-directories-first=false
-sort-order='descending'
+sort-directories-first=true
+sort-order='ascending'
 type-format='category'
-window-position=(841, 291)
+window-position=(841, 419)
 window-size=(1719, 849)
+
+[org/virt-manager/virt-manager]
+manager-window-height=550
+manager-window-width=550
+xmleditor-enabled=true
+
+[org/virt-manager/virt-manager/confirm]
+forcepoweroff=false
+removedev=true
+unapplied-dev=false
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['qemu:///system']
+uris=['qemu:///system']
+
+[org/virt-manager/virt-manager/details]
+show-toolbar=true
+
+[org/virt-manager/virt-manager/new-vm]
+graphics-type='system'
+
+[org/virt-manager/virt-manager/paths]
+media-default='/run/media/1TBDL'
+
+[org/virt-manager/virt-manager/urls]
+isos=['/run/media/1TBDL/virtio-win-0.1.240.iso', '/run/media/thanhtran/BACKUP/SOFTWARE/OS/W10/W10EntActivation.iso', '/run/media/thanhtran/BACKUP/SOFTWARE/OS/W10/Windows 10 Enterprise LTSC x64.iso']
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
+
+[org/virt-manager/virt-manager/vms/bd713d01f70c4b5fa59c0365e72f7598]
+autoconnect=1
+resize-guest=1
+scaling=1
+vm-window-size=(1689, 1177)
