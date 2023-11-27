@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo umount /dev/disk/by-uuid/f39e49a2-f224-45e3-a357-c9a4ba982045
+sudo udisksctl power-off -b /dev/disk/by-uuid/f39e49a2-f224-45e3-a357-c9a4ba982045
+
