@@ -27,6 +27,9 @@ sudo pacman -S xf86-video-amdgpu vulkan-radeon vulkan-mesa-layers
 + To verify hardware rendering: reboot then
 glxinfo | grep "direct rendering"
 
++ Install brave browser
+	yay -S brave-bin
+	+ Install modern scroll extension
 
 + Use firefox to install gnome extensions by extract extensions.zip into ~/.local/share/gnome-shell OR install the following extensions:
 	Rounded Window Corners by Luo Yi
