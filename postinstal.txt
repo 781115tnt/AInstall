@@ -11,6 +11,8 @@ sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor smplaye
 
 yay -S  ibus-bamboo ibus-daemon debtap freedownloadmanager adwaita-qt5-git adwaita-qt6-git
 
+yay -S brave-bin
+
 + Update debtab
 sudo debtap -u
 //Incase of any of the above packages can't be install, download it and then use: debtab pkgname.deb to create an pkgname.zst.  Then we can use: sudo pacman -U pkgname.zst to install the package.
