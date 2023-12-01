@@ -104,7 +104,7 @@ env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['Bamb
 
 
 
-
++ List all orphan apps: sudo pacman -Qqtd
 + Use pamac to remove orphan apps or: sudo pacman -Qtdq | sudo pacman -Rns -
 
 + Remove an app and all dependencies:
