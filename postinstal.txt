@@ -32,7 +32,12 @@ glxinfo | grep "direct rendering"
 	+ Install modern scroll extension
 
 + Use firefox to install gnome extensions by extract extensions.zip into ~/.local/share/gnome-shell OR install the following extensions:
-	Rounded Window Corners by Luo Yi
+	Rounded Window Corners by Luo Yi.  Install manually:
+		sudo pacman -S nodejs yarn gettext
+		git clone https://github.com/yilozt/rounded-window-corners
+		cd rounded-window-corners
+		yarn install && yarn ext:install
+		Then logout and login again
 	Libadwaita, Gtk4 Desktop Icons NG with GSconnect Integration, Drag and Drop onto Dock (Gtk4-DING) by smedius
 	//GSConnect by dlandau
 	AppIndicator and KStatusNotifierItem Support by 3v1n0
