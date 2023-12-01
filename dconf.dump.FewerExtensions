@@ -6,6 +6,9 @@ window-height=1113
 window-is-maximized=false
 window-width=905
 
+[org/gnome/Connections]
+first-run=false
+
 [org/gnome/Console]
 last-window-size=(1132, 1052)
 
@@ -28,7 +31,7 @@ is-maximized=false
 window-size=(960, 600)
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='mouse'
 window-state=(1280, 951, false)
 
 [org/gnome/desktop/a11y]
@@ -42,7 +45,7 @@ screen-reader-enabled=false
 folder-children=['Utilities', 'YaST', 'Pardus', '22cab079-3cc7-4675-bb11-0201787e2ce0', '8bf7705a-bede-4718-be50-41e069d33365', 'bfd26b7e-2a77-4448-b4c4-0f2113009d55', 'e8cf0532-0860-4afc-9074-caa80aaaaea7', '61337d24-a20f-4c4d-bdff-4cbf907d4e6e', '48a5f10d-cfbf-4464-a07b-53bead2c0bca']
 
 [org/gnome/desktop/app-folders/folders/22cab079-3cc7-4675-bb11-0201787e2ce0]
-apps=['gnome-system-monitor.desktop', 'org.gnome.eog.desktop', 'yelp.desktop', 'org.gnome.Snapshot.desktop']
+apps=['org.gnome.eog.desktop']
 name='Gnome Apps'
 translate=false
 
@@ -52,8 +55,8 @@ name='Wine'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/61337d24-a20f-4c4d-bdff-4cbf907d4e6e]
-apps=['org.gnome.Settings.desktop', 'htop.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop', 'bssh.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop']
-name='System Apps'
+apps=['htop.desktop', 'bssh.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'org.gnome.Console.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Loupe.desktop', 'bvnc.desktop', 'mpv.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Logs.desktop', 'org.gnome.clocks.desktop', 'org.gnome.font-viewer.desktop', 'qv4l2.desktop', 'yelp.desktop', 'org.gnome.Snapshot.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'qvidcap.desktop', 'cmake-gui.desktop', 'avahi-discover.desktop', 'smplayer.desktop', 'org.gnome.Settings.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Extensions.desktop', 'lstopo.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop']
+name='Default apps'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/8bf7705a-bede-4718-be50-41e069d33365]
@@ -67,9 +70,9 @@ name='X-Pardus-Apps.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'yad-icon-browser.desktop', 'avahi-discover.desktop', 'bvnc.desktop', 'lstopo.desktop', 'qvidcap.desktop', 'qv4l2.desktop', 'yad-settings.desktop', 'cmake-gui.desktop', 'mpv.desktop', 'org.gnome.clocks.desktop']
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
 categories=['X-GNOME-Utilities']
-excluded-apps=['org.gnome.Evince.desktop', 'org.gnome.baobab.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop']
+excluded-apps=['org.gnome.Evince.desktop', 'org.gnome.baobab.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Console.desktop', 'qv4l2.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Characters.desktop', 'mpv.desktop', 'bvnc.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Dictionary.desktop', 'avahi-discover.desktop', 'lstopo.desktop', 'qvidcap.desktop', 'yad-icon-browser.desktop', 'cmake-gui.desktop', 'yad-settings.desktop']
 name='X-GNOME-Utilities.directory'
 translate=true
 
@@ -83,7 +86,7 @@ apps=['libreoffice-math.desktop', 'libreoffice-writer.desktop', 'libreoffice-imp
 name='Office'
 
 [org/gnome/desktop/app-folders/folders/e8cf0532-0860-4afc-9074-caa80aaaaea7]
-apps=['smplayer.desktop', 'vlc.desktop']
+apps=['vlc.desktop']
 name='Sound & Video'
 
 [org/gnome/desktop/background]
@@ -112,8 +115,11 @@ text-scaling-factor=1.1499999999999999
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-extensions-desktop', 'vlc', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'smplayer', 'gnome-system-monitor', 'org-gnome-console', 'org-gnome-texteditor', 'org-gnome-diskutility']
+application-children=['org-gnome-extensions-desktop', 'vlc', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'smplayer', 'gnome-system-monitor', 'org-gnome-console', 'org-gnome-texteditor', 'org-gnome-diskutility', 'brave-browser']
 show-banners=false
+
+[org/gnome/desktop/notifications/application/brave-browser]
+application-id='brave-browser.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -157,6 +163,10 @@ application-id='vlc.desktop'
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
 
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='default'
+speed=0.39860139860139854
+
 [org/gnome/desktop/peripherals/touchpad]
 click-method='none'
 two-finger-scrolling-enabled=true
@@ -191,6 +201,11 @@ unmaximize=@as []
 button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Roboto Condensed, Bold 11'
 
+[org/gnome/dictionary]
+database='!'
+source-name='Default'
+strategy='exact'
+
 [org/gnome/evince/default]
 continuous=true
 dual-page=false
@@ -201,9 +216,9 @@ inverted-colors=false
 show-sidebar=true
 sidebar-page='links'
 sidebar-size=391
-sizing-mode='free'
-window-ratio=(2.5441176470588234, 1.7133838383838385)
-zoom=0.33908420138888895
+sizing-mode='fit-width'
+window-ratio=(2.8514860497929093, 1.4345312156920149)
+zoom=0.64694762406855366
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -258,7 +273,7 @@ show-create-link=true
 show-delete-permanently=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1384, 821)
+initial-size=(1534, 992)
 maximized=false
 
 [org/gnome/nm-applet/eap/4170a3a9-aa4e-3a5d-b42e-659204952933]
@@ -273,16 +288,19 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/portal/filechooser/brave-browser]
+last-folder-path='/home/thanhtran/Downloads'
+
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'8bf7705a-bede-4718-be50-41e069d33365': <{'position': <0>}>, '61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <1>}>, '22cab079-3cc7-4675-bb11-0201787e2ce0': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'org.gnome.baobab.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <8>}>, '48a5f10d-cfbf-4464-a07b-53bead2c0bca': <{'position': <9>}>, 'gimp.desktop': <{'position': <10>}>, 'virt-manager.desktop': <{'position': <11>}>}]
+app-picker-layout=[{'61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <0>}>, '8bf7705a-bede-4718-be50-41e069d33365': <{'position': <1>}>, '48a5f10d-cfbf-4464-a07b-53bead2c0bca': <{'position': <2>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'org.gnome.baobab.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'gimp.desktop': <{'position': <8>}>, 'virt-manager.desktop': <{'position': <9>}>, 'org.gnome.Dictionary.desktop': <{'position': <10>}>}]
 disable-user-extensions=false
 disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gtk4-ding@smedius.gitlab.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'smplayer.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'freedownloadmanager.desktop', 'org.qbittorrent.qBittorrent.desktop', 'firefox.desktop']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com', 'rounded-window-corners@yilozt']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'brave-browser.desktop', 'freedownloadmanager.desktop', 'org.qbittorrent.qBittorrent.desktop']
 welcome-dialog-last-shown-version='45.0'
 
 [org/gnome/shell/extensions/commandmenu]
@@ -359,6 +377,7 @@ stockgs-force-hotcorner=false
 stockgs-keep-dash=false
 stockgs-keep-top-panel=false
 stockgs-panelbtn-click-only=false
+taskbar-locked=true
 trans-panel-opacity=0.5
 trans-use-custom-gradient=false
 trans-use-custom-opacity=true
@@ -369,6 +388,15 @@ window-preview-title-position='TOP'
 
 [org/gnome/shell/extensions/gtk4-ding]
 icon-size='tiny'
+
+[org/gnome/shell/extensions/rounded-window-corners]
+border-color=(0.2800000011920929, 0.2800000011920929, 0.2800000011920929, 1.0)
+border-width=1
+custom-rounded-corner-settings=@a{sv} {}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>}
+settings-version=uint32 5
+skip-libadwaita-app=true
+skip-libhandy-app=false
 
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(53,132,228)'
@@ -387,6 +415,10 @@ default-size-columns=120
 
 [org/gnome/tweaks]
 show-extensions-notice=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.34000000357627869, 0.34000000357627869, 0.34000000357627869, 1.0), (0.2800000011920929, 0.2800000011920929, 0.2800000011920929, 1.0), (0.19333332777023315, 0.19333332777023315, 0.19333332777023315, 1.0), (0.10999999940395355, 0.10999999940395355, 0.10999999940395355, 1.0), (0.5, 0.5, 0.5, 1.0)]
+selected-color=(true, 0.2800000011920929, 0.2800000011920929, 0.2800000011920929, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -417,12 +449,12 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(841, 419)
+window-position=(26, 23)
 window-size=(1719, 849)
 
 [org/virt-manager/virt-manager]
-manager-window-height=550
-manager-window-width=550
+manager-window-height=782
+manager-window-width=1165
 xmleditor-enabled=true
 
 [org/virt-manager/virt-manager/confirm]
@@ -435,7 +467,7 @@ autoconnect=['qemu:///system']
 uris=['qemu:///system']
 
 [org/virt-manager/virt-manager/details]
-show-toolbar=true
+show-toolbar=false
 
 [org/virt-manager/virt-manager/new-vm]
 graphics-type='system'
