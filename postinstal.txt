@@ -37,7 +37,8 @@ glxinfo | grep "direct rendering"
 		git clone https://github.com/yilozt/rounded-window-corners
 		cd rounded-window-corners
 		yarn install && yarn ext:install
-		Then logout and login again
+		Then logout and login again, check for the extension
+		If OK, then remove: sudo pacman -R nodejs yarn
 	Libadwaita, Gtk4 Desktop Icons NG with GSconnect Integration, Drag and Drop onto Dock (Gtk4-DING) by smedius
 	//GSConnect by dlandau
 	AppIndicator and KStatusNotifierItem Support by 3v1n0
