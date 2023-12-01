@@ -1,7 +1,7 @@
 + Remove unused apps
-sudo pacman -R gnome-calendar gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-software xterm totem gnome-weather epiphany vim gnome-tour
+sudo pacman -R gnome-calendar gnome-contacts simple-scan gnome-maps gnome-music malcontent gnome-software xterm totem gnome-weather epiphany vim gnome-tour gnome-connections
 
-sudo pacman -S gnome-tweaks firefox vlc htop gnome-terminal dconf-editor smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent timeshift btrfs-progs syslinux ripgrep-all gnome-themes-extra gnome-browser-connector dictd gnome-dictionary
+sudo pacman -S gnome-tweaks firefox vlc gnome-terminal dconf-editor smplayer exfat-utils hdparm mesa-utils tldr papirus-icon-theme cdrkit yad iotop unrar libsass sassc dmidecode cpupower ntfs-3g mesa mesa-utils clamav wireless-regdb evolution-data-server pdfgrep foliate calibre gnome-epub-thumbnailer pdftk meld qbittorrent timeshift btrfs-progs syslinux ripgrep-all gnome-themes-extra gnome-browser-connector dictd gnome-dictionary
 
 #sudo pacman -S ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts ttf-hannom otf-ipafont ttf-hanazono ttf-sazanami adobe-source-han-sans-kr-fonts ttf-baekmuk ttf-indic-otf ttf-khmer noto-fonts noto-fonts-extra noto-fonts-extra 
 
