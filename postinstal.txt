@@ -33,7 +33,7 @@ glxinfo | grep "direct rendering"
 
 + Use firefox to install gnome extensions by extract extensions.zip into ~/.local/share/gnome-shell OR install the following extensions:
 	Rounded Window Corners by Luo Yi.  Install manually:
-		sudo pacman -S nodejs yarn gettext
+		sudo pacman -S nodejs yarn
 		git clone https://github.com/yilozt/rounded-window-corners
 		cd rounded-window-corners
 		yarn install && yarn ext:install
