@@ -55,7 +55,7 @@ name='Wine'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/61337d24-a20f-4c4d-bdff-4cbf907d4e6e]
-apps=['htop.desktop', 'bssh.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'org.gnome.Console.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Loupe.desktop', 'bvnc.desktop', 'mpv.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Logs.desktop', 'org.gnome.clocks.desktop', 'org.gnome.font-viewer.desktop', 'qv4l2.desktop', 'yelp.desktop', 'org.gnome.Snapshot.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'qvidcap.desktop', 'cmake-gui.desktop', 'avahi-discover.desktop', 'smplayer.desktop', 'org.gnome.Settings.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Extensions.desktop', 'lstopo.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop']
+apps=['htop.desktop', 'bssh.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'org.gnome.Console.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Loupe.desktop', 'bvnc.desktop', 'mpv.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Logs.desktop', 'org.gnome.clocks.desktop', 'org.gnome.font-viewer.desktop', 'qv4l2.desktop', 'yelp.desktop', 'org.gnome.Snapshot.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'qvidcap.desktop', 'cmake-gui.desktop', 'avahi-discover.desktop', 'org.gnome.Settings.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Extensions.desktop', 'lstopo.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.tweaks.desktop']
 name='Default apps'
 translate=false
 
@@ -256,7 +256,7 @@ toggle-tiled-right=@as []
 default-compression-format='zip'
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='extra-large'
+default-zoom-level='small-plus'
 
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'date_created', 'recency', 'detailed_type']
@@ -300,7 +300,7 @@ app-picker-layout=[{'61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <0>}>,
 disable-user-extensions=false
 disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gtk4-ding@smedius.gitlab.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com', 'rounded-window-corners@yilozt']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'brave-browser.desktop', 'freedownloadmanager.desktop', 'org.qbittorrent.qBittorrent.desktop']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'smplayer.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'brave-browser.desktop', 'freedownloadmanager.desktop', 'org.qbittorrent.qBittorrent.desktop']
 welcome-dialog-last-shown-version='45.0'
 
 [org/gnome/shell/extensions/commandmenu]
