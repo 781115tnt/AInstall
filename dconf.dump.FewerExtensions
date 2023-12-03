@@ -1,6 +1,6 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/nautilus/preferences/click-policy'
-saved-view='/org/gnome/nautilus/preferences/'
+saved-pathbar-path='/org/gnome/dictionary/'
+saved-view='/org/gnome/dictionary/'
 show-warning=false
 window-height=1113
 window-is-maximized=false
@@ -31,14 +31,14 @@ is-maximized=false
 window-size=(960, 600)
 
 [org/gnome/control-center]
-last-panel='mouse'
+last-panel='info-overview'
 window-state=(1280, 951, false)
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=true
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=false
+screen-keyboard-enabled=true
 screen-reader-enabled=false
 
 [org/gnome/desktop/app-folders]
@@ -112,7 +112,7 @@ gtk-theme='Adwaita-dark'
 icon-theme='ePapirus-Dark'
 monospace-font-name='Monospace 11'
 text-scaling-factor=1.1499999999999999
-toolkit-accessibility=false
+toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-extensions-desktop', 'vlc', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'smplayer', 'gnome-system-monitor', 'org-gnome-console', 'org-gnome-texteditor', 'org-gnome-diskutility', 'brave-browser']
@@ -224,7 +224,7 @@ zoom=0.64694762406855366
 migrated=true
 
 [org/gnome/gnome-system-monitor]
-current-tab='processes'
+current-tab='resources'
 maximized=false
 network-total-in-bits=false
 show-dependencies=false
@@ -256,7 +256,7 @@ toggle-tiled-right=@as []
 default-compression-format='zip'
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='small-plus'
+default-zoom-level='extra-large'
 
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'date_created', 'recency', 'detailed_type']
@@ -271,9 +271,10 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 show-create-link=true
 show-delete-permanently=true
+show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1534, 992)
+initial-size=(1154, 982)
 maximized=false
 
 [org/gnome/nm-applet/eap/4170a3a9-aa4e-3a5d-b42e-659204952933]
@@ -289,7 +290,7 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/portal/filechooser/brave-browser]
-last-folder-path='/home/thanhtran/Downloads'
+last-folder-path='/home/thanhtran/AInstall'
 
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='interactive'
@@ -299,8 +300,8 @@ sleep-inactive-ac-type='nothing'
 app-picker-layout=[{'61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <0>}>, '8bf7705a-bede-4718-be50-41e069d33365': <{'position': <1>}>, '48a5f10d-cfbf-4464-a07b-53bead2c0bca': <{'position': <2>}>, 'bfd26b7e-2a77-4448-b4c4-0f2113009d55': <{'position': <3>}>, 'timeshift-gtk.desktop': <{'position': <4>}>, 'org.gnome.Meld.desktop': <{'position': <5>}>, 'org.gnome.baobab.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'gimp.desktop': <{'position': <8>}>, 'virt-manager.desktop': <{'position': <9>}>, 'org.gnome.Dictionary.desktop': <{'position': <10>}>}]
 disable-user-extensions=false
 disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gtk4-ding@smedius.gitlab.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'clipboard-indicator@tudmotu.com', 'custom-hot-corners-extended@G-dH.github.com', 'rounded-window-corners@yilozt']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'smplayer.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'brave-browser.desktop', 'freedownloadmanager.desktop', 'org.qbittorrent.qBittorrent.desktop']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'custom-hot-corners-extended@G-dH.github.com', 'clipboard-indicator@tudmotu.com', 'rounded-window-corners@yilozt']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'brave-browser.desktop']
 welcome-dialog-last-shown-version='45.0'
 
 [org/gnome/shell/extensions/commandmenu]
@@ -390,13 +391,15 @@ window-preview-title-position='TOP'
 icon-size='tiny'
 
 [org/gnome/shell/extensions/rounded-window-corners]
-border-color=(0.2800000011920929, 0.2800000011920929, 0.2800000011920929, 1.0)
-border-width=1
+border-color=(0.19333332777023315, 0.19333332777023315, 0.19333332777023315, 1.0)
+border-width=0
 custom-rounded-corner-settings=@a{sv} {}
-global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>}
+focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': 4, 'opacity': 60}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 10>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
 skip-libadwaita-app=true
 skip-libhandy-app=false
+unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 12, 'spread_radius': -1, 'opacity': 65}
 
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(53,132,228)'
@@ -418,7 +421,7 @@ show-extensions-notice=false
 
 [org/gtk/gtk4/settings/color-chooser]
 custom-colors=[(0.34000000357627869, 0.34000000357627869, 0.34000000357627869, 1.0), (0.2800000011920929, 0.2800000011920929, 0.2800000011920929, 1.0), (0.19333332777023315, 0.19333332777023315, 0.19333332777023315, 1.0), (0.10999999940395355, 0.10999999940395355, 0.10999999940395355, 1.0), (0.5, 0.5, 0.5, 1.0)]
-selected-color=(true, 0.2800000011920929, 0.2800000011920929, 0.2800000011920929, 1.0)
+selected-color=(true, 0.19333332777023315, 0.19333332777023315, 0.19333332777023315, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
