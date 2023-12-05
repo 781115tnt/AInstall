@@ -483,10 +483,12 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 	+ Install: (1) modern scroll extension, (2) Dark Reader, (3) Gnome shell integration, (4) Google Translate
 	+ Set brave://flags search for ozone and select Wayland
 
-+ + Install samba
++ Install samba
 	sudo pacman -S samba
 	sudo cp ~/AInstall/smb.conf /etc/samba
 	Check for configuration parameters: testparm
+	
+	Use Settings -> Network -> Wired -> + New static virtual profile: 10.1.1.99/24 has no dns nor gateway
 	
 	Make share directory
 	sudo mkdir /run/media/DEV
@@ -497,3 +499,4 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 	Stop the server: sudo systemctl stop smb
 	Enable the server: sudo systemctl enable smb
 	Add user and set password: smbpasswd -a thanhtran -> set password is 123456
+
