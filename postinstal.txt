@@ -490,6 +490,7 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 
 	Create a virtual network interface for smb
 		echo "sudo modprobe dummy; sudo ip link add eth1000 type dummy; sudo ip addr add 10.1.1.99/24 brd + dev eth1000 label eth1000:0;" >> ~/.bash_profile
+		Then logout and login again and check: ping 10.1.1.99
 	
 	Make share directory
 	sudo mkdir /run/media/DEV
