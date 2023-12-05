@@ -1,6 +1,6 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/dictionary/'
-saved-view='/org/gnome/dictionary/'
+saved-pathbar-path='/com/'
+saved-view='/com/'
 show-warning=false
 window-height=1113
 window-is-maximized=false
@@ -10,7 +10,7 @@ window-width=905
 first-run=false
 
 [org/gnome/Console]
-last-window-size=(1132, 1052)
+last-window-size=(1116, 727)
 
 [org/gnome/Disks/benchmark]
 do-write=false
@@ -31,14 +31,14 @@ is-maximized=false
 window-size=(960, 600)
 
 [org/gnome/control-center]
-last-panel='info-overview'
+last-panel='network'
 window-state=(1280, 951, false)
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=true
 
 [org/gnome/desktop/a11y/applications]
-screen-keyboard-enabled=true
+screen-keyboard-enabled=false
 screen-reader-enabled=false
 
 [org/gnome/desktop/app-folders]
@@ -109,13 +109,13 @@ font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Roboto Condensed, 11'
 gtk-theme='Adwaita-dark'
-icon-theme='ePapirus-Dark'
+icon-theme='Papirus-Dark'
 monospace-font-name='Monospace 11'
 text-scaling-factor=1.1499999999999999
-toolkit-accessibility=true
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-extensions-desktop', 'vlc', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'smplayer', 'gnome-system-monitor', 'org-gnome-console', 'org-gnome-texteditor', 'org-gnome-diskutility', 'brave-browser']
+application-children=['org-gnome-extensions-desktop', 'vlc', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'smplayer', 'gnome-system-monitor', 'org-gnome-console', 'org-gnome-texteditor', 'org-gnome-diskutility', 'brave-browser', 'wine-programs-diptrace-pcb-layout']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/brave-browser]
@@ -160,12 +160,15 @@ application-id='smplayer.desktop'
 [org/gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
 
+[org/gnome/desktop/notifications/application/wine-programs-diptrace-pcb-layout]
+application-id='wine-Programs-DipTrace-PCB Layout.desktop'
+
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='default'
-speed=0.39860139860139854
+speed=0.0
 
 [org/gnome/desktop/peripherals/touchpad]
 click-method='none'
@@ -216,9 +219,9 @@ inverted-colors=false
 show-sidebar=true
 sidebar-page='links'
 sidebar-size=391
-sizing-mode='fit-width'
-window-ratio=(2.8514860497929093, 1.4345312156920149)
-zoom=0.64694762406855366
+sizing-mode='free'
+window-ratio=(2.7490157704298754, 1.3555668310960727)
+zoom=0.64456977641403779
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -266,7 +269,7 @@ use-tree-view=false
 
 [org/gnome/nautilus/preferences]
 always-use-location-entry=false
-default-folder-viewer='list-view'
+default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 show-create-link=true
@@ -274,7 +277,7 @@ show-delete-permanently=true
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1154, 982)
+initial-size=(1747, 1183)
 maximized=false
 
 [org/gnome/nm-applet/eap/4170a3a9-aa4e-3a5d-b42e-659204952933]
@@ -286,6 +289,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/c2a0dcf0-4d72-412a-88e7-e988b8f1f01c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ec26fcd8-4fe6-432c-8639-09c41120bfec]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -301,7 +308,7 @@ app-picker-layout=[{'61337d24-a20f-4c4d-bdff-4cbf907d4e6e': <{'position': <0>}>,
 disable-user-extensions=false
 disabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gtk4-ding@smedius.gitlab.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'dash-to-panel@jderose9.github.com', 'tiling-assistant@leleat-on-github', 'command-menu@astrapi.de', 'custom-hot-corners-extended@G-dH.github.com', 'clipboard-indicator@tudmotu.com', 'rounded-window-corners@yilozt']
-favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'brave-browser.desktop']
+favorite-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.Nautilus.desktop', 'vlc.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'brave-browser.desktop', 'org.gnome.Dictionary.desktop']
 welcome-dialog-last-shown-version='45.0'
 
 [org/gnome/shell/extensions/commandmenu]
@@ -394,12 +401,10 @@ icon-size='tiny'
 border-color=(0.19333332777023315, 0.19333332777023315, 0.19333332777023315, 1.0)
 border-width=0
 custom-rounded-corner-settings=@a{sv} {}
-focused-shadow={'vertical_offset': 4, 'horizontal_offset': 0, 'blur_offset': 28, 'spread_radius': 4, 'opacity': 60}
 global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 10>, 'smoothing': <uint32 0>, 'enabled': <true>}
 settings-version=uint32 5
 skip-libadwaita-app=true
 skip-libhandy-app=false
-unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 12, 'spread_radius': -1, 'opacity': 65}
 
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(53,132,228)'
