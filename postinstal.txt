@@ -487,6 +487,11 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 	sudo pacman -S samba
 	sudo cp ~/AInstall/smb.conf /etc/samba
 	Check for configuration parameters: testparm
+
+	Create a virtual network interface for smb
+		sudo modprobe dummy; then check if it is loaded: sudo lsmod | grep dummy
+		sudo ip link add eth1000 type dummy; check if it is added: ip link show eth1000
+		sudo ip addr add 10.1.1.99/24 brd + dev eth1000 label eth1000:0;  then check if it works: ping 10.1.1.99
 	
 	Make share directory
 	sudo mkdir /run/media/DEV
