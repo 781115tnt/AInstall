@@ -502,3 +502,10 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 	Enable the server: sudo systemctl enable smb
 	Add user and set password: smbpasswd -a thanhtran -> set password is 123456
 
++ Equalizer:
+	sudo pacman -S pulseaudio-equalizer pavucontrol
+	sudo pacman -S gstreamer gst-plugins-good
+	pactl load-module module-equalizer-sink
+	pactl load-module module-dbus-protocol
+	- Select output FFT based equalizer...
+	- Use command: qpaeq
