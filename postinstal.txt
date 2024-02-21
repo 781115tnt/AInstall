@@ -522,3 +522,6 @@ sudo udisksctl power-off -b /dev/disk/by-uuid/629dbc70-4f52-4f00-b77a-0ba5e93262
 	- To show all devices: iostat -m -d
 	- To show only one device: iostat -m -d -p sdX,sdY,sdZ
 	- To show repeatedly in every n seconds: iostat -m -d n -p sdX,sdY,sdZ
+
++ To copy all files and directories in a folder:
+	cp -R --remove-destination ./* /dest/path
