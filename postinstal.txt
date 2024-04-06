@@ -309,6 +309,8 @@ sudo pacman -Syu --asdeps kicad-library kicad-library-3d
 + concat videos
 	for f in *.mkv; do echo "file '$f'" >> mylist.txt; done
 	ffmpeg -safe 0 -f concat -i mylist.txt -c copy out.mkv
++ Extract audio from video
+	ffmpeg -i video.mkv -map 0:a -acodec copy audio.mp4
 
 + split file
 	infile="filename.mp4"
